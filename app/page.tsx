@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { OzenKoreaLogo } from "../public/svgs/ozen-korea";
 import { OzenSushiLogo } from "../public/svgs/ozen-sushi";
