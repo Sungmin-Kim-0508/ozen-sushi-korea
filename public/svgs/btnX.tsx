@@ -1,0 +1,23 @@
+import React from "react";
+
+function BtnX() {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="none"
+      stroke-width="2.1"
+      viewBox="0 0 24 24"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="h-6 w-6 text-959595"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  );
+}
+
+export default BtnX;

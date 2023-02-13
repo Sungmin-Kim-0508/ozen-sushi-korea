@@ -210,8 +210,8 @@ export const OzenSushiLogo = () => (
         data-name="Est 2008"
         transform="translate(251.331 400.825)"
         fill="#ec6236"
-        font-size="11"
-        font-family="Holtwood One SC"
+        fontSize="11"
+        fontFamily="Holtwood One SC"
       >
         <tspan x="0" y="0">
           Est 2008

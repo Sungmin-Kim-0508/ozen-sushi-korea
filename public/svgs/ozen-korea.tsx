@@ -100,15 +100,15 @@ export const OzenKoreaLogo = () => (
         <text
           id="KOREA"
           transform="translate(0 23)"
-          font-size="22"
-          font-family="Roboto"
-          font-weight="800"
-          letter-spacing="0.28em"
+          fontSize="22"
+          fontFamily="Roboto"
+          fontWeight="800"
+          letterSpacing="0.28em"
         >
           <tspan x="0" y="0">
             K
           </tspan>
-          <tspan y="0" letter-spacing="0.3em">
+          <tspan y="0" letterSpacing="0.3em">
             OREA
           </tspan>
         </text>
@@ -116,15 +116,15 @@ export const OzenKoreaLogo = () => (
           id="KOREA-2"
           data-name="KOREA"
           transform="translate(0 23)"
-          font-size="22"
-          font-family="Roboto"
-          font-weight="800"
-          letter-spacing="0.28em"
+          fontSize="22"
+          fontFamily="Roboto"
+          fontWeight="800"
+          letterSpacing="0.28em"
         >
           <tspan x="0" y="0">
             K
           </tspan>
-          <tspan y="0" letter-spacing="0.3em">
+          <tspan y="0" letterSpacing="0.3em">
             OREA
           </tspan>
         </text>
