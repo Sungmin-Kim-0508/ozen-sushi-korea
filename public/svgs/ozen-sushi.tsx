@@ -1,14 +1,14 @@
 export const OzenSushiLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="299.999"
+    width="400"
     height="232.425"
     viewBox="0 0 299.999 232.425"
   >
     <g
       id="ozensushi_original_logo"
       data-name="ozensushi_original logo"
-      transform="translate(-135.9 -173.4)"
+      transform="translate(-130, -170)"
     >
       <g
         id="Group_6490"

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import OzenSushiHeader from "./OzenSushiNav";
+import OzenSushiHeader from "./Header";
 
 function OzenSushiHome() {
   return (

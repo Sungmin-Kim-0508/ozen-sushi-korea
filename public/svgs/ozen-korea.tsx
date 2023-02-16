@@ -2,13 +2,13 @@ export const OzenKoreaLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="376.001"
-    height="159.553"
+    height="200"
     viewBox="0 0 376.001 159.553"
   >
     <g
       id="Group_6492"
       data-name="Group 6492"
-      transform="translate(-4864 8831.828)"
+      transform="translate(-4864, 8841.828)"
     >
       <g
         id="Group_6060"

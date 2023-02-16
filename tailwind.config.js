@@ -13,6 +13,7 @@ module.exports = {
         959595: "#959595",
         FAFAFA: "#FAFAFA",
         959595: "#959595",
+        DBDBDB: "#DBDBDB",
       },
     },
     screens: {
