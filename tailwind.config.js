@@ -14,6 +14,7 @@ module.exports = {
         FAFAFA: "#FAFAFA",
         959595: "#959595",
         DBDBDB: "#DBDBDB",
+        CF382D: "#CF382D",
       },
     },
     screens: {

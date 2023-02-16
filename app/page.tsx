@@ -14,7 +14,7 @@ function page() {
         <OzenKoreaLogo />
         <Link
           href="/ozen-korea"
-          className={`${btnDefaultStyle} text-white bg-22346b relative top-9`}
+          className={`${btnDefaultStyle} text-white bg-22346b relative top-9 hover:bg-CF382D hover:duration-500`}
         >
           Ozen Korea
         </Link>
@@ -24,7 +24,7 @@ function page() {
         <OzenSushiLogo />
         <Link
           href="/ozen-sushi"
-          className={`${btnDefaultStyle} text-EC6236 bg-white border-solid border-2 border-EC6236 relative top-7`}
+          className={`${btnDefaultStyle} text-EC6236 bg-white border-solid border-2 border-EC6236 relative top-7 hover:bg-EC6236 hover:duration-500 hover:text-white`}
         >
           Ozen Sushi
         </Link>

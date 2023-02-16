@@ -2,7 +2,7 @@ export const OzenKoreaLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="376.001"
-    height="200"
+    height="210"
     viewBox="0 0 376.001 159.553"
   >
     <g
