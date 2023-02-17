@@ -19,12 +19,12 @@ function page() {
           Ozen Korea
         </Link>
       </div>
-      <div className="md:border-l md:border-solid md:border-DBDBDB md:h-28 md:relative md:top-20"></div>
+      <div className="md:border-l md:border-DBDBDB md:h-28 md:relative md:top-20"></div>
       <div className="grid">
         <OzenSushiLogo />
         <Link
           href="/ozen-sushi"
-          className={`${btnDefaultStyle} text-EC6236 bg-white border-solid border-2 border-EC6236 relative top-7 hover:bg-EC6236 hover:duration-500 hover:text-white`}
+          className={`${btnDefaultStyle} text-EC6236 bg-white border-2 border-EC6236 relative top-7 hover:bg-EC6236 hover:duration-500 hover:text-white`}
         >
           Ozen Sushi
         </Link>

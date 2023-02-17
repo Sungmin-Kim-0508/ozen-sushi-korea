@@ -5,10 +5,10 @@ function BtnX() {
     <svg
       stroke="currentColor"
       fill="none"
-      stroke-width="2.1"
+      strokeWidth="2.1"
       viewBox="0 0 24 24"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="h-6 w-6 text-959595"
       height="1em"
       width="1em"

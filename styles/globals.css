@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+}
