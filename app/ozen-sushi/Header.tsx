@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import BtnX from "../../public/svgs/btnX";
 import { OrangeBgBtn, OrangeBorderBtn } from "../components/button";
@@ -11,6 +12,7 @@ type MenuItem = {
 };
 
 function OzenSushiHeader() {
+  const pathname = usePathname();
   const [navHidden, setNavHidden] = useState(false);
   const toggleNav = () => {
     setNavHidden(!navHidden);
@@ -34,7 +36,13 @@ function OzenSushiHeader() {
       <div className="flex h-24 max-h-24 justify-around items-center">
         <nav className="flex gap-10">
           {menuItems.map(({ label, href }) => (
-            <Link key={label} href={href} className="hover:text-EC6236">
+            <Link
+              key={label}
+              href={href}
+              className={`hover:text-EC6236 ${
+                pathname === href ? "text-EC6236" : ""
+              }`}
+            >
               {label}
             </Link>
           ))}
