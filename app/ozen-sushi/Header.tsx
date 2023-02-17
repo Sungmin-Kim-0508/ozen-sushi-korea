@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import BtnX from "../../public/svgs/btnX";
 import { OrangeBgBtn, OrangeBorderBtn } from "../components/button";
-import { aboutUs, menu, ozen_sushi_home } from "../utils/routes";
+import { aboutUs, home, menu, ozen_sushi_home } from "../utils/routes";
 import { OzenSushiHorizontalLogo } from "../../public/svgs/ozen-sushi-horizontal";
 
 type MenuItem = {
@@ -33,7 +33,8 @@ function OzenSushiHeader() {
   ];
   return (
     <>
-      <div className="flex h-24 max-h-24 justify-around items-center">
+      {/* Desktop */}
+      <div className="flex h-24 max-h-24 justify-around items-center sm:hidden">
         <nav className="flex gap-10">
           {menuItems.map(({ label, href }) => (
             <Link
@@ -48,7 +49,9 @@ function OzenSushiHeader() {
           ))}
         </nav>
         <div>
-          <OzenSushiHorizontalLogo />
+          <Link href={home}>
+            <OzenSushiHorizontalLogo />
+          </Link>
         </div>
         <div>
           <OrangeBgBtn width="8.75rem" height="2.56rem">

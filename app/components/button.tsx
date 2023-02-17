@@ -15,7 +15,7 @@ export const OrangeBgBtn: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className="h-12 text-center p-0 rounded-full mx-[5rem] bg-EC6236 text-white"
+    className="text-center p-0 rounded-full bg-EC6236 border-2 border-EC6236 text-white hover:duration-500 hover:text-EC6236 hover:bg-white"
   >
     {children}
   </button>
@@ -29,7 +29,7 @@ export const OrangeBorderBtn: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className="w-64 h-12 text-center p-0 rounded-full mx-[5rem] border-2 border-EC6236 text-EC6236"
+    className="text-center p-0 rounded-full border-2 border-EC6236 text-EC6236 hover:duration-500 hover:text-white hover:bg-EC6236"
   >
     {children}
   </button>

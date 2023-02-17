@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { OzenKoreaLogo } from "../public/svgs/ozen-korea";
-import { OzenSushiLogo } from "../public/svgs/ozen-sushi";
+import { OzenKoreaLogo } from "public/svgs/ozen-korea";
+import { OzenSushiLogo } from "public/svgs/ozen-sushi";
 
 const btnDefaultStyle =
   "w-64 h-12 text-center leading-[48px] rounded-full mx-[5rem]";

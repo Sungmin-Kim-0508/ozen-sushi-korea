@@ -15,6 +15,10 @@ module.exports = {
         959595: "#959595",
         DBDBDB: "#DBDBDB",
         CF382D: "#CF382D",
+        191919: "#191919",
+      },
+      fontFamily: {
+        gravitasOneRegular: "'Gravitas One'",
       },
     },
     screens: {
