@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -17,12 +18,10 @@ module.exports = {
         CF382D: "#CF382D",
         191919: "#191919",
       },
-      fontFamily: {
-        gravitasOneRegular: "'Gravitas One'",
+      fontFamily: {},
+      screens: {
+        md: "750px",
       },
-    },
-    screens: {
-      md: "750px",
     },
   },
   plugins: [],

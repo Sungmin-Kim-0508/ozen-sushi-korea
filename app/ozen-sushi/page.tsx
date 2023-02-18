@@ -4,10 +4,37 @@ import Image from "next/image";
 import { OrangeBorderBtn } from "../components/button";
 import salmonRiceBowl from "public/images/ozen-sushi/salmon_rice_bowl.png";
 // import leavesPic from "public/images/ozen-sushi/josh-calabrese.png";
+import food57 from "public/images/ozen-sushi/food57.png";
+import food58 from "public/images/ozen-sushi/food58.png";
+import food59 from "public/images/ozen-sushi/food59.png";
+import food60 from "public/images/ozen-sushi/food60.png";
+import food61 from "public/images/ozen-sushi/food61.png";
 
 function OzenSushiHome() {
+  const foodImages = [
+    {
+      src: food57,
+      alt: "salmin sushi",
+    },
+    {
+      src: food58,
+      alt: "rolls1",
+    },
+    {
+      src: food59,
+      alt: "rolls2",
+    },
+    {
+      src: food60,
+      alt: "rolls3",
+    },
+    {
+      src: food61,
+      alt: "sasimi",
+    },
+  ];
   return (
-    <div>
+    <main>
       <section className="flex gap-x-60 px-96">
         <div className="flex flex-col relative top-20">
           <div className="flex flex-col mb-3">
@@ -38,9 +65,19 @@ function OzenSushiHome() {
           {/* <Image src={leavesPic} alt="Leaves Pic" className="absolute w-7" /> */}
         </div>
       </section>
-      <section>
-        <div>Images</div>
-        <div className="flex flex-col bg-191919 text-white">
+      <section className="">
+        <div className="flex">
+          {foodImages.map(({ src, alt }) => (
+            <Image
+              key={alt}
+              src={src}
+              alt={alt}
+              sizes="cover"
+              className="w-full"
+            />
+          ))}
+        </div>
+        <div className="flex flex-col bg-191919 text-white px-[17.81rem] py-32">
           <span>What we serve</span>
           <span>
             The unique taste comes from family recipes and from fresh, simple
@@ -55,7 +92,8 @@ function OzenSushiHome() {
           </span>
         </div>
       </section>
-    </div>
+      <section className="">section3</section>
+    </main>
   );
 }
 
