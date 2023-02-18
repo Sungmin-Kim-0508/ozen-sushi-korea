@@ -34,7 +34,7 @@ function OzenSushiHeader() {
   return (
     <>
       {/* Desktop */}
-      <div className="flex h-24 max-h-24 justify-around items-center sm:hidden">
+      <div className="flex h-24 max-h-24 justify-around items-center">
         <nav className="flex gap-10">
           {menuItems.map(({ label, href }) => (
             <Link
