@@ -58,7 +58,7 @@ function OzenSushiHome() {
   ];
   return (
     <main>
-      <section className="flex gap-x-60 px-96">
+      <section className="flex gap-x-60 justify-center">
         <div className="flex flex-col relative top-20">
           <div className="flex flex-col mb-3">
             <span className="font-gravitasOneRegular text-191919 text-6xl font-extrabold tracking-normal">
@@ -84,7 +84,12 @@ function OzenSushiHome() {
           </div>
         </div>
         <div>
-          <Image src={salmonRiceBowl} alt="salmon rice bowl" />
+          <Image
+            src={salmonRiceBowl}
+            alt="salmon rice bowl"
+            width={485}
+            height={485}
+          />
           {/* <Image src={leavesPic} alt="Leaves Pic" className="absolute w-7" /> */}
         </div>
       </section>
