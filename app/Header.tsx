@@ -6,18 +6,35 @@ import { usePathname } from "next/navigation";
 
 function Header() {
   const pathName = usePathname();
-  const isOzenPage = pathName?.includes("ozen-sushi");
+  const isOzenPage = pathName?.includes("ozen-");
+  const isOzenSushiPage = pathName?.includes("-sushi");
+  const isOzenKoreaPage = pathName?.includes("-korea");
   return (
-    <header className="flex justify-between bg-FAFAFA text-959595 px-12">
+    <header className="flex justify-around items-center py-2 bg-FAFAFA text-959595">
+      <div></div>
       <div className="">
         {isOzenPage
           ? "Why don't you try different flavour?"
           : "Welcome to Ozensushi.ca"}
       </div>
       <div className="flex gap-[0.625rem]">
-        <Link href="ozen-sushi">Ozen Sushi</Link>
+        <Link
+          href="ozen-sushi"
+          className={`hover:text-EC6236 ${
+            isOzenSushiPage ? "text-EC6236" : ""
+          }`}
+        >
+          Ozen Sushi
+        </Link>
         <span>|</span>
-        <Link href="ozen-korea">Ozen Korea</Link>
+        <Link
+          href="ozen-korea"
+          className={`hover:text-EC6236 ${
+            isOzenKoreaPage ? "text-EC6236" : ""
+          }`}
+        >
+          Ozen Korea
+        </Link>
       </div>
     </header>
   );

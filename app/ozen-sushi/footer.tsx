@@ -5,24 +5,35 @@ function Footer() {
   return (
     <footer className="flex flex-col">
       <section className="flex">
-        <div className="grow text-white bg-black">
-          <span>Location</span>
+        <div className="grow px-64 py-24 text-white bg-191919">
+          <div className="mb-3">
+            <span className="text-3xl">Location</span>
+          </div>
           <div>
-            <span>
+            <span className="text-base">
               607 Richmond St, London <br /> ON N6A 3G3
             </span>
           </div>
         </div>
-        <div className="grow bg-white text-black">
-          <span>Hours</span>
-          <div className="flex flex-col">
-            <span>Mon to Fri 11am - 9pm</span>
-            <span>Saturday 11am - 10pm</span>
-            <span>Sunday 11am - 10pm</span>
+        <div className="grow px-64 py-24 bg-F1F1F1 text-191bg-191919">
+          <div className="mb-3">
+            <span className="text-3xl">Hours</span>
+          </div>
+          <div className="flex gap-x-12 text-base">
+            <div className="flex flex-col">
+              <span>Mon to Fri</span>
+              <span>Saturday</span>
+              <span>Sunday</span>
+            </div>
+            <div className="flex flex-col">
+              <span>11am - 9pm</span>
+              <span>11am - 10pm</span>
+              <span>11am - 10pm</span>
+            </div>
           </div>
         </div>
       </section>
-      <section className="flex">
+      <section className="flex justify-between px-28 py-2 text-959595 bg-191919">
         <div>&copy; {fullYear} Ozensushi. All rights reserved</div>
         <div>Created by Jinu</div>
       </section>
