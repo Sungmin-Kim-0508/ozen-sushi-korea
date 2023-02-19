@@ -12,7 +12,7 @@ function Header() {
   return (
     <header className="flex justify-around items-center py-2 bg-FAFAFA text-959595">
       <div></div>
-      <div className="">
+      <div className="ml-56">
         {isOzenPage
           ? "Why don't you try different flavour?"
           : "Welcome to Ozensushi.ca"}
