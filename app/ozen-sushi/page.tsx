@@ -93,16 +93,10 @@ function OzenSushiHome() {
           {/* <Image src={leavesPic} alt="Leaves Pic" className="absolute w-7" /> */}
         </div>
       </section>
-      <section className="">
+      <section>
         <div className="flex">
           {foodImagesInSec2.map(({ src, alt }) => (
-            <Image
-              key={alt}
-              src={src}
-              alt={alt}
-              sizes="cover"
-              className="w-full"
-            />
+            <Image key={alt} src={src} alt={alt} className="w-full" />
           ))}
         </div>
         <div className="flex flex-col gap-y-10 text-center bg-191919 text-white px-[17.81rem] py-32">
