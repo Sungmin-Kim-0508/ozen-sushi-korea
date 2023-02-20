@@ -16,7 +16,7 @@ function AboutUs() {
     },
     {
       src: food72,
-      alt: "food70",
+      alt: "food72",
     },
     {
       src: food71,
