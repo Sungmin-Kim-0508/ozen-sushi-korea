@@ -126,7 +126,7 @@ function OzenSushiHome() {
           </span>
           <div className="grid grid-cols-2 gap-2">
             {foodImagesInSec3.map(({ src, alt }) => (
-              <Image src={src} alt={alt} />
+              <Image key={alt} src={src} alt={alt} />
             ))}
           </div>
         </div>

@@ -24,13 +24,13 @@ function OzenKoreaHeader() {
       <nav>
         <ul className="flex gap-x-4">
           {menuItems.map(({ label, href }) => (
-            <li>
+            <li key={label}>
               <Link href={href}>{label}</Link>
             </li>
           ))}
         </ul>
       </nav>
-      <div>Image</div>
+      <div>Ozen Korea Logo</div>
       <div>
         <RedBgBtc width="8.75rem" height="2.5rem">
           Order Online
