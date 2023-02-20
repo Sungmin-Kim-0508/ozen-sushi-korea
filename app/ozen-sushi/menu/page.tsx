@@ -4,9 +4,9 @@ import React from "react";
 
 function pages() {
   return (
-    <div>
+    <main className="h-[30rem]">
       <p>Ozen Sushi Menu</p>
-    </div>
+    </main>
   );
 }
 

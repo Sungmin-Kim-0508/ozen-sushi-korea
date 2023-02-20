@@ -1,11 +1,12 @@
 "use client";
 import { BlackBgBtc } from "app/components/button";
 import Image from "next/image";
-import food57 from "public/images/ozen-sushi/food57.png";
-import food63 from "public/images/ozen-sushi/food63.png";
-import food64 from "public/images/ozen-sushi/food64.png";
-import food65 from "public/images/ozen-sushi/food65.png";
-import food66 from "public/images/ozen-sushi/food66.png";
+import image9928 from "public/images/ozen-korea/img_9928.png";
+import image9926 from "public/images/ozen-korea/img_9926.png";
+import food63 from "public/images/ozen-korea/food63.png";
+import food64 from "public/images/ozen-korea/food64.png";
+import food65 from "public/images/ozen-korea/food65.png";
+import food66 from "public/images/ozen-korea/food66.png";
 
 function OzenKoreaHome() {
   const foodImagesInSec3 = [
@@ -31,7 +32,7 @@ function OzenKoreaHome() {
       <section className="h-[43.75rem]">
         <div className="flex h-full">
           <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48">
-            <span className="text-6xl">
+            <span className="text-6xl gravitas-one">
               Welcome to <br /> OzenKorea
             </span>
             <span className="text-lg font-bold">
@@ -46,14 +47,14 @@ function OzenKoreaHome() {
             </BlackBgBtc>
           </div>
           <div className="grow w-1/2">
-            <Image src={food57} alt="food57" className="w-full h-full" />
+            <Image src={image9928} alt="food57" className="w-full h-full" />
           </div>
         </div>
       </section>
       <section className="h-[43.75rem]">
         <div className="flex h-full">
           <div className="grow w-1/2">
-            <Image src={food57} alt="food57" className="w-full h-full" />
+            <Image src={image9926} alt="food57" className="w-full h-full" />
           </div>
           <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48">
             <div>
