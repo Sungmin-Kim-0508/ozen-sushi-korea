@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import BtnX from "../../public/svgs/btnX";
+import { usePathname } from "next/navigation";
 import { OrangeBgBtn } from "../components/button";
 import { aboutUs, home, menu, ozen_sushi_home } from "../utils/routes";
 import { OzenSushiHorizontalLogo } from "../../public/svgs/ozen-sushi-horizontal";
-
-type MenuItem = {
-  label: string;
-  href: string;
-};
+import { MenuItem } from "app/utils/types";
 
 function OzenSushiHeader() {
   const pathname = usePathname();

@@ -34,3 +34,13 @@ export const OrangeBorderBtn: React.FC<BtnProps> = ({
     {children}
   </button>
 );
+
+export const RedBgBtc: React.FC<BtnProps> = ({ children, width, height }) => (
+  <button
+    type="button"
+    style={{ width, height }}
+    className="text-center p-0 rounded-full bg-CF382D border-2 border-CF382D text-white hover:duration-500 hover:bg-22346b hover:border-22346b"
+  >
+    {children}
+  </button>
+);

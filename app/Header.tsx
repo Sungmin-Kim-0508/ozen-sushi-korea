@@ -9,8 +9,12 @@ function Header() {
   const isOzenPage = pathName?.includes("ozen-");
   const isOzenSushiPage = pathName?.includes("-sushi");
   const isOzenKoreaPage = pathName?.includes("-korea");
+
+  const bgColour = isOzenKoreaPage ? "bg-black" : "bg-FAFAFA";
   return (
-    <header className="flex justify-around items-center py-2 bg-FAFAFA text-959595">
+    <header
+      className={`flex justify-around items-center py-2 ${bgColour} text-959595`}
+    >
       <div></div>
       <div className="ml-56">
         {isOzenPage
