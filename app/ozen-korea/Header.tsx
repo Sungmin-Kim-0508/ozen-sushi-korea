@@ -2,6 +2,7 @@ import { RedBgBtc } from "app/components/button";
 import { aboutUs, ozen_korea_home, menu } from "app/utils/routes";
 import { MenuItem } from "app/utils/types";
 import Link from "next/link";
+import { OzenKoreaLogoSmall } from "public/svgs/ozen-korea-small";
 import React from "react";
 
 function OzenKoreaHeader() {
@@ -20,7 +21,7 @@ function OzenKoreaHeader() {
     },
   ];
   return (
-    <header className="flex justify-around items-center py-5">
+    <header className="flex justify-around items-center py-5 border-t border-b border-C9C9C9">
       <nav>
         <ul className="flex gap-x-4">
           {menuItems.map(({ label, href }) => (
@@ -30,7 +31,9 @@ function OzenKoreaHeader() {
           ))}
         </ul>
       </nav>
-      <div>Ozen Korea Logo</div>
+      <div>
+        <OzenKoreaLogoSmall />
+      </div>
       <div>
         <RedBgBtc width="8.75rem" height="2.5rem">
           Order Online

@@ -18,6 +18,7 @@ module.exports = {
         CF382D: "#CF382D",
         191919: "#191919",
         F1F1F1: "#F1F1F1",
+        C9C9C9: "#C9C9C9",
       },
       fontFamily: {},
       screens: {
