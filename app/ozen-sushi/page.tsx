@@ -61,7 +61,7 @@ function OzenSushiHome() {
       <section className="flex gap-x-60 justify-center">
         <div className="flex flex-col relative top-20">
           <div className="flex flex-col mb-3">
-            <span className="gravitasOne text-191919 text-6xl font-extrabold tracking-normal">
+            <span className="gravitasOne text-191919 text-6xl font-extrabold tracking-normal mb-3">
               Welcome to
             </span>
             <span className="gravitasOne text-EC6236 text-6xl">Ozensushi</span>

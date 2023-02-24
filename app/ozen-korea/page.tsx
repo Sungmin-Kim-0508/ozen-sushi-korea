@@ -31,8 +31,8 @@ function OzenKoreaHome() {
     <main>
       <section className="h-[43.75rem]">
         <div className="flex h-full">
-          <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48">
-            <span className="text-6xl gravitasOne">
+          <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48 mb-3">
+            <span className="text-6xl gravitasOne leading-tight">
               Welcome to <br /> OzenKorea
             </span>
             <span className="text-lg font-bold">
