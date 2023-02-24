@@ -1,8 +1,8 @@
 "use client";
 import { BlackBgBtc } from "app/components/button";
 import Image from "next/image";
-import image9928 from "public/images/ozen-korea/img_9928.png";
-import image9926 from "public/images/ozen-korea/img_9926.png";
+import image9928Large from "public/images/ozen-korea/img_9928@2x.png";
+import image9926Large from "public/images/ozen-korea/img_9926@2x.png";
 import food63 from "public/images/ozen-korea/food63.png";
 import food64 from "public/images/ozen-korea/food64.png";
 import food65 from "public/images/ozen-korea/food65.png";
@@ -47,14 +47,22 @@ function OzenKoreaHome() {
             </BlackBgBtc>
           </div>
           <div className="grow w-1/2">
-            <Image src={image9928} alt="food57" className="w-full h-full" />
+            <Image
+              src={image9928Large}
+              alt="food57"
+              className="w-full h-full"
+            />
           </div>
         </div>
       </section>
       <section className="h-[43.75rem]">
         <div className="flex h-full">
           <div className="grow w-1/2">
-            <Image src={image9926} alt="food57" className="w-full h-full" />
+            <Image
+              src={image9926Large}
+              alt="food57"
+              className="w-full h-full"
+            />
           </div>
           <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48">
             <div>
