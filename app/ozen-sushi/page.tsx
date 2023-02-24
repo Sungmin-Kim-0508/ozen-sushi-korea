@@ -61,12 +61,10 @@ function OzenSushiHome() {
       <section className="flex gap-x-60 justify-center">
         <div className="flex flex-col relative top-20">
           <div className="flex flex-col mb-3">
-            <span className="font-gravitasOneRegular text-191919 text-6xl font-extrabold tracking-normal">
+            <span className="gravitasOne text-191919 text-6xl font-extrabold tracking-normal">
               Welcome to
             </span>
-            <span className="font-gravitasOneRegular text-EC6236 text-6xl">
-              Ozensushi
-            </span>
+            <span className="gravitasOne text-EC6236 text-6xl">Ozensushi</span>
           </div>
           <div className="flex flex-col mb-8">
             <span className="font-semibold text-[1.125rem] mb-2">
@@ -100,7 +98,7 @@ function OzenSushiHome() {
           ))}
         </div>
         <div className="flex flex-col gap-y-10 text-center bg-191919 text-white px-[17.81rem] py-32">
-          <span className="text-4xl">What we serve</span>
+          <span className="text-4xl gravitasOne">What we serve</span>
           <span className="px-64">
             The unique taste comes from family recipes and from fresh, simple
             and tasteful ingredients straight out of love. In every menu items
@@ -119,7 +117,7 @@ function OzenSushiHome() {
           <Image src={stickers} alt="ozen-sushi-stickers" />
         </div>
         <div className="flex flex-col m-auto">
-          <span className="text-3xl">
+          <span className="text-3xl gravitasOne">
             Check out Our Stories
             <br />
             in INSTAGRAM

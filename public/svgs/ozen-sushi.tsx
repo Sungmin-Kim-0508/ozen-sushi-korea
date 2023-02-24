@@ -1,3 +1,5 @@
+const setToMiddleTranslate = "translate(-130, -170)";
+
 export const OzenSushiLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +10,7 @@ export const OzenSushiLogo = () => (
     <g
       id="ozensushi_original_logo"
       data-name="ozensushi_original logo"
-      transform="translate(-130, -170)"
+      transform={setToMiddleTranslate}
     >
       <g
         id="Group_6490"
