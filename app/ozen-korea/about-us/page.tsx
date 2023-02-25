@@ -53,7 +53,7 @@ function AboutUs() {
         </div>
       </section>
       <section>
-        <div className="flex h-1/4">
+        <div className="flex">
           {foodImages.map(({ src, alt }) => (
             <Image key={alt} src={src} alt={alt} className="w-full" />
           ))}
