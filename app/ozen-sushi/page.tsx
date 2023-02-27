@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { OrangeBorderBtn } from "../components/button";
 import salmonRiceBowl from "public/images/ozen-sushi/salmon_rice_bowl.png";
-// import leavesPic from "public/images/ozen-sushi/josh-calabrese.png";
 import food57 from "public/images/ozen-sushi/food57.png";
 import food58 from "public/images/ozen-sushi/food58.png";
 import food59 from "public/images/ozen-sushi/food59.png";
@@ -58,8 +57,8 @@ function OzenSushiHome() {
   ];
   return (
     <main>
-      <section className="flex gap-x-60 justify-center">
-        <div className="flex flex-col relative top-20">
+      <section className="flex">
+        <div className="flex-1 flex flex-col align-middle relative top-32 left-80">
           <div className="flex flex-col mb-3">
             <span className="gravitasOne text-191919 text-6xl font-extrabold tracking-normal mb-3">
               Welcome to
@@ -81,14 +80,12 @@ function OzenSushiHome() {
             </OrangeBorderBtn>
           </div>
         </div>
-        <div>
+        <div className="flex-1">
           <Image
             src={salmonRiceBowl}
             alt="salmon rice bowl"
-            width={485}
-            height={485}
+            className="w-full"
           />
-          {/* <Image src={leavesPic} alt="Leaves Pic" className="absolute w-7" /> */}
         </div>
       </section>
       <section>
