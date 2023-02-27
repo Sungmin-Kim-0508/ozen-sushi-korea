@@ -75,13 +75,13 @@ function OzenKoreaHome() {
       <section>
         <div className="flex flex-col gap-y-10 text-center bg-FAFAFA text-191919 px-[17.81rem] py-32">
           <span className="text-4xl gravitasOne">What we serve</span>
-          <span className="px-64">
+          <span className="px-auto">
             The unique taste comes from family recipes and from fresh, simple
             and tasteful ingredients straight out of love. In every menu items
             from OZEN SUSHI there is a bit of Korean/Japanese culture and
             flavor.
           </span>
-          <span className="px-64">
+          <span className="px-auto">
             Ozen Sushi bridges the traditional with the contemporary, bringing
             live-fire cooking, housemade spicy mayo sauce, and a robust fresh
             fish list to the heart of London Ontario.

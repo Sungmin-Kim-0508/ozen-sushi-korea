@@ -94,15 +94,15 @@ function OzenSushiHome() {
             <Image key={alt} src={src} alt={alt} className="w-full" />
           ))}
         </div>
-        <div className="flex flex-col gap-y-10 text-center bg-191919 text-white px-[17.81rem] py-32">
-          <span className="text-4xl gravitasOne">What we serve</span>
-          <span className="px-64">
+        <div className="flex flex-col gap-y-10 text-center bg-191919 text-white px-[30.81rem] py-32">
+          <span className="text-4xl min-w-max gravitasOne">What we serve</span>
+          <span className="px-auto min-w-[25.62rem]">
             The unique taste comes from family recipes and from fresh, simple
             and tasteful ingredients straight out of love. In every menu items
             from OZEN SUSHI there is a bit of Korean/Japanese culture and
             flavor.
           </span>
-          <span className="px-64">
+          <span className="px-auto min-w-[25.62rem]">
             Ozen Sushi bridges the traditional with the contemporary, bringing
             live-fire cooking, housemade spicy mayo sauce, and a robust fresh
             fish list to the heart of London Ontario.
@@ -111,10 +111,14 @@ function OzenSushiHome() {
       </section>
       <section className="flex gap-x-60 px-72">
         <div>
-          <Image src={stickers} alt="ozen-sushi-stickers" />
+          <Image
+            src={stickers}
+            alt="ozen-sushi-stickers"
+            className="max-w-full max-h-full h-full w-full min-w-[18rem]"
+          />
         </div>
         <div className="flex flex-col m-auto">
-          <span className="text-3xl gravitasOne">
+          <span className="text-3xl min-w-max gravitasOne">
             Check out Our Stories
             <br />
             in INSTAGRAM
