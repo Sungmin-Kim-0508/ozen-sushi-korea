@@ -58,7 +58,7 @@ function OzenSushiHome() {
   return (
     <main>
       <section className="flex">
-        <div className="flex-1 flex flex-col align-middle relative top-32 left-80">
+        <div className="flex-1 flex flex-col align-middle relative top-32 left-64">
           <div className="flex flex-col mb-3">
             <span className="gravitasOne text-191919 text-6xl font-extrabold tracking-normal mb-3">
               Welcome to
