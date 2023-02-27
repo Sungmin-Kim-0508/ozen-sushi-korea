@@ -21,7 +21,7 @@ function OzenKoreaHeader() {
     },
   ];
   return (
-    <header className="sticky top-0 flex justify-around items-center py-5 border-t border-b bg-black border-C9C9C9">
+    <header className="sticky top-0 z-10 flex justify-around items-center py-5 border-t border-b bg-black border-C9C9C9">
       <nav>
         <ul className="flex gap-x-4">
           {menuItems.map(({ label, href }) => (
