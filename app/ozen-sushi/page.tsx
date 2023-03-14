@@ -3,40 +3,13 @@
 import Image from "next/image";
 import { OrangeBorderBtn } from "../components/button";
 import salmonRiceBowl from "public/images/ozen-sushi/salmon_rice_bowl.png";
-import food57 from "public/images/ozen-sushi/food57.png";
-import food58 from "public/images/ozen-sushi/food58.png";
-import food59 from "public/images/ozen-sushi/food59.png";
-import food60 from "public/images/ozen-sushi/food60.png";
-import food61 from "public/images/ozen-sushi/food61.png";
 import food63 from "public/images/ozen-sushi/food63.png";
 import food64 from "public/images/ozen-sushi/food64.png";
 import food65 from "public/images/ozen-sushi/food65.png";
 import food66 from "public/images/ozen-sushi/food66.png";
-import stickers from "public/images/ozen-sushi/stickers.png";
+import food91 from "public/images/ozen-sushi/food91.png";
 
 function OzenSushiHome() {
-  const foodImagesInSec2 = [
-    {
-      src: food57,
-      alt: "salmin sushi",
-    },
-    {
-      src: food58,
-      alt: "rolls1",
-    },
-    {
-      src: food59,
-      alt: "rolls2",
-    },
-    {
-      src: food60,
-      alt: "rolls3",
-    },
-    {
-      src: food61,
-      alt: "sasimi",
-    },
-  ];
   const foodImagesInSec3 = [
     {
       src: food63,
@@ -91,26 +64,26 @@ function OzenSushiHome() {
         </div>
       </section>
       <section>
-        <div className="flex">
-          {foodImagesInSec2.map(({ src, alt }) => (
-            <Image key={alt} src={src} alt={alt} className="w-full" />
-          ))}
-        </div>
-        <div className="flex flex-col gap-y-10 text-center bg-191919 text-white px-[30.81rem] py-32">
-          <span className="text-4xl min-w-max monserratBold900">
-            What we serve
-          </span>
-          <span className="px-auto min-w-[25.62rem]">
-            The unique taste comes from family recipes and from fresh, simple
-            and tasteful ingredients straight out of love. In every menu items
-            from OZEN SUSHI there is a bit of Korean/Japanese culture and
-            flavor.
-          </span>
-          <span className="px-auto min-w-[25.62rem]">
-            Ozen Sushi bridges the traditional with the contemporary, bringing
-            live-fire cooking, housemade spicy mayo sauce, and a robust fresh
-            fish list to the heart of London Ontario.
-          </span>
+        <div className="flex bg-191919">
+          <div>
+            <Image src={food91} alt="food91" />
+          </div>
+          <div className="flex flex-col justify-center gap-y-10 text-white px-40 py-10">
+            <span className="text-4xl min-w-max monserratBold900 w-[45.5rem]">
+              What we served
+            </span>
+            <span className="px-auto w-[45.5rem]">
+              The unique taste comes from family recipes and from fresh, simple
+              and tasteful ingredients straight out of love. In every menu items
+              from OZEN SUSHI there is a bit of Korean/Japanese culture and
+              flavor.
+            </span>
+            <span className="px-auto w-[45.5rem]">
+              Ozen Sushi bridges the traditional with the contemporary, bringing
+              live-fire cooking, housemade spicy mayo sauce, and a robust fresh
+              fish list to the heart of London Ontario.
+            </span>
+          </div>
         </div>
       </section>
       <section className="flex gap-x-60 px-28 py-24">
