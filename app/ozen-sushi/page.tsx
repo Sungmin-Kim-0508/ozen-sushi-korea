@@ -60,10 +60,12 @@ function OzenSushiHome() {
       <section className="flex">
         <div className="flex-1 flex flex-col align-middle relative top-32 left-64">
           <div className="flex flex-col mb-3">
-            <span className="gravitasOne text-191919 text-6xl font-extrabold tracking-normal mb-3">
+            <span className="monserratBold900 text-191919 text-6xl font-extrabold tracking-normal mb-3">
               Welcome to
             </span>
-            <span className="gravitasOne text-EC6236 text-6xl">Ozensushi</span>
+            <span className="monserratBold900 text-EC6236 text-6xl">
+              Ozensushi
+            </span>
           </div>
           <div className="flex flex-col mb-8">
             <span className="font-semibold text-[1.125rem] mb-2">
@@ -95,7 +97,9 @@ function OzenSushiHome() {
           ))}
         </div>
         <div className="flex flex-col gap-y-10 text-center bg-191919 text-white px-[30.81rem] py-32">
-          <span className="text-4xl min-w-max gravitasOne">What we serve</span>
+          <span className="text-4xl min-w-max monserratBold900">
+            What we serve
+          </span>
           <span className="px-auto min-w-[25.62rem]">
             The unique taste comes from family recipes and from fresh, simple
             and tasteful ingredients straight out of love. In every menu items
@@ -109,23 +113,15 @@ function OzenSushiHome() {
           </span>
         </div>
       </section>
-      <section className="flex gap-x-60 px-72">
-        <div>
-          <Image
-            src={stickers}
-            alt="ozen-sushi-stickers"
-            className="max-w-full max-h-full h-full w-full min-w-[18rem]"
-          />
-        </div>
-        <div className="flex flex-col m-auto">
-          <span className="text-3xl min-w-max gravitasOne">
-            Check out Our Stories
-            <br />
-            in INSTAGRAM
-          </span>
-          <div className="grid grid-cols-2 gap-2">
+      <section className="flex gap-x-60 px-28 py-24">
+        <div className="flex flex-col m-auto text-3xl min-w-max mb-7">
+          <div className="flex gap-x-3 mb-5">
+            <span className="monserratBold600">Check out</span>
+            <span className="monserratBold600 text-EC6236 ">Our Stories</span>
+          </div>
+          <div className="flex gap-4">
             {foodImagesInSec3.map(({ src, alt }) => (
-              <Image key={alt} src={src} alt={alt} />
+              <Image key={alt} src={src} alt={alt} width={350} height={350} />
             ))}
           </div>
         </div>

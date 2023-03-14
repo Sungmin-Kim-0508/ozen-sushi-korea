@@ -7,7 +7,7 @@ function Footer() {
       <section className="flex">
         <div className="grow px-64 py-24 text-white bg-191919">
           <div className="mb-3">
-            <span className="text-3xl gravitasOne">Location</span>
+            <span className="text-3xl monserratBold900">Location</span>
           </div>
           <div>
             <span className="text-base">
@@ -17,7 +17,7 @@ function Footer() {
         </div>
         <div className="grow px-64 py-24 bg-F1F1F1 text-191919">
           <div className="mb-3">
-            <span className="text-3xl gravitasOne">Hours</span>
+            <span className="text-3xl monserratBold900">Hours</span>
           </div>
           <div className="flex gap-x-12 text-base">
             <div className="flex flex-col">

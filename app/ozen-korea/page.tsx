@@ -32,7 +32,7 @@ function OzenKoreaHome() {
       <section className="h-[43.75rem]">
         <div className="flex h-full">
           <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48">
-            <span className="text-6xl gravitasOne">
+            <span className="text-6xl monserratBold900">
               Welcome to <br /> OzenKorea
             </span>
             <span className="text-lg font-bold">
@@ -66,7 +66,7 @@ function OzenKoreaHome() {
           </div>
           <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48">
             <div>
-              <span className="text-4xl gravitasOne">Operate Hours</span>
+              <span className="text-4xl monserratBold900">Operate Hours</span>
             </div>
             <div>Monday to Friday</div>
           </div>
@@ -74,7 +74,7 @@ function OzenKoreaHome() {
       </section>
       <section>
         <div className="flex flex-col gap-y-10 text-center bg-FAFAFA text-191919 px-[17.81rem] py-32">
-          <span className="text-4xl gravitasOne">What we serve</span>
+          <span className="text-4xl monserratBold900">What we serve</span>
           <span className="px-auto">
             The unique taste comes from family recipes and from fresh, simple
             and tasteful ingredients straight out of love. In every menu items
@@ -89,7 +89,7 @@ function OzenKoreaHome() {
         </div>
       </section>
       <section className="flex flex-col items-center py-28 gap-y-8 bg-white">
-        <div className="text-4xl text-191919 text-center gravitasOne">
+        <div className="text-4xl text-191919 text-center monserratBold600">
           Check out Our Stories
           <br />
           in INSTAGRAM

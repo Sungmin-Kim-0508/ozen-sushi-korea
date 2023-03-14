@@ -34,7 +34,7 @@ function AboutUs() {
     <main>
       <section className="flex flex-col items-center px-72 py-24 text-center">
         <div className="mb-10">
-          <span className="text-4xl gravitasOne">About Us</span>
+          <span className="text-4xl monserratBold900">About Us</span>
         </div>
         <div className="mb-5">
           <span>
