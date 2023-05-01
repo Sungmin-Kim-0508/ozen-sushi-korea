@@ -3,47 +3,29 @@
 import Image from "next/image";
 import { BlueBgBtn, OrangeBgBtn } from "../components/button";
 import salmonRiceBowl from "public/images/ozen-sushi/sushi_bowl.png";
-import food63 from "public/images/ozen-sushi/food63.png";
-import food64 from "public/images/ozen-sushi/food64.png";
-import food65 from "public/images/ozen-sushi/food65.png";
-import food66 from "public/images/ozen-sushi/food66.png";
-import food91 from "public/images/ozen-sushi/food91.png";
 import plaid from "public/images/ozen-sushi/plaid_bg.png";
 import image144 from "public/images/ozen-sushi/image_144.png";
+import image_7601 from "public/images/ozen-sushi/image_7601.png";
+import image_7626 from "public/images/ozen-sushi/image_7626.png";
 
 function OzenSushiHome() {
-  const foodImagesInSec3 = [
-    {
-      src: food63,
-      alt: "salmin sushi",
-    },
-    {
-      src: food64,
-      alt: "rolls1",
-    },
-    {
-      src: food65,
-      alt: "rolls2",
-    },
-    {
-      src: food66,
-      alt: "rolls3",
-    },
-  ];
   return (
     <>
-      <section className="relative w-full">
-        <Image alt="plaid" src={plaid} className="absolute min-w-full -z-10" />
-        <div className="flex">
-          {/* need to define lg:font-size */}
-          <div className="flex-1 flex flex-col px-28 py-44">
-            <span className="font-semibold text-2xl xl:text-[1.125rem] mb-2">
+      <section className="relative w-full h-full">
+        <Image
+          alt="plaid"
+          src={plaid}
+          className="absolute min-w-full min-h-full -z-10"
+        />
+        <div className="flex mb-16 xl:mb-48">
+          <div className="flex-1 flex flex-col px-56 xl:px-28 py-44 xl:py-12">
+            <span className="font-semibold text-xl mb-2">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-191919 text-8xl xl:text-6xl font-extrabold">
+            <span className="monserratBold900 text-191919 text-8xl xl:text-6xl lg:text-4xl font-extrabold">
               Welcome to
             </span>
-            <span className="monserratBold900 text-EC6236 text-8xl xl:text-6xl font-extrabold mb-5">
+            <span className="monserratBold900 text-EC6236 text-8xl xl:text-6xl lg:text-4xl font-extrabold mb-5">
               Ozensushi
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
@@ -66,18 +48,74 @@ function OzenSushiHome() {
             <Image
               alt="salmonRiceBowl"
               src={salmonRiceBowl}
-              className="absolute right-16 z-10 max-w-full lg:w-2/5"
+              className="absolute right-16 z-10 max-w-full xl:w-2/5"
             />
             <Image
               alt="img144"
               src={image144}
-              className="absolute right-0 bg-transparent max-w-full lg:w-2/5 "
+              className="absolute right-0 bg-transparent max-w-full xl:w-2/5"
             />
           </div>
         </div>
+        <div className="relative flex xl:gap-x-10 px-32 ">
+          <div className="flex-1">
+            <Image
+              alt="image_7601"
+              src={image_7601}
+              width={500}
+              className="absolute left-56 -top-28 xl:left-28 z-10"
+            />
+          </div>
+          <div className="flex-1 flex flex-col mb-40 xl:mb-32 xl:w-[65rem]">
+            <span className="text-5xl">
+              What we <span className="text-EC6236">serve</span>
+            </span>
+            <div className="border-2 border-EC6236 max-w-[3.75rem] my-5" />
+            <div>
+              <div className="mb-5">
+                The unique taste comes from family recipes and from fresh,
+                simple and tasteful ingredients straight out of love. In every
+                menu items from OZEN SUSHI there is a bit of Korean/Japanese
+                culture and flavour.
+              </div>
+              <div className="mb-5">
+                Ozen Sushi bridges the traditional with the contemporary,
+                bringing live-fire cooking, housemade spicy mayo sauce, and a
+                robust fresh fish list to the heart of London Ontario.
+              </div>
+            </div>
+            <OrangeBgBtn width="12.5rem" height="3.25rem">
+              Learn More
+            </OrangeBgBtn>
+          </div>
+        </div>
       </section>
-      <section>Section2</section>
-      <section>Section3</section>
+      <section className="relative w-full h-full">
+        <Image
+          alt="image_7626"
+          src={image_7626}
+          className="absolute min-w-full min-h-full -z-10"
+        />
+        <div className="flex flex-col items-end text-end pr-40 mlg:pr-20 py-32 mlg:py-24">
+          <span className="monserratBold900 text-5xl mlg:text-4xl text-white mb-2">
+            Get 10% Off!
+          </span>
+          <span className="monserratBold900 text-5xl mlg:text-4xl text-white xl:text-6xl lg:text-4xl mb-5">
+            Online Order!
+          </span>
+          <div className="border-2 w-[3.75rem] border-white mb-5" />
+          <div className="text-white text-2xl lg:text-lg w-[40rem] mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            consectetur augue sit amet viverra varius. Suspendisse porttitor
+            placerat enim nec molestie. Nullam dolor nisi, dignissim quis sapien
+            at, rhoncus tempor ipsum.
+          </div>
+          <BlueBgBtn width="12.5rem" height="3.25rem">
+            Online Order
+          </BlueBgBtn>
+        </div>
+      </section>
+      <section className="relative">Section3</section>
     </>
   );
 }

@@ -30,8 +30,10 @@ module.exports = {
         // => @media (max-width: 1400px) { ... }
         lg: { max: "1200px" },
         // => @media (max-width: 1150px) { ... }
-        md: { max: "767px" },
-        // => @media (max-width: 767px) { ... }
+        mlg: { max: "1024px" },
+        // => @media (max-width: 1024px) { ... }
+        md: { max: "768px" },
+        // => @media (max-width: 768px) { ... }
         sm: { max: "639px" },
         // => @media (max-width: 639px) { ... }
       },

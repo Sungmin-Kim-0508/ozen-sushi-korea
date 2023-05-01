@@ -2,35 +2,8 @@
 
 import { OrangeBorderBtn } from "app/components/button";
 import Image from "next/image";
-import food70 from "public/images/ozen-sushi/food70.png";
-import food71 from "public/images/ozen-sushi/food71.png";
-import food72 from "public/images/ozen-sushi/food72.png";
-import food73 from "public/images/ozen-sushi/food73.png";
-import food74 from "public/images/ozen-sushi/food74.png";
 
 function AboutUs() {
-  const foodImages = [
-    {
-      src: food70,
-      alt: "food70",
-    },
-    {
-      src: food72,
-      alt: "food72",
-    },
-    {
-      src: food71,
-      alt: "food71",
-    },
-    {
-      src: food73,
-      alt: "food73",
-    },
-    {
-      src: food74,
-      alt: "food74",
-    },
-  ];
   return (
     <main>
       <section className="flex flex-col items-center px-72 py-24">
@@ -60,9 +33,9 @@ function AboutUs() {
       </section>
       <section>
         <div className="flex">
-          {foodImages.map(({ src, alt }) => (
+          {/* {foodImages.map(({ src, alt }) => (
             <Image key={alt} src={src} alt={alt} className="w-full" />
-          ))}
+          ))} */}
         </div>
       </section>
     </main>
