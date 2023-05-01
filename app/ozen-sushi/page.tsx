@@ -11,7 +11,7 @@ import image_7626 from "public/images/ozen-sushi/image_7626.png";
 function OzenSushiHome() {
   return (
     <>
-      <section className="relative w-full h-full">
+      <section className="relative w-full min-h-full">
         <Image
           alt="plaid"
           src={plaid}
@@ -30,10 +30,12 @@ function OzenSushiHome() {
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
             <div className="flex flex-col mb-5">
-              <span>
+              <span className="text-xl">
                 The unique taste comes from family recipes and from fresh
               </span>
-              <span>simple and tasteful ingredients straight out of love.</span>
+              <span className="text-xl">
+                simple and tasteful ingredients straight out of love.
+              </span>
             </div>
             <div className="flex gap-x-7">
               <OrangeBgBtn width="12.5rem" height="3.25rem">
@@ -57,28 +59,28 @@ function OzenSushiHome() {
             />
           </div>
         </div>
-        <div className="relative flex xl:gap-x-10 px-32 ">
+        <div className="relative flex xl:gap-x-40 px-32 xl:px-28">
           <div className="flex-1">
             <Image
               alt="image_7601"
               src={image_7601}
               width={500}
-              className="absolute left-56 -top-28 xl:left-28 z-10"
+              className="absolute left-56 -top-28 xl:left-28 z-10 xl:-top-8 lg:w-[25rem] lg:h-[35rem] lg:top-2"
             />
           </div>
-          <div className="flex-1 flex flex-col mb-40 xl:mb-32 xl:w-[65rem]">
-            <span className="text-5xl">
+          <div className="flex-1 flex flex-col mb-40 px-28 xl:mb-32 xl:px-0 xl:w-[65rem] xl:relative xl:top-[3.75rem]">
+            <span className="text-5xl lg:text-4xl">
               What we <span className="text-EC6236">serve</span>
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] my-5" />
             <div>
-              <div className="mb-5">
+              <div className="mb-5 text-xl lg:text-sm">
                 The unique taste comes from family recipes and from fresh,
                 simple and tasteful ingredients straight out of love. In every
                 menu items from OZEN SUSHI there is a bit of Korean/Japanese
                 culture and flavour.
               </div>
-              <div className="mb-5">
+              <div className="mb-7 text-xl lg:text-sm">
                 Ozen Sushi bridges the traditional with the contemporary,
                 bringing live-fire cooking, housemade spicy mayo sauce, and a
                 robust fresh fish list to the heart of London Ontario.
@@ -104,7 +106,7 @@ function OzenSushiHome() {
             Online Order!
           </span>
           <div className="border-2 w-[3.75rem] border-white mb-5" />
-          <div className="text-white text-2xl lg:text-lg w-[40rem] mb-6">
+          <div className="text-white text-xl lg:text-lg w-[40rem] mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             consectetur augue sit amet viverra varius. Suspendisse porttitor
             placerat enim nec molestie. Nullam dolor nisi, dignissim quis sapien
@@ -115,7 +117,17 @@ function OzenSushiHome() {
           </BlueBgBtn>
         </div>
       </section>
-      <section className="relative">Section3</section>
+      <section className="relative">
+        <div>
+          <span className="monserratBold900 text-4xl text-black">
+            Check out{" "}
+            <span className="monserratBold900 text-4xl text-EC6236">
+              Our Stories
+            </span>
+          </span>
+          <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
+        </div>
+      </section>
     </>
   );
 }

@@ -10,7 +10,7 @@ const btnDefaultStyle =
 
 function page() {
   return (
-    <div className="grid gap-y-20 px-[8rem] mt-64 md:grid-flow-col md:justify-center md:gap-x-32">
+    <div className="grid grid-flow-col justify-center gap-x-20 px-[8rem] mt-64 lg:gap-x-6 md:justify-center md:gap-x-32">
       <div className="grid">
         <OzenKoreaLogo />
         <Link
