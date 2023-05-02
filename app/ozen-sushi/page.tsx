@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { BlueBgBtn, OrangeBgBtn } from "../components/button";
 import salmonRiceBowl from "public/images/ozen-sushi/sushi_bowl.png";
@@ -7,8 +5,30 @@ import plaid from "public/images/ozen-sushi/plaid_bg.png";
 import image144 from "public/images/ozen-sushi/image_144.png";
 import image_7601 from "public/images/ozen-sushi/image_7601.png";
 import image_7626 from "public/images/ozen-sushi/image_7626.png";
+import image_136 from "public/images/ozen-sushi/image_136.png";
+import image_137 from "public/images/ozen-sushi/image_137.png";
+import image_138 from "public/images/ozen-sushi/image_138.png";
+import image_139 from "public/images/ozen-sushi/image_139.png";
 
 function OzenSushiHome() {
+  const foodImages = [
+    {
+      src: image_136,
+      alt: "image_136",
+    },
+    {
+      src: image_137,
+      alt: "image_137",
+    },
+    {
+      src: image_138,
+      alt: "image_138",
+    },
+    {
+      src: image_139,
+      alt: "image_139",
+    },
+  ];
   return (
     <>
       <section className="relative w-full min-h-full">
@@ -118,15 +138,25 @@ function OzenSushiHome() {
           </BlueBgBtn>
         </div>
       </section>
-      <section className="relative">
-        <div>
-          <span className="monserratBold900 text-4xl text-black">
+      <section className="relative py-24">
+        <div className="text-center mb-5">
+          <span className="monserratBold900 text-5xl text-black">
             Check out{" "}
-            <span className="monserratBold900 text-4xl text-EC6236">
+            <span className="monserratBold900 text-5xl text-EC6236">
               Our Stories
             </span>
           </span>
-          <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
+        </div>
+        <div className="border-2 border-EC6236 mx-[58rem] mb-5 xl:mx-[31rem] mlg:mx-[30rem]" />
+        <div className="flex gap-x-3 w-screen">
+          {foodImages.map((image) => (
+            <Image
+              key={image.alt}
+              alt={image.alt}
+              src={image.src}
+              className="h-full max-h-full w-full max-w-full overflow-hidden xl:w-1/4"
+            />
+          ))}
         </div>
       </section>
     </>
