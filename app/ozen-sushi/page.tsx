@@ -147,7 +147,9 @@ function OzenSushiHome() {
             </span>
           </span>
         </div>
-        <div className="border-2 border-EC6236 mx-[58rem] mb-5 xl:mx-[31rem] mlg:mx-[30rem]" />
+        <div className="flex justify-center">
+          <div className="border-2 border-EC6236 w-14 mb-5" />
+        </div>
         <div className="flex gap-x-3 w-screen">
           {foodImages.map((image) => (
             <Image
