@@ -1,8 +1,8 @@
 "use client";
 import { BlackBgBtc } from "app/components/button";
 import Image from "next/image";
-import image9928Large from "public/images/ozen-korea/img_9928@2x.png";
-import image9926Large from "public/images/ozen-korea/img_9926@2x.png";
+import image9928Large from "public/images/ozen-korea/img_9928.png";
+import image9926Large from "public/images/ozen-korea/img_9926.png";
 import food63 from "public/images/ozen-korea/food63.png";
 import food64 from "public/images/ozen-korea/food64.png";
 import food65 from "public/images/ozen-korea/food65.png";
