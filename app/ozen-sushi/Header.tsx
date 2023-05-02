@@ -31,25 +31,25 @@ function OzenSushiHeader() {
     <>
       {/* Desktop */}
       <div className="sticky top-0 z-20 flex h-24 max-h-24 justify-around items-center bg-white">
-        <nav className="flex gap-10">
-          {menuItems.map(({ label, href }) => (
-            <Link
-              key={label}
-              href={href}
-              className={`hover:text-EC6236 ${
-                pathname === href ? "text-EC6236" : ""
-              }`}
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
         <div>
           <Link href={home}>
             <OzenSushiHorizontalLogo />
           </Link>
         </div>
-        <div>
+        <div className="flex">
+          <nav className="flex gap-16 items-center relative right-20 lg:gap-5 lg:right-5">
+            {menuItems.map(({ label, href }) => (
+              <Link
+                key={label}
+                href={href}
+                className={`hover:text-EC6236 ${
+                  pathname === href ? "text-EC6236" : ""
+                }`}
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
           <OrangeBgBtn width="8.75rem" height="2.56rem">
             Online Order
           </OrangeBgBtn>
