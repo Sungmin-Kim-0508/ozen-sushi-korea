@@ -150,7 +150,7 @@ function OzenSushiHome() {
         <div className="flex justify-center">
           <div className="border-2 border-EC6236 w-14 mb-5" />
         </div>
-        <div className="flex gap-x-3 w-screen">
+        <div className="flex gap-x-3 w-full">
           {foodImages.map((image) => (
             <Image
               key={image.alt}
