@@ -1,4 +1,4 @@
-import { RedBgBtc } from "app/components/button";
+import { RedBgBtn } from "app/components/button";
 import { aboutUs, ozen_korea_home, menu } from "app/utils/routes";
 import { MenuItem } from "app/utils/types";
 import Link from "next/link";
@@ -35,9 +35,9 @@ function OzenKoreaHeader() {
         <OzenKoreaLogoSmall />
       </div>
       <div>
-        <RedBgBtc width="8.75rem" height="2.5rem">
+        <RedBgBtn width="8.75rem" height="2.5rem">
           Order Online
-        </RedBgBtc>
+        </RedBgBtn>
       </div>
     </header>
   );

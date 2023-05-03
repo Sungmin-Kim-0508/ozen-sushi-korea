@@ -9,6 +9,7 @@ import image_136 from "public/images/ozen-sushi/image_136.png";
 import image_137 from "public/images/ozen-sushi/image_137.png";
 import image_138 from "public/images/ozen-sushi/image_138.png";
 import image_139 from "public/images/ozen-sushi/image_139.png";
+import DiscountOfferSection from "app/components/DiscountOfferSection";
 
 function OzenSushiHome() {
   const foodImages = [
@@ -37,25 +38,23 @@ function OzenSushiHome() {
           src={plaid}
           className="absolute min-w-full min-h-full -z-10"
         />
-        <div className="flex mb-16 xl:mb-48">
-          <div className="flex-1 flex flex-col px-56 xl:px-28 py-44 xl:py-12">
-            <span className="font-semibold text-xl mb-2">
+        <div className="flex mb-16">
+          <div className="flex-1 flex flex-col justify-center px-56 py-44 xl:px-28 xl:py-12 mlg:px-10">
+            <span className="font-semibold text-xl mb-2 xl:text-base">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-191919 text-8xl xl:text-6xl lg:text-4xl font-extrabold">
+            <span className="monserratBold900 text-191919 text-8xl font-extrabold xl:text-6xl lg:text-4xl mlg:text-[2.5rem]">
               Welcome to
             </span>
-            <span className="monserratBold900 text-EC6236 text-8xl xl:text-6xl lg:text-4xl font-extrabold mb-5">
+            <span className="monserratBold900 text-EC6236 text-8xl font-extrabold mb-5 xl:text-6xl lg:text-4xl mlg:text-[2.5rem]">
               Ozensushi
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
-            <div className="flex flex-col mb-5">
-              <span className="text-xl">
+            <div className="flex flex-col mb-5 text-base mlg:text-sm">
+              <span>
                 The unique taste comes from family recipes and from fresh
               </span>
-              <span className="text-xl">
-                simple and tasteful ingredients straight out of love.
-              </span>
+              <span>simple and tasteful ingredients straight out of love.</span>
             </div>
             <div className="flex gap-x-7">
               <OrangeBgBtn width="12.5rem" height="3.25rem">
@@ -79,13 +78,13 @@ function OzenSushiHome() {
             />
           </div>
         </div>
-        <div className="relative flex xl:gap-x-40 px-32 xl:px-28">
+        <div className="relative flex justify-center xl:gap-x-40 px-32 xl:px-28 mlg:px-3 mlg:gap-x-0">
           <div className="flex-1">
             <Image
               alt="image_7601"
               src={image_7601}
-              width={500}
-              className="absolute left-56 -top-28 xl:left-28 z-10 xl:-top-8 lg:w-[25rem] lg:h-[35rem] lg:top-2"
+              // width={500}
+              className="absolute left-56 -top-28 xl:left-28 z-10 xl:-top-8 lg:w-[25rem] lg:h-[35rem] lg:top-2 mlg:w-[15rem] mlg:h-[25rem] mlg:top-12 mlg:left-10"
             />
           </div>
           <div className="flex-1 flex flex-col mb-40 px-28 xl:mb-32 xl:px-0 xl:w-[65rem] xl:relative xl:top-[3.75rem]">
@@ -112,31 +111,7 @@ function OzenSushiHome() {
           </div>
         </div>
       </section>
-      <section className="relative w-full min-h-full">
-        <Image
-          alt="image_7626"
-          src={image_7626}
-          className="absolute min-w-full h-full -z-10"
-        />
-        <div className="flex flex-col items-end text-end pr-56 py-32 lg:pr-20 lg:py-24">
-          <span className="monserratBold900 text-5xl mlg:text-4xl text-white mb-2">
-            Get 10% Off!
-          </span>
-          <span className="monserratBold900 text-5xl mlg:text-4xl text-white xl:text-6xl lg:text-4xl mb-5">
-            Online Order!
-          </span>
-          <div className="border-2 w-[3.75rem] border-white mb-5" />
-          <div className="text-white text-xl w-[40rem] mb-6 lg:text-lg mlg:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            consectetur augue sit amet viverra varius. Suspendisse porttitor
-            placerat enim nec molestie. Nullam dolor nisi, dignissim quis sapien
-            at, rhoncus tempor ipsum.
-          </div>
-          <BlueBgBtn width="12.5rem" height="3.25rem">
-            Online Order
-          </BlueBgBtn>
-        </div>
-      </section>
+      <DiscountOfferSection />
       <section className="relative py-24">
         <div className="text-center mb-5">
           <span className="monserratBold900 text-5xl text-black">

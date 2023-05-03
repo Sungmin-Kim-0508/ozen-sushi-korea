@@ -38,7 +38,7 @@ export const OrangeBorderBtn: React.FC<BtnProps> = ({
   </button>
 );
 
-export const RedBgBtc: React.FC<BtnProps> = ({
+export const RedBgBtn: React.FC<BtnProps> = ({
   children,
   width,
   height,
@@ -47,7 +47,7 @@ export const RedBgBtc: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className={`text-center p-0 rounded-full bg-CF382D border-2 border-CF382D text-white hover:duration-500 hover:bg-22346b hover:border-22346b ${className}`}
+    className={`text-center p-0 rounded-[1.25rem] bg-CF382D border border-CF382D text-white hover:duration-500 hover:bg-black hover:border-CF382D hover:text-CF382D ${className}`}
   >
     {children}
   </button>
@@ -62,7 +62,7 @@ export const BlackBgBtc: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className={`text-center p-0 rounded-full bg-black border-2 border-white text-white hover:duration-500 hover:bg-22346b hover:border-22346b ${className}`}
+    className={`text-center p-0 rounded-[1.25rem] bg-black border border-white text-white hover:duration-500 hover:bg-white hover:border-white hover:text-black ${className}`}
   >
     {children}
   </button>

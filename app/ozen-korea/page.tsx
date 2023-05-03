@@ -1,8 +1,8 @@
 "use client";
-import { BlackBgBtc } from "app/components/button";
+import { BlackBgBtc, RedBgBtn } from "app/components/button";
 import Image from "next/image";
 import image9928Large from "public/images/ozen-korea/img_9928.png";
-import image9926Large from "public/images/ozen-korea/img_9926.png";
+import image_9930 from "public/images/ozen-korea/img_9930.png";
 import food63 from "public/images/ozen-korea/food63.png";
 import food64 from "public/images/ozen-korea/food64.png";
 import food65 from "public/images/ozen-korea/food65.png";
@@ -29,47 +29,64 @@ function OzenKoreaHome() {
   ];
   return (
     <main>
-      <section className="h-[43.75rem]">
+      <section>
         <div className="flex h-full">
-          <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48">
-            <span className="text-6xl monserratBold900">
-              Welcome to <br /> OzenKorea
-            </span>
-            <span className="text-lg font-bold">
+          <div className="flex-1 flex flex-col justify-center px-36 xl:px-24 mlg:px-12">
+            <span className="font-semibold text-base mb-2">
               Served everyday since 2008
             </span>
-            <span className="mb-4">
-              The unique taste comes from family recipes and from fresh, <br />{" "}
-              simple and tasteful ingredients straight out of love.
+            <span className="monserratBold900 text-white text-8xl font-extrabold xl:text-6xl">
+              Welcome to
             </span>
-            <BlackBgBtc width="16.25rem" height="3.25rem">
-              Learn More
-            </BlackBgBtc>
+            <span className="monserratBold900 text-CF382D text-8xl font-extrabold xl:text-6xl mb-5">
+              Ozen Korea
+            </span>
+            <div className="border-2 border-CF382D max-w-[3.75rem] mb-5" />
+            <div className="flex flex-col mb-5 text-base">
+              <span>
+                The unique taste comes from family recipes and from fresh
+              </span>
+              <span>simple and tasteful ingredients straight out of love.</span>
+            </div>
+            <div className="flex gap-x-7">
+              <RedBgBtn width="12.5rem" height="3.25rem">
+                Learn More
+              </RedBgBtn>
+              <BlackBgBtc width="12.5rem" height="3.25rem">
+                Go to Ozen Korea
+              </BlackBgBtc>
+            </div>
           </div>
-          <div className="grow w-1/2">
+          <div className="flex-1">
             <Image
               src={image9928Large}
               alt="food57"
-              className="w-full h-full"
+              className="max-w-full max-h-full"
             />
           </div>
         </div>
       </section>
-      <section className="h-[43.75rem]">
-        <div className="flex h-full">
-          <div className="grow w-1/2">
-            <Image
-              src={image9926Large}
-              alt="food57"
-              className="w-full h-full"
-            />
+      <section className="flex justify-center bg-white py-[6.25rem]">
+        <div className="flex justify-center">
+          <Image alt="image_9930" src={image_9930} width={500} />
+        </div>
+        <div className="flex flex-col justify-center">
+          <span className="text-black text-5xl lg:text-4xl">
+            What we <span className="text-CF382D">serve</span>
+          </span>
+          <div className="border-2 border-CF382D max-w-[3.75rem] my-5" />
+          <div className="mb-5 text-black text-xl lg:text-sm">
+            Ozen Korea is a Korean restaurant located in the vibrant city of
+            London, Ontario. With its unique fusion of traditional Korean
+            cuisine and contemporary style, Ozen Korea offers an exceptional
+            dining experience that combines bold flavors and impeccable service.
+            Ozen Sushi bridges the traditional with the contemporary, bringing
+            live-fire cooking, housemade spicy mayo sauce, and a robust fresh
+            fish list to the heart of London Ontario.
           </div>
-          <div className="grow flex flex-col gap-y-3 w-1/2 px-28 py-48">
-            <div>
-              <span className="text-4xl monserratBold900">Operate Hours</span>
-            </div>
-            <div>Monday to Friday</div>
-          </div>
+          <RedBgBtn width="12.5rem" height="3.25rem">
+            Learn More
+          </RedBgBtn>
         </div>
       </section>
       <section>
