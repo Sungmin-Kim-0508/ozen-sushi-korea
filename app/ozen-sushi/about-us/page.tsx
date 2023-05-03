@@ -1,44 +1,105 @@
 "use client";
 
-import { OrangeBorderBtn } from "app/components/button";
 import Image from "next/image";
+import { BlueBgBtn } from "app/components/button";
+import image_7606 from "public/images/ozen-sushi/image_7606.png";
+import plaid from "public/images/ozen-sushi/plaid_bg.png";
+import image_7626 from "public/images/ozen-sushi/image_7626.png";
+import image_136 from "public/images/ozen-sushi/image_136.png";
+import image_137 from "public/images/ozen-sushi/image_137.png";
+import image_138 from "public/images/ozen-sushi/image_138.png";
+import image_139 from "public/images/ozen-sushi/image_139.png";
 
 function AboutUs() {
+  const foodImages = [
+    {
+      src: image_136,
+      alt: "image_136",
+    },
+    {
+      src: image_137,
+      alt: "image_137",
+    },
+    {
+      src: image_138,
+      alt: "image_138",
+    },
+    {
+      src: image_139,
+      alt: "image_139",
+    },
+  ];
   return (
-    <main>
-      <section className="flex flex-col items-center px-72 py-24">
-        <div className="text-center mb-10">
-          <span className="text-4xl monserratBold900">About Us</span>
+    <>
+      <section className="flex gap-x-16 relative w-full min-h-full">
+        <Image
+          alt="plaid"
+          src={plaid}
+          className="absolute min-w-full min-h-full -z-10"
+        />
+        <div className="px-[17rem] py-[8rem] flex justify-center gap-x-32 xl:px-[10rem] mlg:px-[5rem] mlg:gap-x-16">
+          <div>
+            <Image alt="image_7606" src={image_7606} />
+          </div>
+          <div className="flex flex-col justify-center w-[36rem]">
+            <span className="monserratBold900 text-5xl mlg:text-4xl">
+              About Us
+            </span>
+            <div className="border-2 border-EC6236 max-w-[3.75rem] mt-5 mb-5" />
+            <div className="text-xl mlg:text-base">
+              <div className="mb-5">
+                The unique taste comes from family recipes and from fresh,
+                simple and tasteful ingredients straight out of love. In every
+                menu items from OZEN SUSHI there is a bit of Korean/Japanese
+                culture and flavor.
+              </div>
+              <div>
+                Ozen Sushi bridges the traditional with the contemporary,
+                bringing live-fire cooking, housemade spicy mayo sauce, and a
+                robust fresh fish list to the heart of London Ontario.
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="mb-5">
-          <span>
-            The unique taste comes from family recipes and from fresh, simple
-            and tasteful ingredients straight out of love. In <br /> every menu
-            items from OZEN SUSHI there is a bit of Korean/Japanese culture and
-            flavor.
+      </section>
+      <section className="relative w-full min-h-full">
+        <Image
+          alt="image_7626"
+          src={image_7626}
+          className="absolute min-w-full h-full -z-10"
+        />
+        <div className="flex flex-col items-end text-end pr-56 py-32 lg:pr-20 lg:py-24">
+          <span className="monserratBold900 text-5xl mlg:text-4xl text-white mb-2">
+            Get 10% Off!
           </span>
-        </div>
-        <div className="mb-10">
-          <span>
-            Ozen Sushi bridges the traditional with the contemporary, bringing
-            live-fire cooking, housemade spicy mayo sauce,
-            <br /> and a robust fresh fish list to the heart of London Ontario.
+          <span className="monserratBold900 text-5xl mlg:text-4xl text-white xl:text-6xl lg:text-4xl mb-5">
+            Online Order!
           </span>
-        </div>
-        <div>
-          <OrangeBorderBtn width="16.25rem" height="3.25rem">
+          <div className="border-2 w-[3.75rem] border-white mb-5" />
+          <div className="text-white text-xl w-[40rem] mb-6 lg:text-lg mlg:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            consectetur augue sit amet viverra varius. Suspendisse porttitor
+            placerat enim nec molestie. Nullam dolor nisi, dignissim quis sapien
+            at, rhoncus tempor ipsum.
+          </div>
+          <BlueBgBtn width="12.5rem" height="3.25rem">
             Online Order
-          </OrangeBorderBtn>
+          </BlueBgBtn>
         </div>
       </section>
       <section>
-        <div className="flex">
-          {/* {foodImages.map(({ src, alt }) => (
-            <Image key={alt} src={src} alt={alt} className="w-full" />
-          ))} */}
+        <div className="flex w-full">
+          {foodImages.map((image) => (
+            <Image
+              key={image.alt}
+              alt={image.alt}
+              src={image.src}
+              className="h-full max-h-full w-full max-w-full overflow-hidden xl:w-1/4"
+            />
+          ))}
         </div>
       </section>
-    </main>
+    </>
   );
 }
 

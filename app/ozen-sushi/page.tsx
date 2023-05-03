@@ -116,7 +116,6 @@ function OzenSushiHome() {
         <Image
           alt="image_7626"
           src={image_7626}
-          // height={400}
           className="absolute min-w-full h-full -z-10"
         />
         <div className="flex flex-col items-end text-end pr-56 py-32 lg:pr-20 lg:py-24">

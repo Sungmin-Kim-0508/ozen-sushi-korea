@@ -4,7 +4,7 @@ import React from "react";
 
 function pages() {
   return (
-    <main className="h-[30rem]">
+    <main className="h-[50rem]">
       <p>Ozen Sushi Menu</p>
     </main>
   );
