@@ -26,6 +26,8 @@ module.exports = {
       },
       fontFamily: {},
       screens: {
+        xxl: { max: "1700px" },
+        // => @media (max-width: 1700px) { ... }
         xl: { max: "1400px" },
         // => @media (max-width: 1400px) { ... }
         lg: { max: "1200px" },

@@ -30,7 +30,7 @@ function OzenSushiHeader() {
   return (
     <>
       {/* Desktop */}
-      <div className="sticky top-0 z-20 flex h-24 max-h-24 justify-around items-center bg-white">
+      <div className="sticky top-0 z-20 flex h-24 max-h-24 justify-between items-center px-[7.2rem] mlg:px-[4rem] bg-white">
         <div>
           <Link href={home}>
             <OzenSushiHorizontalLogo />

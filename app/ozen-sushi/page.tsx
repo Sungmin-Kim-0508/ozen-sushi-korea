@@ -39,22 +39,22 @@ function OzenSushiHome() {
           className="absolute min-w-full min-h-full -z-10"
         />
         <div className="flex mb-16">
-          <div className="flex-1 flex flex-col justify-center px-56 py-44 xl:px-28 xl:py-12 mlg:px-10">
-            <span className="font-semibold text-xl mb-2 xl:text-base">
+          <div className="flex-1 flex flex-col justify-center px-32 py-44 xl:py-12 mlg:px-20">
+            <span className="font-semibold text-xl text-[1.125rem] mlg:text-[1rem]">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-191919 text-8xl font-extrabold xl:text-6xl lg:text-4xl mlg:text-[2.5rem]">
+            <span className="monserratBold900 text-191919 font-extrabold text-[5.5vw] mlg:text-[4.5vw] leading-none">
               Welcome to
             </span>
-            <span className="monserratBold900 text-EC6236 text-8xl font-extrabold mb-5 xl:text-6xl lg:text-4xl mlg:text-[2.5rem]">
+            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[5.5vw] mlg:text-[4.5vw] leading-none">
               Ozensushi
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
-            <div className="flex flex-col mb-5 text-base mlg:text-sm">
-              <span>
-                The unique taste comes from family recipes and from fresh
-              </span>
-              <span>simple and tasteful ingredients straight out of love.</span>
+            <div className="flex flex-col mb-5 mlg:w-[27.25rem] text-[1.5vw] mlg:text-[1.3vw]">
+              The unique taste comes from family recipes and from fresh simple
+              and tasteful ingredients straight out of love.
+              <span></span>
+              {/* <span></span> */}
             </div>
             <div className="flex gap-x-7">
               <OrangeBgBtn width="12.5rem" height="3.25rem">
@@ -78,28 +78,26 @@ function OzenSushiHome() {
             />
           </div>
         </div>
-        <div className="relative flex justify-center xl:gap-x-40 px-32 xl:px-28 mlg:px-3 mlg:gap-x-0">
-          <div className="flex-1">
-            <Image
-              alt="image_7601"
-              src={image_7601}
-              // width={500}
-              className="absolute left-56 -top-28 xl:left-28 z-10 xl:-top-8 lg:w-[25rem] lg:h-[35rem] lg:top-2 mlg:w-[15rem] mlg:h-[25rem] mlg:top-12 mlg:left-10"
-            />
-          </div>
-          <div className="flex-1 flex flex-col mb-40 px-28 xl:mb-32 xl:px-0 xl:w-[65rem] xl:relative xl:top-[3.75rem]">
-            <span className="text-5xl lg:text-4xl">
-              What we <span className="text-EC6236">serve</span>
+        <div className="flex px-32 xl:px-28 mlg:px-20">
+          <Image
+            alt="image_7601"
+            src={image_7601}
+            className="z-10 w-[clamp(24rem,30vw,36rem)] min-h-[25rem] relative top-8"
+          />
+          <div className="flex flex-col justify-center ml-[3vw] w-[40vw] relative top-10 xl:top-20 mlg:top-24 mb-40">
+            <span className="monserratBold900 text-[3.5vw] xl:text-[3vw]">
+              What we{" "}
+              <span className="text-EC6236 monserratBold900">serve</span>
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] my-5" />
-            <div>
-              <div className="mb-5 text-xl lg:text-sm">
+            <div className="text-[clamp(14px,1.0vw,20px)]">
+              <div className="mb-5">
                 The unique taste comes from family recipes and from fresh,
                 simple and tasteful ingredients straight out of love. In every
                 menu items from OZEN SUSHI there is a bit of Korean/Japanese
                 culture and flavour.
               </div>
-              <div className="mb-7 text-xl lg:text-sm">
+              <div className="mb-7">
                 Ozen Sushi bridges the traditional with the contemporary,
                 bringing live-fire cooking, housemade spicy mayo sauce, and a
                 robust fresh fish list to the heart of London Ontario.
@@ -113,7 +111,7 @@ function OzenSushiHome() {
       </section>
       <DiscountOfferSection />
       <section className="relative py-24">
-        <div className="text-center mb-5">
+        <div className="text-center mb-10">
           <span className="monserratBold900 text-5xl text-black">
             Check out{" "}
             <span className="monserratBold900 text-5xl text-EC6236">
@@ -122,7 +120,7 @@ function OzenSushiHome() {
           </span>
         </div>
         <div className="flex justify-center">
-          <div className="border-2 border-EC6236 w-14 mb-5" />
+          <div className="border-2 border-EC6236 w-14 mb-10" />
         </div>
         <div className="flex gap-x-3 w-full">
           {foodImages.map((image) => (
