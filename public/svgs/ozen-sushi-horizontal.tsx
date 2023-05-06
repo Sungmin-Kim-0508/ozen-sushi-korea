@@ -5,7 +5,7 @@ export const OzenSushiHorizontalLogo = () => {
       viewBox="0 0 302.564 45.702"
       // className="w-[clamp(220px,20.7vw,300px)] v-[clamp(60.3px,9vh,80px)]"
       style={{
-        width: "clamp(220px,22.7vw,500px)",
+        width: "clamp(220px,17.8vw,500px)",
         height: "clamp(60.3px,8.9vh,100px)",
       }}
     >

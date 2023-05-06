@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="flex flex-col">
       <section className="flex justify-between pl-[7.2rem] text-white bg-191919">
-        <div className="pt-[3.75rem] relative -left-4">
+        <div className="pt-[3.75rem] relative left-3">
           <OzenSushiLogoHorizontalWhite />
         </div>
         <div className="flex gap-x-10 pr-[2rem] py-[3.75rem]">

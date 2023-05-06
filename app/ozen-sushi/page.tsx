@@ -29,6 +29,7 @@ function OzenSushiHome() {
       alt: "image_139",
     },
   ];
+  const ADDTIONAL_SIZE = 9.2;
   return (
     <>
       <section className="relative w-full min-h-full">
@@ -38,28 +39,28 @@ function OzenSushiHome() {
           className="absolute min-w-full min-h-full -z-10"
         />
         <div className="flex mb-16">
-          <div className="flex-1 flex flex-col justify-center px-32 py-44 xl:py-12 mlg:px-20">
-            <span className="font-semibold text-xl text-[1.3vw]">
+          <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[14.62vw]">
+            <span className="font-semibold text-xl text-[1.28vw]">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-191919 font-extrabold text-[5.5vw] mlg:text-[4.5vw] leading-none">
+            <span className="monserratBold900 text-191919 font-extrabold text-[4.42vw] leading-none">
               Welcome to
             </span>
-            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[5.5vw] mlg:text-[4.5vw] leading-none">
+            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[4.42vw] leading-none">
               Ozensushi
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
-            <div className="flex flex-col mb-5 mlg:w-[27.25rem] text-[1.4vw] mlg:text-[1.3vw]">
+            <div className="flex flex-col mb-5 w-[35.71vw] text-[1.15vw]">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
               <span></span>
               {/* <span></span> */}
             </div>
             <div className="flex gap-x-7">
-              <OrangeBgBtn width="12.5rem" height="3.25rem">
+              <OrangeBgBtn width="14.28vw" height="3.92vw">
                 Learn More
               </OrangeBgBtn>
-              <BlueBgBtn width="12.5rem" height="3.25rem">
+              <BlueBgBtn width="14.28vw" height="3.92vw">
                 Go to Ozen Korea
               </BlueBgBtn>
             </div>
@@ -68,12 +69,12 @@ function OzenSushiHome() {
             <Image
               alt="salmonRiceBowl"
               src={salmonRiceBowl}
-              className="absolute right-16 z-10 max-w-full xl:w-2/5"
+              className={`absolute right-[6vw] top-[3.5vw] z-10 w-[43vw] h-[43vw]`}
             />
             <Image
               alt="img144"
               src={image144}
-              className="absolute right-0 bg-transparent max-w-full xl:w-2/5"
+              className="absolute right-0 bg-transparent w-[47.86vw] h-[49.1vw]"
             />
           </div>
         </div>
@@ -81,7 +82,7 @@ function OzenSushiHome() {
           <Image
             alt="image_7601"
             src={image_7601}
-            className="z-10 w-[clamp(24rem,30vw,36rem)] min-h-[25rem] relative top-8"
+            className="z-10 w-[clamp(280px,36.43vw,1000px)] v-[47.45vw] relative top-8"
           />
           <div className="flex flex-col justify-center ml-[3vw] w-[40vw] relative top-10 xl:top-20 mlg:top-24 mb-40">
             <span className="monserratBold900 text-[3.5vw] xl:text-[3vw]">
@@ -102,7 +103,7 @@ function OzenSushiHome() {
                 robust fresh fish list to the heart of London Ontario.
               </div>
             </div>
-            <OrangeBgBtn width="12.5rem" height="3.25rem">
+            <OrangeBgBtn width="14.30vw" height="3.92vw">
               Learn More
             </OrangeBgBtn>
           </div>

@@ -46,15 +46,15 @@ function AboutUs() {
             <span className="monserratBold900 text-5xl mlg:text-4xl">
               About Us
             </span>
-            <div className="border-2 border-EC6236 max-w-[3.75rem] mt-5 mb-5" />
-            <div className="text-xl mlg:text-base">
-              <div className="mb-5">
+            <div className="border-2 border-EC6236 max-w-[4rem] mt-5 mb-5" />
+            <div className="w-[37.6vw]">
+              <div className="text-[clamp(12px,1.14vw,17px)] mb-5">
                 The unique taste comes from family recipes and from fresh,
                 simple and tasteful ingredients straight out of love. In every
                 menu items from OZEN SUSHI there is a bit of Korean/Japanese
                 culture and flavor.
               </div>
-              <div>
+              <div className="text-[clamp(12px,1.14vw,17px)]">
                 Ozen Sushi bridges the traditional with the contemporary,
                 bringing live-fire cooking, housemade spicy mayo sauce, and a
                 robust fresh fish list to the heart of London Ontario.

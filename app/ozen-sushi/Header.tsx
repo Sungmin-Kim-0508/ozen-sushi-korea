@@ -37,7 +37,7 @@ function OzenSushiHeader() {
           </Link>
         </div>
         <div className="flex">
-          <nav className="flex gap-16 items-center relative right-20 lg:gap-5 lg:right-5">
+          <nav className="flex gap-16 items-center relative right-20 text-[1.14vw] lg:gap-5 lg:right-5">
             {menuItems.map(({ label, href }) => (
               <Link
                 key={label}
@@ -50,7 +50,7 @@ function OzenSushiHeader() {
               </Link>
             ))}
           </nav>
-          <OrangeBgBtn width="8.75rem" height="2.56rem">
+          <OrangeBgBtn width="10.71vw" height="3.14vw">
             Online Order
           </OrangeBgBtn>
         </div>

@@ -13,10 +13,11 @@ export const OzenSushiLogoHorizontalWhite = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width="302.564"
-      // height="45.702"
       viewBox="0 0 302.564 45.702"
-      style={{ width: "20.76vw", height: "9vh" }}
+      style={{
+        width: "clamp(220px,17.8vw,500px)",
+        height: "clamp(60.3px,8.9vh,100px)",
+      }}
     >
       <g
         id="ozensushi_horizontal_logo"
