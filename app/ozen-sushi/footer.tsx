@@ -12,17 +12,17 @@ function Footer() {
         <div className="flex gap-x-10 pr-[2rem] py-[3.75rem]">
           <div className="w-auto">
             <div className="mb-3">
-              <span className="text-EC6236 text-base font-extrabold">
+              <span className="text-EC6236 text-[1.1vw] font-extrabold">
                 Hours
               </span>
             </div>
-            <div className="flex gap-x-8 text-base">
-              <div className="flex flex-col gap-y-2 text-[15px]">
+            <div className="flex gap-x-8">
+              <div className="flex flex-col gap-y-2 text-[1vw]">
                 <span>Mon to Fri</span>
                 <span>Saturday</span>
                 <span>Sunday</span>
               </div>
-              <div className="flex flex-col gap-y-2 text-[15px]">
+              <div className="flex flex-col gap-y-2 text-[1vw]">
                 <span>11am - 9pm</span>
                 <span>11am - 10pm</span>
                 <span>11am - 10pm</span>
@@ -31,11 +31,11 @@ function Footer() {
           </div>
           <div className="w-auto">
             <div className="mb-3">
-              <span className="text-EC6236 text-base font-extrabold">
+              <span className="text-EC6236 text-[1.1vw] font-extrabold">
                 Get In Touch
               </span>
             </div>
-            <div className="w-2/3 text-base text-[15px]">
+            <div className="w-2/3  text-[1vw]">
               607 Richmond St, London ON N6A 3G3
             </div>
             <div>{/* instagram icon here */}</div>

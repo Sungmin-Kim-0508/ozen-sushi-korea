@@ -4,7 +4,6 @@ import salmonRiceBowl from "public/images/ozen-sushi/sushi_bowl.png";
 import plaid from "public/images/ozen-sushi/plaid_bg.png";
 import image144 from "public/images/ozen-sushi/image_144.png";
 import image_7601 from "public/images/ozen-sushi/image_7601.png";
-import image_7626 from "public/images/ozen-sushi/image_7626.png";
 import image_136 from "public/images/ozen-sushi/image_136.png";
 import image_137 from "public/images/ozen-sushi/image_137.png";
 import image_138 from "public/images/ozen-sushi/image_138.png";
@@ -40,7 +39,7 @@ function OzenSushiHome() {
         />
         <div className="flex mb-16">
           <div className="flex-1 flex flex-col justify-center px-32 py-44 xl:py-12 mlg:px-20">
-            <span className="font-semibold text-xl text-[1.125rem] mlg:text-[1rem]">
+            <span className="font-semibold text-xl text-[1.3vw]">
               Served everyday since 2008
             </span>
             <span className="monserratBold900 text-191919 font-extrabold text-[5.5vw] mlg:text-[4.5vw] leading-none">
@@ -50,7 +49,7 @@ function OzenSushiHome() {
               Ozensushi
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
-            <div className="flex flex-col mb-5 mlg:w-[27.25rem] text-[1.5vw] mlg:text-[1.3vw]">
+            <div className="flex flex-col mb-5 mlg:w-[27.25rem] text-[1.4vw] mlg:text-[1.3vw]">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
               <span></span>
