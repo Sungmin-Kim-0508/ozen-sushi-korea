@@ -23,6 +23,7 @@ module.exports = {
         F49172: "#F49172",
         "103DC6": "#103DC6",
         "395AC1": "#395AC1",
+        595959: "#595959",
       },
       fontFamily: {},
       screens: {

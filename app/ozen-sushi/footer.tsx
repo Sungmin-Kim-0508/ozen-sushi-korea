@@ -52,7 +52,7 @@ function Footer() {
           </div>
         </div>
       </section>
-      <section className="flex justify-between px-[7.2rem] py-2 text-sm text-white bg-191919 mlg:px-[4.8rem]">
+      <section className="flex justify-between px-[7.2rem] py-2 text-sm text-white bg-191919 mlg:px-[4.8rem] border-t border-595959">
         <div>Website proudly create by Jinu & Sungmin</div>
         <div>&copy; {fullYear} Ozensushi. All rights reserved</div>
       </section>

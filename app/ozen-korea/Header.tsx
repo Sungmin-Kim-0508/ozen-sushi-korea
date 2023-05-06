@@ -1,11 +1,13 @@
+import React from "react";
+import Link from "next/link";
 import { RedBgBtn } from "app/components/button";
 import { aboutUs, ozen_korea_home, menu } from "app/utils/routes";
 import { MenuItem } from "app/utils/types";
-import Link from "next/link";
 import { OzenKoreaLogoSmall } from "public/svgs/ozen-korea-small";
-import React from "react";
+import { usePathname } from "next/navigation";
 
 function OzenKoreaHeader() {
+  const pathname = usePathname();
   const menuItems: MenuItem[] = [
     {
       label: "Home",
@@ -21,23 +23,27 @@ function OzenKoreaHeader() {
     },
   ];
   return (
-    <header className="sticky top-0 z-10 flex justify-around items-center py-5 border-t border-b bg-black border-C9C9C9">
-      <nav>
-        <ul className="flex gap-x-4">
-          {menuItems.map(({ label, href }) => (
-            <li key={label}>
-              <Link href={href}>{label}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <div>
+    <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[2.8vw] py-[1.78vw] bg-black">
+      <Link href={ozen_korea_home}>
         <OzenKoreaLogoSmall />
-      </div>
-      <div>
-        <RedBgBtn width="8.75rem" height="2.5rem">
-          Order Online
-        </RedBgBtn>
+      </Link>
+      <div className="flex">
+        <nav className="flex gap-[4.28vw] items-center relative right-20 text-[clamp(12.5px,1.14vw,25px)]">
+          {menuItems.map(({ label, href }) => (
+            <Link
+              key={label}
+              href={href}
+              className={`hover:text-CF382D ${
+                pathname === href ? "text-CF382D" : ""
+              }`}
+            >
+              {label}
+            </Link>
+          ))}
+          <RedBgBtn width="10.71vw" height="3.14vw">
+            Online Order
+          </RedBgBtn>
+        </nav>
       </div>
     </header>
   );

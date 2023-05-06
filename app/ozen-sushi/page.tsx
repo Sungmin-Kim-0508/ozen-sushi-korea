@@ -46,14 +46,12 @@ function OzenSushiHome() {
               Welcome to
             </span>
             <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[4.42vw] leading-none">
-              Ozensushi
+              Ozen Sushi
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
             <div className="flex flex-col mb-5 w-[35.71vw] text-[1.15vw]">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
-              <span></span>
-              {/* <span></span> */}
             </div>
             <div className="flex gap-x-7">
               <OrangeBgBtn width="14.28vw" height="3.92vw">
@@ -111,9 +109,9 @@ function OzenSushiHome() {
       <DiscountOfferSection />
       <section className="relative py-24">
         <div className="text-center mb-10">
-          <span className="monserratBold900 text-5xl text-black">
+          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-black">
             Check out{" "}
-            <span className="monserratBold900 text-5xl text-EC6236">
+            <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-EC6236">
               Our Stories
             </span>
           </span>
