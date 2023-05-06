@@ -49,10 +49,10 @@ function OzenSushiHeader() {
                 {label}
               </Link>
             ))}
+            <OrangeBgBtn width="10.71vw" height="3.14vw">
+              Online Order
+            </OrangeBgBtn>
           </nav>
-          <OrangeBgBtn width="10.71vw" height="3.14vw">
-            Online Order
-          </OrangeBgBtn>
         </div>
       </div>
     </>

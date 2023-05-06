@@ -18,7 +18,7 @@ const DiscountOfferSection = () => {
           Online Order!
         </span>
         <div className="border-2 w-[3.75rem] border-white mb-5" />
-        <div className="text-white text-[clamp(12px,1vw,16px)] w-[40.17vw] mb-[2.14vw]">
+        <div className="text-white text-[clamp(12px,1vw,20px)] w-[40.17vw] mb-[2.14vw]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           consectetur augue sit amet viverra varius. Suspendisse porttitor
           placerat enim nec molestie. Nullam dolor nisi, dignissim quis sapien

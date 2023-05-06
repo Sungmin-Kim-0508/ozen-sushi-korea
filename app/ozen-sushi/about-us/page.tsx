@@ -38,9 +38,13 @@ function AboutUs() {
           src={plaid}
           className="absolute min-w-full min-h-full -z-10"
         />
-        <div className="px-[17rem] py-[8rem] flex justify-center gap-x-32 xl:px-[10rem] mlg:px-[5rem] mlg:gap-x-16">
+        <div className="flex justify-center px-[8.21vw] py-[8.57vw] gap-x-[6.42vw]">
           <div>
-            <Image alt="image_7606" src={image_7606} />
+            <Image
+              alt="image_7606"
+              src={image_7606}
+              className="w-[36.42vw] h-[47.21vw]"
+            />
           </div>
           <div className="flex flex-col justify-center w-[36rem]">
             <span className="monserratBold900 text-5xl mlg:text-4xl">
@@ -48,13 +52,13 @@ function AboutUs() {
             </span>
             <div className="border-2 border-EC6236 max-w-[4rem] mt-5 mb-5" />
             <div className="w-[37.6vw]">
-              <div className="text-[clamp(12px,1.14vw,17px)] mb-5">
+              <div className="text-[clamp(12px,1.14vw,22px)] mb-5">
                 The unique taste comes from family recipes and from fresh,
                 simple and tasteful ingredients straight out of love. In every
                 menu items from OZEN SUSHI there is a bit of Korean/Japanese
                 culture and flavor.
               </div>
-              <div className="text-[clamp(12px,1.14vw,17px)]">
+              <div className="text-[clamp(12px,1.14vw,22px)]">
                 Ozen Sushi bridges the traditional with the contemporary,
                 bringing live-fire cooking, housemade spicy mayo sauce, and a
                 robust fresh fish list to the heart of London Ontario.
