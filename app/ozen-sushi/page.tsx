@@ -29,7 +29,6 @@ function OzenSushiHome() {
       alt: "image_139",
     },
   ];
-  const ADDTIONAL_SIZE = 9.2;
   return (
     <>
       <section className="relative w-full min-h-full">
@@ -84,7 +83,7 @@ function OzenSushiHome() {
             src={image_7601}
             className="z-10 w-[clamp(280px,36.43vw,1000px)] v-[47.45vw] relative top-8"
           />
-          <div className="flex flex-col justify-center ml-[3vw] w-[40vw] relative top-10 xl:top-20 mlg:top-24 mb-40">
+          <div className="flex flex-col justify-center ml-[6.42vw] w-[40vw] relative top-10 xl:top-20 mlg:top-24 mb-40">
             <span className="monserratBold900 text-[3.5vw] xl:text-[3vw]">
               What we{" "}
               <span className="text-EC6236 monserratBold900">serve</span>
