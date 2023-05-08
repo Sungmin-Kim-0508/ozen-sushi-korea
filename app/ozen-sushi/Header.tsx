@@ -29,7 +29,7 @@ function OzenSushiHeader() {
           <OzenSushiHorizontalLogo />
         </Link>
         <div className="flex">
-          <nav className="flex gap-16 items-center relative right-20 text-[clamp(12.5px,1.14vw,25px)] lg:gap-5 lg:right-5">
+          <nav className="flex gap-16 items-center relative right-20 text-[clamp(18px,1.14vw,25px)] lg:gap-5 lg:right-5">
             {menuItems.map(({ label, href }) => (
               <Link
                 key={label}

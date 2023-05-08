@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { BlueBgBtn } from "app/components/button";
 import image_7606 from "public/images/ozen-sushi/image_7606.png";
 import plaid from "public/images/ozen-sushi/plaid_bg.png";
-import image_7626 from "public/images/ozen-sushi/image_7626.png";
 import image_136 from "public/images/ozen-sushi/image_136.png";
 import image_137 from "public/images/ozen-sushi/image_137.png";
 import image_138 from "public/images/ozen-sushi/image_138.png";
