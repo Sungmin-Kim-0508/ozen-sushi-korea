@@ -24,7 +24,10 @@ const DiscountOfferSection = () => {
           placerat enim nec molestie. Nullam dolor nisi, dignissim quis sapien
           at, rhoncus tempor ipsum.
         </div>
-        <BlueBgBtn width="14.30vw" height="3.92vw">
+        <BlueBgBtn
+          width="clamp(9.2px,14.28vw,200px)"
+          height="clamp(9.2px,3.92vw,60px)"
+        >
           Online Order
         </BlueBgBtn>
       </div>

@@ -39,25 +39,31 @@ function OzenSushiHome() {
         />
         <div className="flex mb-16">
           <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[14.62vw]">
-            <span className="font-semibold text-xl text-[1.28vw]">
+            <span className="font-semibold text-xl text-[clamp(13px,1.28vw,40px)]">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-191919 font-extrabold text-[4.42vw] leading-none">
+            <span className="monserratBold900 text-191919 font-extrabold text-[clamp(45px,4.42vw,77px)] leading-none">
               Welcome to
             </span>
-            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[4.42vw] leading-none">
+            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[clamp(45px,4.42vw,77px)] leading-none">
               Ozen Sushi
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
-            <div className="flex flex-col mb-5 w-[35.71vw] text-[1.15vw]">
+            <div className="flex flex-col mb-5 w-[35.71vw] text-[clamp(11px,1.15vw,20px)]">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
             </div>
             <div className="flex gap-x-7">
-              <OrangeBgBtn width="14.28vw" height="3.92vw">
+              <OrangeBgBtn
+                width="clamp(9.2px,14.28vw,200px)"
+                height="clamp(9.2px,3.92vw,60px)"
+              >
                 Learn More
               </OrangeBgBtn>
-              <BlueBgBtn width="14.28vw" height="3.92vw">
+              <BlueBgBtn
+                width="clamp(9.2px,14.28vw,240px)"
+                height="clamp(9.2px,3.92vw,60px)"
+              >
                 Go to Ozen Korea
               </BlueBgBtn>
             </div>
@@ -100,7 +106,10 @@ function OzenSushiHome() {
                 robust fresh fish list to the heart of London Ontario.
               </div>
             </div>
-            <OrangeBgBtn width="14.30vw" height="3.92vw">
+            <OrangeBgBtn
+              width="clamp(9.2px,14.28vw,200px)"
+              height="clamp(9.2px,3.92vw,60px)"
+            >
               Learn More
             </OrangeBgBtn>
           </div>

@@ -41,7 +41,10 @@ function OzenSushiHeader() {
                 {label}
               </Link>
             ))}
-            <OrangeBgBtn width="10.71vw" height="3.14vw">
+            <OrangeBgBtn
+              width="clamp(9.2px,14.28vw,170px)"
+              height="clamp(10px,3.92vw,50px)"
+            >
               Online Order
             </OrangeBgBtn>
           </nav>
