@@ -24,12 +24,12 @@ function OzenSushiHeader() {
   ];
   return (
     <>
-      <header className="sticky top-0 z-20 flex justify-between items-center px-[7.2rem] py-[1.78vw] mlg:px-[4rem] bg-white">
+      <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[8.1vw] py-[1.78vw] bg-white">
         <Link href={ozen_sushi_home}>
           <OzenSushiHorizontalLogo />
         </Link>
-        <div className="flex">
-          <nav className="flex gap-16 items-center relative right-20 text-[clamp(18px,1.14vw,25px)] lg:gap-5 lg:right-5">
+        <div>
+          <nav className="flex gap-16 items-center relative text-[clamp(18px,1.14vw,25px)] lg:gap-5">
             {menuItems.map(({ label, href }) => (
               <Link
                 key={label}

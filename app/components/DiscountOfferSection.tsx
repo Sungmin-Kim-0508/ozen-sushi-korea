@@ -10,7 +10,7 @@ const DiscountOfferSection = () => {
         src={image_7626}
         className="absolute min-w-full h-full -z-10"
       />
-      <div className="flex flex-col items-end text-end pr-56 py-32 lg:pr-20 lg:py-24">
+      <div className="flex flex-col items-end text-end pr-[8.21vw] py-32 lg:py-24">
         <span className="monserratBold900 text-[clamp(36px,3vw,100px)] text-white mb-2">
           Get 10% Off!
         </span>
