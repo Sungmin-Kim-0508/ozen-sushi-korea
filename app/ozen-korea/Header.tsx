@@ -23,28 +23,26 @@ function OzenKoreaHeader() {
     },
   ];
   return (
-    <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[2.8vw] py-[1.78vw] bg-black">
+    <header className="sticky top-0 z-20 flex justify-between items-center px-[8.21vw] py-[1.78vw] bg-black">
       <Link href={ozen_korea_home}>
         <OzenKoreaLogoSmall />
       </Link>
-      <div className="flex">
-        <nav className="flex gap-[4.28vw] items-center relative right-20 text-[clamp(12.5px,1.14vw,25px)]">
-          {menuItems.map(({ label, href }) => (
-            <Link
-              key={label}
-              href={href}
-              className={`hover:text-CF382D ${
-                pathname === href ? "text-CF382D" : ""
-              }`}
-            >
-              {label}
-            </Link>
-          ))}
-          <RedBgBtn width="10.71vw" height="3.14vw">
-            Online Order
-          </RedBgBtn>
-        </nav>
-      </div>
+      <nav className="flex gap-[4.28vw] items-center text-[clamp(13px,1.14vw,25px)]">
+        {menuItems.map(({ label, href }) => (
+          <Link
+            key={label}
+            href={href}
+            className={`hover:text-CF382D ${
+              pathname === href ? "text-CF382D" : ""
+            }`}
+          >
+            {label}
+          </Link>
+        ))}
+        <RedBgBtn width="10.71vw" height="3.14vw">
+          Online Order
+        </RedBgBtn>
+      </nav>
     </header>
   );
 }

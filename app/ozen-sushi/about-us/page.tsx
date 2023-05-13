@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import image_7606 from "public/images/ozen-sushi/image_7606.png";
-import plaid from "public/images/ozen-sushi/plaid_bg.png";
 import image_136 from "public/images/ozen-sushi/image_136.png";
 import image_137 from "public/images/ozen-sushi/image_137.png";
 import image_138 from "public/images/ozen-sushi/image_138.png";
@@ -31,11 +30,6 @@ function AboutUs() {
   return (
     <>
       <section className="flex gap-x-16 relative w-full min-h-full">
-        <Image
-          alt="plaid"
-          src={plaid}
-          className="absolute min-w-full min-h-full -z-10"
-        />
         <div className="flex justify-center px-[8.21vw] py-[8.57vw] gap-x-[6.42vw]">
           <div>
             <Image

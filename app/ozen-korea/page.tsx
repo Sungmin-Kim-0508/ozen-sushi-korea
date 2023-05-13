@@ -32,7 +32,7 @@ function OzenKoreaHome() {
     <>
       <section className="relative w-full min-h-full bg-black">
         <div className="flex mb-16">
-          <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[14.62vw]">
+          <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[10vw]">
             <span className="font-semibold text-xl text-[1.28vw]">
               Served everyday since 2008
             </span>
@@ -60,12 +60,12 @@ function OzenKoreaHome() {
             <Image
               alt="image9928"
               src={image9928Large}
-              className={`right-[6vw] z-10 w-[43vw] h-[43vw]`}
+              className={`right-[6vw] z-10 w-[43vw] h-full`}
             />
           </div>
         </div>
       </section>
-      <section className="flex px-32 py-[7.14vw] bg-white">
+      <section className="flex px-32 py-[8.21vw] bg-white">
         <Image
           alt="image_9930"
           src={image_9930}

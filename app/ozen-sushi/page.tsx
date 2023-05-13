@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { BlueBgBtn, OrangeBgBtn } from "../components/button";
 import salmonRiceBowl from "public/images/ozen-sushi/sushi_bowl.png";
-import plaid from "public/images/ozen-sushi/plaid_bg.png";
 import image144 from "public/images/ozen-sushi/image_144.png";
 import image_7601 from "public/images/ozen-sushi/image_7601.png";
 import image_136 from "public/images/ozen-sushi/image_136.png";
@@ -32,24 +31,19 @@ function OzenSushiHome() {
   return (
     <>
       <section className="relative w-full min-h-full">
-        <Image
-          alt="plaid"
-          src={plaid}
-          className="absolute min-w-full min-h-full -z-10"
-        />
         <div className="flex mb-16">
-          <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[14.62vw]">
-            <span className="font-semibold text-xl text-[clamp(13px,1.28vw,40px)]">
+          <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[14.62vw] mlg:pt-[8vw]">
+            <span className="font-semibold text-xl text-[clamp(11px,1.28vw,40px)]">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-191919 font-extrabold text-[clamp(45px,4.42vw,77px)] leading-none">
+            <span className="monserratBold900 text-191919 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none">
               Welcome to
             </span>
-            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[clamp(45px,4.42vw,77px)] leading-none">
+            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none">
               Ozen Sushi
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
-            <div className="flex flex-col mb-5 w-[35.71vw] text-[clamp(11px,1.15vw,20px)]">
+            <div className="flex flex-col mb-5 w-[35.71vw] text-[clamp(10px,1.15vw,20px)]">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
             </div>
@@ -81,7 +75,7 @@ function OzenSushiHome() {
             />
           </div>
         </div>
-        <div className="flex px-32 xl:px-28 mlg:px-20">
+        <div className="flex px-32 xl:px-24 mlg:px-12">
           <Image
             alt="image_7601"
             src={image_7601}
