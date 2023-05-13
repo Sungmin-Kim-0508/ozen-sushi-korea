@@ -2,8 +2,8 @@ import React from "react";
 
 type BtnProps = {
   children: React.ReactNode;
-  width: string;
-  height: string;
+  width?: string;
+  height?: string;
   className?: string;
 };
 
@@ -18,7 +18,7 @@ export const OrangeBgBtn: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className={`text-center rounded-[1.42vw] bg-gradient-to-r from-EC6236 to-F49172 border border-EC6236 text-white ${buttonFontSize} hover:text-EC6236 hover:from-white hover:to-white duration-1000 ${
+    className={`text-center rounded-[20px] bg-gradient-to-r from-EC6236 to-F49172 border border-EC6236 text-white ${buttonFontSize} hover:text-EC6236 md:rounded-[14px] hover:from-white hover:to-white duration-1000 ${
       className ? className : ""
     }`}
   >
@@ -52,7 +52,7 @@ export const RedBgBtn: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className={`text-center rounded-[1.42vw] bg-CF382D border border-CF382D ${buttonFontSize} text-white hover:duration-500 hover:bg-black hover:border-CF382D hover:text-CF382D ${
+    className={`text-center rounded-[20px] bg-CF382D border border-CF382D ${buttonFontSize} text-white hover:duration-500 hover:bg-black hover:border-CF382D hover:text-CF382D ${
       className ? className : ""
     }`}
   >
@@ -69,7 +69,7 @@ export const BlackBgBtc: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className={`text-center rounded-[1.42vw] bg-black border border-white text-white ${buttonFontSize} hover:duration-500 hover:bg-white hover:border-white hover:text-black ${
+    className={`text-center rounded-[20px] bg-black border border-white text-white ${buttonFontSize} hover:duration-500 hover:bg-white hover:border-white hover:text-black ${
       className ? className : ""
     }`}
   >
@@ -86,7 +86,7 @@ export const BlueBgBtn: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className={`text-center rounded-[1.42vw] bg-gradient-to-r from-103DC6 to-395AC1 border border-4358DC text-white ${buttonFontSize} hover:bg-white hover:border-4358DC hover:text-4358DC hover:from-white hover:to-white duration-1000 ${
+    className={`text-center rounded-[20px] bg-gradient-to-r from-103DC6 to-395AC1 border border-4358DC text-white ${buttonFontSize} md:rounded-[14px] hover:bg-white hover:border-4358DC hover:text-4358DC hover:from-white hover:to-white duration-1000 ${
       className ? className : ""
     }`}
   >

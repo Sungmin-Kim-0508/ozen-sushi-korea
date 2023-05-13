@@ -24,6 +24,10 @@ export default function Head() {
         href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+        rel="stylesheet"
+      />
     </head>
   );
 }

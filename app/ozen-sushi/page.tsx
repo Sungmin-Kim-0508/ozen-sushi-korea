@@ -31,47 +31,44 @@ function OzenSushiHome() {
   return (
     <>
       <section className="relative w-full min-h-full">
-        <div className="flex mb-16">
-          <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[14.62vw] mlg:pt-[8vw]">
-            <span className="font-semibold text-xl text-[clamp(11px,1.28vw,40px)]">
+        <div className="flex mb-16 md:block md:px-[max(20px,5.33vw)]">
+          <div className="flex-1 flex flex-col justify-center px-[max(42px,8.21vw)] py-[14.62vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
+            <span className="font-semibold text-xl text-[clamp(11px,1.28vw,40px)] md:hidden">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-191919 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none">
+            <span className="monserratBold900 text-191919 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none md:text-[max(32px,9.6vw)]">
               Welcome to
             </span>
-            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none">
+            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none md:text-[max(32px,9.6vw)]">
               Ozen Sushi
             </span>
-            <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5" />
-            <div className="flex flex-col mb-5 w-[35.71vw] text-[clamp(10px,1.15vw,20px)]">
+            <span className="hidden robotoMedium md:block md:text-[max(12px,3.73vw)]">
+              Served everyday since 2008
+            </span>
+            <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5 md:hidden" />
+            <div className="mb-5 w-[35.71vw] text-[clamp(10px,1.15vw,20px)] md:w-full md:block md:px-[min(16px,5.86vw)] md:text-[clamp(10px,3.2vw,20px)]">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
             </div>
-            <div className="flex gap-x-7">
-              <OrangeBgBtn
-                width="clamp(9.2px,14.28vw,200px)"
-                height="clamp(9.2px,3.92vw,60px)"
-              >
+            <div className="flex gap-x-7 md:justify-center md:gap-x-[10px]">
+              <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </OrangeBgBtn>
-              <BlueBgBtn
-                width="clamp(9.2px,14.28vw,240px)"
-                height="clamp(9.2px,3.92vw,60px)"
-              >
+              <BlueBgBtn className="w-[clamp(140px,14.28vw,240px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
                 Go to Ozen Korea
               </BlueBgBtn>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 md:flex-initial">
             <Image
               alt="salmonRiceBowl"
               src={salmonRiceBowl}
-              className={`absolute right-[6vw] top-[3.5vw] z-10 w-[43vw] h-[43vw]`}
+              className={`absolute right-[6vw] top-[3.5vw] z-10 w-[43vw] h-[43vw] md:hidden`}
             />
             <Image
               alt="img144"
               src={image144}
-              className="absolute right-0 bg-transparent w-[47.86vw] h-[49.1vw]"
+              className="absolute right-0 bg-transparent w-[47.86vw] h-[49.1vw] md:-z-10 md:hidden"
             />
           </div>
         </div>
