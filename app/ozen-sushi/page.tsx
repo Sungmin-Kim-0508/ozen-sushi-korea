@@ -91,30 +91,30 @@ function OzenSushiHome() {
             <WhatWeServeSection />
           </div>
         </div>
-        <div className="hidden md:block pt-[max(40px,10.66vw)] pb-[max(30px,8vw)] px-[max(21px,5.6vw)] bg-191919 text-center rounded-[max(20px,5.3vw)] mb-[max(30px,8vw)]">
+        <div className="hidden md:block pt-[max(40px,10.66vw)] px-[max(21px,5.6vw)] bg-191919 text-center rounded-[max(20px,5.3vw)] mb-[max(30px,8vw)]">
           <WhatWeServeSection />
         </div>
       </section>
       <DiscountOfferSection />
-      <section className="relative py-24">
-        <div className="text-center mb-10">
-          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-black">
+      <section className="relative py-24 md:pt-[max(30px,8vw)] md:pb-[max(7px,1.86vw)]">
+        <div className="text-center mb-10 md:mb-[max(20px,5.33vw)]">
+          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-black md:text-[max(20px,5.33vw)]">
             Check out{" "}
-            <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-EC6236">
+            <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-EC6236 md:text-[max(20px,5.33vw)]">
               Our Stories
             </span>
           </span>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center md:hidden">
           <div className="border-2 border-EC6236 w-14 mb-10" />
         </div>
-        <div className="flex gap-x-3 w-full">
+        <div className="flex gap-x-3 w-full md:grid grid-rows-2 grid-cols-2 md:gap-y-3">
           {foodImages.map((image) => (
             <Image
               key={image.alt}
               alt={image.alt}
               src={image.src}
-              className="h-full max-h-full w-full max-w-full overflow-hidden xl:w-1/4"
+              className="h-full max-h-full w-full max-w-full overflow-hidden md:w-full"
             />
           ))}
         </div>
