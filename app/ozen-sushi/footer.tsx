@@ -15,7 +15,7 @@ function Footer() {
         className="flex justify-between pl-[clamp(50px,6vw,90px)] text-white bg-191919
                    md:flex-col md:items-center md:pl-0 md:pb-[max(41px,10.93vw)] md:bg-F1F1F1"
       >
-        <div className="pt-[clamp(40px,4.28vw,60px)] md:mb-[max(40px,10.66vw)]">
+        <div className="pt-[clamp(40px,4.28vw,60px)] md:mb-[max(30px,8vw)]">
           <OzenSushiLogoHorizontalWhite className="md:hidden" />
           <OzenSushiHorizontalLogo className="hidden md:block w-[max(242px,64.54vw)] h-[clamp(60.3px,8.9vh,100px)]" />
         </div>

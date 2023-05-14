@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import image_7606 from "public/images/ozen-sushi/image_7606.png";
+import image_131 from "public/images/ozen-sushi/image_131.png";
 import image_136 from "public/images/ozen-sushi/image_136.png";
 import image_137 from "public/images/ozen-sushi/image_137.png";
 import image_138 from "public/images/ozen-sushi/image_138.png";
 import image_139 from "public/images/ozen-sushi/image_139.png";
 import DiscountOfferSection from "app/components/DiscountOfferSection";
+import { OrangeBgBtn } from "app/components/button";
 
 function AboutUs() {
   const foodImages = [
@@ -29,38 +31,55 @@ function AboutUs() {
   ];
   return (
     <>
-      <section className="flex gap-x-16 relative w-full min-h-full">
-        <div className="flex justify-center px-[8.21vw] py-[8.57vw] gap-x-[6.42vw]">
-          <div>
-            <Image
-              alt="image_7606"
-              src={image_7606}
-              className="w-[36.42vw] h-[47.21vw]"
-            />
-          </div>
-          <div className="flex flex-col justify-center w-[36rem]">
-            <span className="monserratBold900 text-5xl mlg:text-4xl">
+      <section className="flex md:block md:px-[max(20px,5.33vw)]">
+        <div className="flex justify-center px-[8.21vw] py-[8.57vw] gap-x-[6.42vw] md:px-0">
+          <Image
+            alt="image_7606"
+            src={image_7606}
+            className="w-[36.42vw] h-[47.21vw] md:hidden"
+          />
+          <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg">
+            <span className="monserratBold900 text-5xl mlg:text-4xl md:hidden">
               About Us
             </span>
-            <div className="border-2 border-EC6236 max-w-[4rem] mt-5 mb-5" />
-            <div className="w-[37.6vw]">
-              <div className="text-[clamp(12px,1.14vw,22px)] mb-5">
+            <span className="hidden md:block monserratBold900 text-[max(20px,5.33vw)] text-center">
+              About{" "}
+              <span className="monserratBold900 text-EC6236 text-[max(20px,5.33vw)]">
+                Us
+              </span>
+            </span>
+            <div className="border-2 border-EC6236 max-w-[4rem] my-5 md:mx-auto md:w-[7rem]" />
+            <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)]">
+              <div className="mb-5">
                 The unique taste comes from family recipes and from fresh,
                 simple and tasteful ingredients straight out of love. In every
                 menu items from OZEN SUSHI there is a bit of Korean/Japanese
                 culture and flavor.
               </div>
-              <div className="text-[clamp(12px,1.14vw,22px)]">
+              <div className="mb-8">
                 Ozen Sushi bridges the traditional with the contemporary,
                 bringing live-fire cooking, housemade spicy mayo sauce, and a
                 robust fresh fish list to the heart of London Ontario.
               </div>
             </div>
+            <div className="flex justify-center">
+              <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
+                Learn More
+              </OrangeBgBtn>
+            </div>
           </div>
         </div>
       </section>
+      <section className="hidden md:block mb-8">
+        <Image
+          alt="image_131"
+          src={image_131}
+          className="px-[max(20px,5.33vw)] min-w-full"
+        />
+      </section>
       <DiscountOfferSection />
-      <section>
+      <div className="mt-8" />
+      <section className="md:hidden">
         <div className="flex w-full">
           {foodImages.map((image) => (
             <Image
