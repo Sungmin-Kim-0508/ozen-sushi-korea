@@ -34,7 +34,7 @@ function OzenSushiHeader() {
             href={ozen_sushi_home}
             className="w-[clamp(220px,17.8vw,500px)] h-[clamp(60.3px,8.9vh,100px)] md:w-[clamp(129.54px,34.54vw,260px)] md:h-[clamp(20px,5.21vh,70px)]"
           >
-            <OzenSushiHorizontalLogo />
+            <OzenSushiHorizontalLogo className="w-full h-full" />
           </Link>
         </div>
         <div>

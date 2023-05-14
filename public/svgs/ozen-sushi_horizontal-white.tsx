@@ -1,15 +1,8 @@
-import { useState, useEffect } from "react";
-
-export const OzenSushiLogoHorizontalWhite = () => {
-  const [width, setWidth] = useState();
-  useEffect(() => {
-    const handleResize = () => {};
-    window.addEventListener("resize", () => handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+export const OzenSushiLogoHorizontalWhite = ({
+  className = "",
+}: {
+  className?: string;
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +11,7 @@ export const OzenSushiLogoHorizontalWhite = () => {
         width: "clamp(220px,17.8vw,500px)",
         height: "clamp(60.3px,8.9vh,100px)",
       }}
+      className={className === "" ? "" : className}
     >
       <g
         id="ozensushi_horizontal_logo"

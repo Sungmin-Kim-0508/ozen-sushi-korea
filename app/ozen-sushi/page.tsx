@@ -91,7 +91,7 @@ function OzenSushiHome() {
             <WhatWeServeSection />
           </div>
         </div>
-        <div className="hidden md:block pt-[max(40px,10.66vw)] px-[max(21px,5.6vw)] bg-191919 text-center rounded-[max(20px,5.3vw)] mb-[max(30px,8vw)]">
+        <div className="hidden md:block pt-[max(40px,10.66vw)] pb-[max(30px,8vw)] px-[max(21px,5.6vw)] bg-191919 text-center rounded-[max(20px,5.3vw)] mb-[max(30px,8vw)]">
           <WhatWeServeSection />
         </div>
       </section>
