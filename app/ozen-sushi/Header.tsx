@@ -4,7 +4,12 @@ import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { OrangeBgBtn } from "../components/button";
-import { aboutUs, menu, ozen_sushi_home } from "../utils/routes";
+import {
+  aboutUs,
+  menu,
+  ozen_korea_home,
+  ozen_sushi_home,
+} from "../utils/routes";
 import { OzenSushiHorizontalLogo } from "../../public/svgs/ozen-sushi-horizontal";
 import { MenuItem } from "app/utils/types";
 
@@ -24,6 +29,10 @@ function OzenSushiHeader() {
       label: "Menu",
       href: ozen_sushi_home + menu,
     },
+    {
+      label: "Ozen Korea",
+      href: ozen_korea_home,
+    },
   ];
 
   const toggleNavbar = () => {
@@ -37,7 +46,7 @@ function OzenSushiHeader() {
       >
         <nav
           className="flex flex-col gap-y-[max(40px,10.66vw)] items-center
-                     pt-[max(80px,21.33vw)] px-[max(136px,36.26vw)]
+                     pt-[max(80px,21.33vw)] px-[max(120px,32vw)]
                      text-[max(20px,5.33vw)]"
         >
           {menuItems.map(({ label, href }) => (
@@ -46,7 +55,7 @@ function OzenSushiHeader() {
               href={href}
               className={`hover:text-EC6236 ${
                 pathname === href ? "text-EC6236" : ""
-              }`}
+              } ${label === "Ozen Korea" ? "block" : ""}`}
               onClick={() => setIsNavOpen(false)}
             >
               {label}
@@ -86,7 +95,7 @@ function OzenSushiHeader() {
                 href={href}
                 className={`hover:text-EC6236 ${
                   pathname === href ? "text-EC6236" : ""
-                } md:hidden`}
+                } md:hidden ${label === "Ozen Korea" ? "hidden" : ""}`}
               >
                 {label}
               </Link>

@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { BlueBgBtn, OrangeBgBtn } from "../components/button";
+import { ANIMATION_CONFIGUARTION } from "app/utils/constants";
 import salmonRiceBowl from "public/images/ozen-sushi/sushi_bowl.png";
 import image144 from "public/images/ozen-sushi/image_144.png";
 import image_7601 from "public/images/ozen-sushi/image_7601.png";
@@ -32,9 +33,17 @@ function OzenSushiHome() {
       alt: "image_139",
     },
   ];
+  const sections = document.querySelectorAll("section");
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      console.log(entries);
+    });
+  }, []);
   return (
     <>
-      <section className="relative w-full min-h-full md:px-[max(20px,5.33vw)]">
+      <section
+        className={`relative w-full min-h-full md:px-[max(20px,5.33vw)] ${ANIMATION_CONFIGUARTION}`}
+      >
         <div className="flex mb-16 md:block">
           <div className="flex-1 flex flex-col justify-center px-[max(42px,8.21vw)] py-[14.62vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
             <span className="font-semibold text-xl text-[clamp(11px,1.28vw,40px)] md:hidden">
@@ -96,7 +105,9 @@ function OzenSushiHome() {
         </div>
       </section>
       <DiscountOfferSection />
-      <section className="relative py-24 md:pt-[max(30px,8vw)] md:pb-[max(7px,1.86vw)]">
+      <section
+        className={`relative py-24 md:pt-[max(30px,8vw)] md:pb-[max(7px,1.86vw)] ${ANIMATION_CONFIGUARTION}`}
+      >
         <div className="text-center mb-10 md:mb-[max(20px,5.33vw)]">
           <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-black md:text-[max(20px,5.33vw)]">
             Check out{" "}
