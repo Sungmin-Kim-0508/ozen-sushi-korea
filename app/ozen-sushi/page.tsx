@@ -46,7 +46,7 @@ function OzenSushiHome() {
             <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none md:text-[max(32px,9.6vw)]">
               Ozen Sushi
             </span>
-            <span className="hidden robotoMedium md:block md:text-[max(12px,3.73vw)]">
+            <span className="hidden robotoMedium mb-[max(6px,1.6vw)] md:block md:text-[max(14px,3.73vw)]">
               Served everyday since 2008
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5 md:hidden" />

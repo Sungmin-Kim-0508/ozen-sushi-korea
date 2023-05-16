@@ -4,7 +4,7 @@ import { BlueBgBtn, OrangeBgBtn } from "app/components/button";
 
 const DiscountOfferSection = () => {
   return (
-    <section className="relative w-full min-h-full md:px-[max(21px,5.6vw)]">
+    <section className="relative w-full min-h-full md:static md:px-[max(21px,5.6vw)]">
       <Image
         alt="image_7626"
         src={image_7626}

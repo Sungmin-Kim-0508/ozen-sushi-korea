@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
 import { OrangeBgBtn } from "../components/button";
 import { aboutUs, menu, ozen_sushi_home } from "../utils/routes";
 import { OzenSushiHorizontalLogo } from "../../public/svgs/ozen-sushi-horizontal";
 import { MenuItem } from "app/utils/types";
 
 function OzenSushiHeader() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const pathname = usePathname();
   const menuItems: MenuItem[] = [
     {
@@ -23,11 +25,49 @@ function OzenSushiHeader() {
       href: ozen_sushi_home + menu,
     },
   ];
-  return (
-    <>
+
+  const toggleNavbar = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  if (isNavOpen) {
+    return (
+      <header className="animate-fade animate-once animate-duration-[2000ms] animate-ease-linear">
+        <nav
+          className="fixed top-0 left-0 bg-white w-full h-screen
+        flex flex-col gap-y-[max(40px,10.66vw)] items-center
+        pt-[max(80px,21.33vw)] px-[max(136px,36.26vw)]
+        text-[max(20px,5.33vw)] z-30"
+        >
+          {menuItems.map(({ label, href }) => (
+            <Link
+              key={label}
+              href={href}
+              className={`hover:text-EC6236 ${
+                pathname === href ? "text-EC6236" : ""
+              }`}
+              onClick={() => setIsNavOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
+          <button
+            className="absolute bottom-[max(72px,19.2vw)]"
+            onClick={toggleNavbar}
+          >
+            <RxCross2 />
+          </button>
+        </nav>
+      </header>
+    );
+  } else {
+    return (
       <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[8.1vw] py-[1.78vw] bg-white">
         <div className="md:flex items-center gap-x-[clamp(10px,2vw,15px)]">
-          <button className="hidden md:block md:w-[clamp(11px,2.93vw,20px)] md:h-[clamp(13px,3.46vw,22px)]">
+          <button
+            className="hidden md:block md:w-[clamp(11px,2.93vw,20px)] md:h-[clamp(13px,3.46vw,22px)]"
+            onClick={toggleNavbar}
+          >
             <GiHamburgerMenu className="w-full h-full" />
           </button>
           <Link
@@ -60,8 +100,8 @@ function OzenSushiHeader() {
           </nav>
         </div>
       </header>
-    </>
-  );
+    );
+  }
 }
 
 export default OzenSushiHeader;

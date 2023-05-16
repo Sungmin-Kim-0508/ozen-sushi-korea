@@ -5,6 +5,7 @@ type BtnProps = {
   width?: string;
   height?: string;
   className?: string;
+  onClick?: () => void;
 };
 
 const buttonFontSize = "text-[clamp(11px,1.14vw,22px)]";
@@ -14,6 +15,7 @@ export const OrangeBgBtn: React.FC<BtnProps> = ({
   width,
   height,
   className,
+  onClick,
 }) => (
   <button
     type="button"
@@ -21,6 +23,7 @@ export const OrangeBgBtn: React.FC<BtnProps> = ({
     className={`text-center rounded-[20px] bg-gradient-to-r from-EC6236 to-F49172 border border-EC6236 text-white ${buttonFontSize} hover:text-EC6236 md:rounded-[14px] hover:from-white hover:to-white duration-1000 ${
       className ? className : ""
     }`}
+    onClick={onClick}
   >
     {children}
   </button>
