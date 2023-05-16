@@ -32,12 +32,13 @@ function OzenSushiHeader() {
 
   if (isNavOpen) {
     return (
-      <header className="animate-fade animate-once animate-duration-[2000ms] animate-ease-linear">
+      <header
+        className={`fixed top-0 left-0 bg-white w-full h-screen z-30 animate-flip-down animate-duration-[800ms]`}
+      >
         <nav
-          className="fixed top-0 left-0 bg-white w-full h-screen
-        flex flex-col gap-y-[max(40px,10.66vw)] items-center
-        pt-[max(80px,21.33vw)] px-[max(136px,36.26vw)]
-        text-[max(20px,5.33vw)] z-30"
+          className="flex flex-col gap-y-[max(40px,10.66vw)] items-center
+                     pt-[max(80px,21.33vw)] px-[max(136px,36.26vw)]
+                     text-[max(20px,5.33vw)]"
         >
           {menuItems.map(({ label, href }) => (
             <Link
@@ -62,7 +63,7 @@ function OzenSushiHeader() {
     );
   } else {
     return (
-      <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[8.1vw] py-[1.78vw] bg-white">
+      <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[8.1vw] py-[1.78vw] bg-white animate-flip-up">
         <div className="md:flex items-center gap-x-[clamp(10px,2vw,15px)]">
           <button
             className="hidden md:block md:w-[clamp(11px,2.93vw,20px)] md:h-[clamp(13px,3.46vw,22px)]"
