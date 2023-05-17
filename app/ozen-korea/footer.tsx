@@ -47,7 +47,7 @@ function Footer() {
           <div className="w-auto md:flex md:flex-col md:items-center">
             <div className="mb-3">
               <span
-                className={`text-EC6236 ${titleInfoTextSize} font-extrabold md:hidden`}
+                className={`text-CF382D ${titleInfoTextSize} font-extrabold md:hidden`}
               >
                 Get In Touch
               </span>

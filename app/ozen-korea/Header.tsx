@@ -83,7 +83,7 @@ function OzenKoreaHeader() {
             <Link
               key={label}
               href={href}
-              className={`hover:text-CF382D ${
+              className={`text-white hover:text-CF382D ${
                 pathname === href ? "text-CF382D" : ""
               } md:hidden`}
             >

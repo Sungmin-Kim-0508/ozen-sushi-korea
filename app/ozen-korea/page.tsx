@@ -34,7 +34,7 @@ function OzenKoreaHome() {
       <section className="relative w-full min-h-full md:px-[max(20px,5.33vw)]">
         <div className="flex mb-16 md:block md:mt-[max(30px,8vw)] bg-191919 md:rounded-[max(20px,5.3vw)]">
           <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[10vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
-            <span className="font-semibold text-xl text-[1.28vw] md:hidden">
+            <span className="font-semibold text-[1.28vw] md:hidden">
               Served everyday since 2008
             </span>
             <span className="monserratBold900 text-white font-extrabold text-[4.42vw] leading-none md:text-[max(32px,9.6vw)]">
@@ -43,11 +43,11 @@ function OzenKoreaHome() {
             <span className="monserratBold900 text-CF382D mb-5 font-extrabold text-[4.42vw] leading-none md:text-[max(32px,9.6vw)]">
               Ozen Korea
             </span>
-            <span className="hidden robotoMedium mb-[max(6px,1.6vw)] md:block md:text-[max(14px,3.73vw)]">
+            <span className="hidden robotoMedium mb-[max(6px,1.6vw)] md:block md:text-[max(14px,3.73vw)] md:text-white">
               Served everyday since 2008
             </span>
             <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5 md:hidden" />
-            <div className="flex flex-col mb-5 w-[35.71vw] text-[1.15vw] md:w-full md:block md:px-[min(16px,5.86vw)] md:text-[clamp(10px,3.2vw,20px)]">
+            <div className="flex flex-col mb-5 w-[35.71vw] text-[1.15vw] md:w-full md:block md:px-[min(16px,5.86vw)] md:text-[clamp(10px,3.2vw,20px)] md:text-white">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
             </div>

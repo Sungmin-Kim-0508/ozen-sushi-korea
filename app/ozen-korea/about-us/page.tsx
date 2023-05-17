@@ -49,17 +49,17 @@ function AboutUs() {
             className="w-[36.42vw] h-[47.21vw] md:hidden"
           />
           <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg">
-            <span className="monserratBold900 text-5xl mlg:text-4xl md:hidden">
+            <span className="monserratBold900 text-191919 text-5xl mlg:text-4xl md:hidden">
               About Us
             </span>
-            <span className="hidden md:block monserratBold900 text-[max(20px,5.33vw)] text-center">
+            <span className="hidden md:block text-white  monserratBold900 text-[max(20px,5.33vw)] text-center">
               About{" "}
               <span className="monserratBold900 text-CF382D text-[max(20px,5.33vw)]">
                 Us
               </span>
             </span>
             <div className="border-2 border-CF382D max-w-[4rem] my-5 md:mx-auto md:w-[7rem]" />
-            <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)]">
+            <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)] md:text-white">
               <div className="mb-5">
                 The unique taste comes from family recipes and from fresh,
                 simple and tasteful ingredients straight out of love. In every
@@ -79,12 +79,10 @@ function AboutUs() {
             </div>
           </div>
         </div>
+        <div className="hidden md:block">
+          <Image alt="image_9931" src={img9931} className={`w-full`} />
+        </div>
       </section>
-      <Image
-        alt="image_9931"
-        src={img9931}
-        className={`w-full ${SECTION_GAP_IN_MOBILE}`}
-      />
       <div className={`${SECTION_GAP_IN_MOBILE}`}>
         <DiscountOfferSection />
       </div>
