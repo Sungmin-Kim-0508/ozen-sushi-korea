@@ -55,7 +55,7 @@ export const RedBgBtn: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className={`text-center rounded-[20px] bg-CF382D border border-CF382D ${buttonFontSize} text-white hover:duration-500 hover:bg-black hover:border-CF382D hover:text-CF382D ${
+    className={`text-center rounded-[20px] bg-CF382D border border-CF382D ${buttonFontSize} text-white hover:duration-500 hover:bg-191919 hover:border-CF382D hover:text-CF382D ${
       className ? className : ""
     }`}
   >
@@ -72,7 +72,7 @@ export const BlackBgBtc: React.FC<BtnProps> = ({
   <button
     type="button"
     style={{ width, height }}
-    className={`text-center rounded-[20px] bg-black border border-white text-white ${buttonFontSize} hover:duration-500 hover:bg-white hover:border-white hover:text-black ${
+    className={`text-center rounded-[20px] bg-191919 border border-white text-white ${buttonFontSize} hover:duration-500 hover:bg-white hover:border-white hover:text-191919 ${
       className ? className : ""
     }`}
   >

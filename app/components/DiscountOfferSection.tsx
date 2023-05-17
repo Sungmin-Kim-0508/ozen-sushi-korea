@@ -15,14 +15,14 @@ const DiscountOfferSection = () => {
           className="absolute min-w-full h-full -z-10 md:hidden"
         />
         <div className="flex flex-col items-end text-end pr-[8.21vw] py-32 md:md:bg-F7F7F8 md:items-center md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:rounded-[max(20px,5.3vw)] md:text-center">
-          <span className="monserratBold900 text-[clamp(36px,3vw,100px)] text-white mb-2 md:text-black md:text-[max(20px,5.33vw)]">
+          <span className="monserratBold900 text-[clamp(36px,3vw,100px)] text-white mb-2 md:text-191919 md:text-[max(20px,5.33vw)]">
             Get 10% Off!
           </span>
           <span className="monserratBold900 text-[clamp(36px,3vw,100px)] text-white mb-5 md:text-EC6236 md:text-[max(20px,5.33vw)]">
             Online Order!
           </span>
           <div className="border-2 w-[3.75rem] border-white mb-5 md:border-EC6236" />
-          <div className="text-white text-[clamp(12px,1vw,20px)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-black md:text-[max(12px,3.2vw)]">
+          <div className="text-white text-[clamp(12px,1vw,20px)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-191919 md:text-[max(12px,3.2vw)]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             consectetur augue sit amet viverra varius. Suspendisse porttitor
             placerat enim nec molestie. Nullam dolor nisi, dignissim quis sapien

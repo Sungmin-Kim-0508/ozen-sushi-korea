@@ -65,7 +65,7 @@ function OzenSushiHeader() {
             className="absolute bottom-[max(72px,19.2vw)]"
             onClick={toggleNavbar}
           >
-            <RxCross2 />
+            <RxCross2 className="text-959595" />
           </button>
         </nav>
       </header>

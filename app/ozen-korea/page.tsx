@@ -92,7 +92,7 @@ function OzenKoreaHome() {
             </span>
           </span>
           <div className="border-2 border-CF382D max-w-[3.75rem] my-5" />
-          <div className="mb-7 text-[clamp(14px,1.0vw,20px)] text-black leading-normal">
+          <div className="mb-7 text-[clamp(14px,1.0vw,20px)] text-191919 leading-normal">
             Ozen Korea is a Korean restaurant located in the vibrant city of
             London, Ontario. With its unique fusion of traditional Korean
             cuisine and contemporary style, Ozen Korea offers an exceptional
@@ -109,7 +109,7 @@ function OzenKoreaHome() {
       <DiscountOfferSection />
       <section className="relative py-24 bg-white">
         <div className="text-center mb-10">
-          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-black">
+          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-191919">
             Check out{" "}
             <span className="monserratBold900 text-[clamp(35px,3vw,50px)] text-CF382D border-CF382D">
               Our Stories
@@ -136,7 +136,7 @@ function OzenKoreaHome() {
 
 const WhatWeServeMobile = () => (
   <section className="hidden md:flex bg-191919 w-full px-[max(20px,5.33vw)]">
-    <div className="py-[max(40px,10.66vw)]">
+    <div className="py-[max(40px,10.66vw)] md:text-center">
       <span className="monserratBold900 text-[max(20px,5.33vw)] text-white">
         What we{" "}
         <span className="text-CF38border-CF382D monserratBold900 text-CF382D">

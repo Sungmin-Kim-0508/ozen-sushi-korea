@@ -22,7 +22,7 @@ function AboutUs() {
             </span>
           </span>
           <div className="border-2 border-CF382D max-w-[3.75rem] my-5" />
-          <div className="mb-7 text-[clamp(14px,1.0vw,20px)] text-black leading-normal">
+          <div className="mb-7 text-[clamp(14px,1.0vw,20px)] text-191919 leading-normal">
             Ozen Korea is a Korean restaurant located in the vibrant city of
             London, Ontario. With its unique fusion of traditional Korean
             cuisine and contemporary style, Ozen Korea offers an exceptional

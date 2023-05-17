@@ -7,10 +7,6 @@ export const OzenSushiHorizontalLogo = ({
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 302.564 45.702"
-      // style={{
-      //   width: "100%",
-      //   height: "100%",
-      // }}
       className={className ? className : ""}
     >
       <g

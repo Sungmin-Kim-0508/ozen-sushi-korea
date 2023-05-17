@@ -1,12 +1,11 @@
 import React from "react";
 
-export function OzenKoreaLogoSmall() {
+export function OzenKoreaLogoSmall({ className = "" }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="183.336"
-      height="79.656"
       viewBox="0 0 183.336 79.656"
+      className={className}
     >
       <g id="ozenkorea_logo_1" transform="translate(-0.007 0.002)">
         <g

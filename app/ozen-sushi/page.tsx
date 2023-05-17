@@ -109,7 +109,7 @@ function OzenSushiHome() {
         className={`relative py-24 md:pt-[max(30px,8vw)] md:pb-[max(7px,1.86vw)] ${ANIMATION_CONFIGUARTION}`}
       >
         <div className="text-center mb-10 md:mb-[max(20px,5.33vw)]">
-          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-black md:text-[max(20px,5.33vw)]">
+          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-191919 md:text-[max(20px,5.33vw)]">
             Check out{" "}
             <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-EC6236 md:text-[max(20px,5.33vw)]">
               Our Stories

@@ -56,14 +56,14 @@ function OzenKoreaHeader() {
             className="absolute bottom-[max(72px,19.2vw)]"
             onClick={toggleNavbar}
           >
-            <RxCross2 className="text-191919" />
+            <RxCross2 className="text-959595" />
           </button>
         </nav>
       </header>
     );
   } else {
     return (
-      <header className="sticky top-0 z-20 flex justify-between items-center px-[8.21vw] py-[1.78vw] bg-black">
+      <header className="sticky top-0 z-20 flex justify-between items-center px-[8.21vw] py-[1.78vw] bg-191919">
         <div className="md:flex items-center gap-x-[clamp(10px,2vw,15px)]">
           <button
             className="hidden md:block md:w-[clamp(11px,2.93vw,20px)] md:h-[clamp(13px,3.46vw,22px)]"
@@ -72,11 +72,11 @@ function OzenKoreaHeader() {
             <GiHamburgerMenu className="w-full h-full" />
           </button>
           <Link href={ozen_korea_home} className="md:hidden">
-            <OzenKoreaLogoSmall />
+            <OzenKoreaLogoSmall className="w-[max(183px,12.14vw)]" />
           </Link>
         </div>
         <Link href={ozen_korea_home} className="hidden md:block">
-          <OzenKoreaLogoSmall />
+          <OzenKoreaLogoSmall className="w-[max(91px,24.26vw)]" />
         </Link>
         <nav className="flex gap-[4.28vw] items-center text-[clamp(13px,1.14vw,25px)]">
           {menuItems.map(({ label, href }) => (
@@ -93,7 +93,7 @@ function OzenKoreaHeader() {
           <RedBgBtn
             width="clamp(100px,14.28vw,170px)"
             height="clamp(30px,3.92vw,50px)"
-            className="md:rounded-xl"
+            className="md:rounded-xl md:bg-191919 md:text-white md:border-white"
           >
             Online Order
           </RedBgBtn>
