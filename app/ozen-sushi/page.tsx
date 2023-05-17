@@ -33,12 +33,6 @@ function OzenSushiHome() {
       alt: "image_139",
     },
   ];
-  const sections = document.querySelectorAll("section");
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      console.log(entries);
-    });
-  }, []);
   return (
     <>
       <section
