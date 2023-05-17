@@ -1,6 +1,6 @@
 "use client";
-import { BlackBgBtc, RedBgBtn } from "app/components/button";
 import Image from "next/image";
+import { BlackBgBtc, RedBgBtn } from "app/components/button";
 import image9928Large from "public/images/ozen-korea/img_9928.png";
 import image_9930 from "public/images/ozen-korea/img_9930.png";
 import food63 from "public/images/ozen-korea/food63.png";
