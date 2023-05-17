@@ -66,7 +66,7 @@ function OzenKoreaHeader() {
       <header className="sticky top-0 z-20 flex justify-between items-center px-[8.21vw] py-[1.78vw] bg-191919">
         <div className="md:flex items-center gap-x-[clamp(10px,2vw,15px)]">
           <button
-            className="hidden md:block md:w-[clamp(11px,2.93vw,20px)] md:h-[clamp(13px,3.46vw,22px)]"
+            className="hidden md:block md:w-[clamp(15px,2.93vw,20px)] md:h-[clamp(15px,3.46vw,22px)]"
             onClick={toggleNavbar}
           >
             <GiHamburgerMenu className="w-full h-full" />

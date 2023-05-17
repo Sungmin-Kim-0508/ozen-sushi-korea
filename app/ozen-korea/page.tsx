@@ -135,8 +135,8 @@ function OzenKoreaHome() {
 }
 
 const WhatWeServeMobile = () => (
-  <section className="hidden md:flex bg-191919 w-full px-[max(20px,5.33vw)]">
-    <div className="py-[max(40px,10.66vw)] md:text-center">
+  <section className="hidden md:flex w-full px-[max(20px,5.33vw)]">
+    <div className="py-[max(40px,10.66vw)] md:text-center md:bg-191919 md:rounded-[max(20px,5.3vw)] md:px-[max(22px,5.86vw)]">
       <span className="monserratBold900 text-[max(20px,5.33vw)] text-white">
         What we{" "}
         <span className="text-CF38border-CF382D monserratBold900 text-CF382D">
