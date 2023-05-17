@@ -69,7 +69,7 @@ function OzenKoreaHeader() {
             className="hidden md:block md:w-[clamp(15px,2.93vw,20px)] md:h-[clamp(15px,3.46vw,22px)]"
             onClick={toggleNavbar}
           >
-            <GiHamburgerMenu className="w-full h-full" />
+            <GiHamburgerMenu className="w-full h-full text-white" />
           </button>
           <Link href={ozen_korea_home} className="md:hidden">
             <OzenKoreaLogoSmall className="w-[max(183px,12.14vw)]" />
