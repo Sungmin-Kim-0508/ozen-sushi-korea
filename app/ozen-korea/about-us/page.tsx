@@ -37,7 +37,7 @@ function AboutUs() {
       <section
         className={`flex md:block md:px-[max(20px,5.33vw)] ${SECTION_GAP_IN_MOBILE} mt-[max(30px,8vw)]`}
       >
-        <div className="flex justify-center px-[8.21vw] py-[8.57vw] gap-x-[6.42vw] md:px-0 md:bg-191919 rounded-[max(20px,5.3vw)]">
+        <div className="flex justify-center px-[8.21vw] py-[8.57vw] gap-x-[6.42vw] md:p-0 md:bg-191919 rounded-[max(20px,5.3vw)]">
           <Image
             alt="image_7606"
             src={img7629}
