@@ -63,7 +63,7 @@ function OzenKoreaHeader() {
     );
   } else {
     return (
-      <header className="sticky top-0 z-20 flex justify-between items-center px-[8.21vw] py-[1.78vw] bg-191919">
+      <header className="sticky top-0 z-20 flex justify-between items-center px-[8.21vw] py-[1.78vw] md:px-[max(24px,6.4vw)] bg-191919">
         <div className="md:flex items-center gap-x-[clamp(10px,2vw,15px)]">
           <button
             className="hidden md:block md:w-[clamp(15px,2.93vw,20px)] md:h-[clamp(15px,3.46vw,22px)]"
@@ -75,7 +75,10 @@ function OzenKoreaHeader() {
             <OzenKoreaLogoSmall className="w-[max(183px,12.14vw)]" />
           </Link>
         </div>
-        <Link href={ozen_korea_home} className="hidden md:block">
+        <Link
+          href={ozen_korea_home}
+          className="hidden md:block md:relative left-6"
+        >
           <OzenKoreaLogoSmall className="w-[max(91px,24.26vw)]" />
         </Link>
         <nav className="flex gap-[4.28vw] items-center text-[clamp(13px,1.14vw,25px)]">
