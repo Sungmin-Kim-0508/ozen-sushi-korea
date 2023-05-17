@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { RedBgBtn } from "app/components/button";
 import { aboutUs, ozen_korea_home, menu } from "app/utils/routes";
 import { MenuItem } from "app/utils/types";
 import { OzenKoreaLogoSmall } from "public/svgs/ozen-korea-small";
 import { usePathname } from "next/navigation";
+import { RxCross2 } from "react-icons/rx";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function OzenKoreaHeader() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const pathname = usePathname();
   const menuItems: MenuItem[] = [
     {
@@ -22,29 +25,82 @@ function OzenKoreaHeader() {
       href: ozen_korea_home + menu,
     },
   ];
-  return (
-    <header className="sticky top-0 z-20 flex justify-between items-center px-[8.21vw] py-[1.78vw] bg-black">
-      <Link href={ozen_korea_home}>
-        <OzenKoreaLogoSmall />
-      </Link>
-      <nav className="flex gap-[4.28vw] items-center text-[clamp(13px,1.14vw,25px)]">
-        {menuItems.map(({ label, href }) => (
-          <Link
-            key={label}
-            href={href}
-            className={`hover:text-CF382D ${
-              pathname === href ? "text-CF382D" : ""
-            }`}
+
+  const toggleNavbar = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  if (isNavOpen) {
+    return (
+      <header
+        className={`fixed top-0 left-0 bg-white w-full h-screen z-30 animate-flip-down animate-duration-[800ms]`}
+      >
+        <nav
+          className="flex flex-col gap-y-[max(40px,10.66vw)] items-center
+                     pt-[max(80px,21.33vw)] px-[max(120px,32vw)]
+                     text-[max(20px,5.33vw)]"
+        >
+          {menuItems.map(({ label, href }) => (
+            <Link
+              key={label}
+              href={href}
+              className={`text-191919 hover:text-CF382D ${
+                pathname === href ? "text-CF382D" : ""
+              } ${label === "Ozen Korea" ? "block" : ""}`}
+              onClick={() => setIsNavOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
+          <button
+            className="absolute bottom-[max(72px,19.2vw)]"
+            onClick={toggleNavbar}
           >
-            {label}
+            <RxCross2 className="text-191919" />
+          </button>
+        </nav>
+      </header>
+    );
+  } else {
+    return (
+      <header className="sticky top-0 z-20 flex justify-between items-center px-[8.21vw] py-[1.78vw] bg-black">
+        <div className="md:flex items-center gap-x-[clamp(10px,2vw,15px)]">
+          <button
+            className="hidden md:block md:w-[clamp(11px,2.93vw,20px)] md:h-[clamp(13px,3.46vw,22px)]"
+            onClick={toggleNavbar}
+          >
+            <GiHamburgerMenu className="w-full h-full" />
+          </button>
+          <Link href={ozen_korea_home} className="md:hidden">
+            <OzenKoreaLogoSmall />
           </Link>
-        ))}
-        <RedBgBtn width="10.71vw" height="3.14vw">
-          Online Order
-        </RedBgBtn>
-      </nav>
-    </header>
-  );
+        </div>
+        <Link href={ozen_korea_home} className="hidden md:block">
+          <OzenKoreaLogoSmall />
+        </Link>
+        <nav className="flex gap-[4.28vw] items-center text-[clamp(13px,1.14vw,25px)]">
+          {menuItems.map(({ label, href }) => (
+            <Link
+              key={label}
+              href={href}
+              className={`hover:text-CF382D ${
+                pathname === href ? "text-CF382D" : ""
+              } md:hidden`}
+            >
+              {label}
+            </Link>
+          ))}
+          <RedBgBtn
+            width="clamp(100px,14.28vw,170px)"
+            height="clamp(30px,3.92vw,50px)"
+            className="md:rounded-xl"
+          >
+            Online Order
+          </RedBgBtn>
+        </nav>
+      </header>
+    );
+  }
 }
 
 export default OzenKoreaHeader;

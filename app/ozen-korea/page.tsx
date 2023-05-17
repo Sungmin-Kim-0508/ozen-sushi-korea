@@ -32,7 +32,7 @@ function OzenKoreaHome() {
   return (
     <>
       <section className="relative w-full min-h-full md:px-[max(20px,5.33vw)]">
-        <div className="flex mb-16 md:block md:mt-[max(30px,8vw)] md:bg-black md:rounded-[max(20px,5.3vw)]">
+        <div className="flex mb-16 md:block md:mt-[max(30px,8vw)] bg-191919 md:rounded-[max(20px,5.3vw)]">
           <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[10vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
             <span className="font-semibold text-xl text-[1.28vw] md:hidden">
               Served everyday since 2008
@@ -135,7 +135,7 @@ function OzenKoreaHome() {
 }
 
 const WhatWeServeMobile = () => (
-  <section className="hidden md:static w-full px-[max(20px,5.33vw)]">
+  <section className="hidden md:flex bg-191919 w-full px-[max(20px,5.33vw)]">
     <div className="py-[max(40px,10.66vw)]">
       <span className="monserratBold900 text-[max(20px,5.33vw)] text-white">
         What we{" "}

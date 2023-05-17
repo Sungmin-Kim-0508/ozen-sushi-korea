@@ -95,7 +95,7 @@ function OzenSushiHeader() {
                 href={href}
                 className={`hover:text-EC6236 ${
                   pathname === href ? "text-EC6236" : ""
-                } md:hidden ${label === "Ozen Korea" ? "hidden" : ""}`}
+                } ${label === "Ozen Korea" ? "hidden" : ""} md:hidden`}
               >
                 {label}
               </Link>
