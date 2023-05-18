@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { RedBgBtn } from "app/components/button";
-import { aboutUs, ozen_korea_home, menu } from "app/utils/routes";
+import {
+  aboutUs,
+  ozen_korea_home,
+  menu,
+  ozen_sushi_home,
+} from "app/utils/routes";
 import { MenuItem } from "app/utils/types";
 import { OzenKoreaLogoSmall } from "public/svgs/ozen-korea-small";
 import { usePathname } from "next/navigation";
@@ -23,6 +28,10 @@ function OzenKoreaHeader() {
     {
       label: "Menu",
       href: ozen_korea_home + menu,
+    },
+    {
+      label: "Ozen Sushi",
+      href: ozen_sushi_home,
     },
   ];
 
