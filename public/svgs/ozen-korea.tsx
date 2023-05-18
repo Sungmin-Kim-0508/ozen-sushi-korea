@@ -1,8 +1,9 @@
-export const OzenKoreaLogo = () => (
+export const OzenKoreaLogo = ({ className = "" }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="376.001"
+    // width="376.001"
     height="210"
+    className={className ? className : ""}
     viewBox="0 0 376.001 159.553"
   >
     <g

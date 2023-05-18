@@ -6,16 +6,16 @@ import { OzenKoreaLogo } from "public/svgs/ozen-korea";
 import ozen_sushi_logo from "public/images/ozen-sushi/ozensushi_original_logo.png";
 
 const btnDefaultStyle =
-  "w-64 h-12 text-center leading-[48px] rounded-full mx-[5rem]";
+  "w-64 h-12 text-center leading-[48px] rounded-full mx-auto";
 
 function page() {
   return (
     <div className="grid grid-flow-col justify-center gap-x-20 px-[8rem] py-64 lg:gap-x-6 md:grid-flow-row md:justify-center md:py-16">
-      <div className="grid">
-        <OzenKoreaLogo />
+      <div className="grid md:justify-center md:align-middle md:mx-auto">
+        <OzenKoreaLogo className="w-[clamp(350px,26.85vw,376px)] md:w-[max(190px,50.66vw)] md:mx-auto" />
         <Link
           href="/ozen-korea"
-          className={`${btnDefaultStyle} text-white bg-22346b relative top-9 hover:bg-CF382D hover:duration-500`}
+          className={`${btnDefaultStyle} text-white bg-22346b hover:bg-CF382D hover:duration-500`}
         >
           Ozen Korea
         </Link>
@@ -25,7 +25,7 @@ function page() {
         <Image
           src={ozen_sushi_logo}
           alt="ozen_sushi_logo"
-          className="relative left-14"
+          className="md:mb-3"
         />
         <Link
           href="/ozen-sushi"
