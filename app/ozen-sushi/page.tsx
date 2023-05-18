@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { BlueBgBtn, OrangeBgBtn } from "../components/button";
 import { ANIMATION_CONFIGUARTION } from "app/utils/constants";
 import salmonRiceBowl from "public/images/ozen-sushi/sushi_bowl.png";
@@ -13,8 +13,10 @@ import image_137 from "public/images/ozen-sushi/image_137.png";
 import image_138 from "public/images/ozen-sushi/image_138.png";
 import image_139 from "public/images/ozen-sushi/image_139.png";
 import DiscountOfferSection from "app/components/DiscountOfferSection";
+import { ozen_korea_home } from "app/utils/routes";
 
 function OzenSushiHome() {
+  const router = useRouter();
   const foodImages = [
     {
       src: image_136,
@@ -61,7 +63,13 @@ function OzenSushiHome() {
               <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </OrangeBgBtn>
-              <BlueBgBtn className="w-[clamp(140px,14.28vw,240px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
+              <BlueBgBtn
+                className="w-[clamp(140px,14.28vw,240px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]"
+                onClick={(event) => {
+                  event?.preventDefault();
+                  router.push(`${ozen_korea_home}`);
+                }}
+              >
                 Go to Ozen Korea
               </BlueBgBtn>
             </div>
@@ -97,6 +105,9 @@ function OzenSushiHome() {
         <div className="hidden md:block pt-[max(40px,10.66vw)] pb-[max(30px,8vw)] px-[max(21px,5.6vw)] bg-191919 text-center rounded-[max(20px,5.3vw)] mb-[max(30px,8vw)]">
           <WhatWeServeSection />
         </div>
+      </section>
+      <section className="hidden md:block px-[max(20px,5.33vw)] mb-[max(30px,8vw)]">
+        <Image alt="img_137" src={image_137} className="w-full rounded-3xl" />
       </section>
       <DiscountOfferSection />
       <section

@@ -5,7 +5,7 @@ type BtnProps = {
   width?: string;
   height?: string;
   className?: string;
-  onClick?: () => void;
+  onClick?: (event?: React.MouseEvent<HTMLElement>) => void;
 };
 
 const buttonFontSize = "text-[clamp(11px,1.14vw,22px)]";
@@ -35,6 +35,7 @@ export const OrangeBorderBtn: React.FC<BtnProps> = ({
   width,
   height,
   className,
+  onClick,
 }) => (
   <button
     type="button"
@@ -42,6 +43,7 @@ export const OrangeBorderBtn: React.FC<BtnProps> = ({
     className={`text-center ${borderRounded} border-2 border-EC6236 text-EC6236 ${buttonFontSize} hover:duration-500 hover:text-white hover:bg-EC6236 ${
       className ? className : ""
     }`}
+    onClick={onClick}
   >
     {children}
   </button>
@@ -52,6 +54,7 @@ export const RedBgBtn: React.FC<BtnProps> = ({
   width,
   height,
   className,
+  onClick,
 }) => (
   <button
     type="button"
@@ -59,6 +62,7 @@ export const RedBgBtn: React.FC<BtnProps> = ({
     className={`text-center ${borderRounded} bg-CF382D border border-CF382D ${buttonFontSize} text-white hover:duration-500 hover:bg-191919 hover:border-CF382D hover:text-CF382D ${
       className ? className : ""
     }`}
+    onClick={onClick}
   >
     {children}
   </button>
@@ -69,6 +73,7 @@ export const BlackBgBtc: React.FC<BtnProps> = ({
   width,
   height,
   className,
+  onClick,
 }) => (
   <button
     type="button"
@@ -76,6 +81,7 @@ export const BlackBgBtc: React.FC<BtnProps> = ({
     className={`text-center bg-191919 border border-white text-white ${buttonFontSize} hover:duration-500 hover:bg-white hover:border-white hover:text-191919 ${
       className ? className : ""
     } ${borderRounded}`}
+    onClick={onClick}
   >
     {children}
   </button>
@@ -86,6 +92,7 @@ export const BlueBgBtn: React.FC<BtnProps> = ({
   width,
   height,
   className,
+  onClick,
 }) => (
   <button
     type="button"
@@ -93,6 +100,7 @@ export const BlueBgBtn: React.FC<BtnProps> = ({
     className={`text-center ${borderRounded} bg-gradient-to-r from-103DC6 to-395AC1 border border-4358DC text-white ${buttonFontSize} md:rounded-[14px] hover:bg-white hover:border-4358DC hover:text-4358DC hover:from-white hover:to-white duration-1000 ${
       className ? className : ""
     }`}
+    onClick={onClick}
   >
     {children}
   </button>

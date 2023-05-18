@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { BlackBgBtc, RedBgBtn } from "app/components/button";
 import image9928Large from "public/images/ozen-korea/img_9928.png";
 import image_9930 from "public/images/ozen-korea/img_9930.png";
@@ -8,8 +9,10 @@ import food64 from "public/images/ozen-korea/food64.png";
 import food65 from "public/images/ozen-korea/food65.png";
 import food66 from "public/images/ozen-korea/food66.png";
 import DiscountOfferSection from "app/components/DiscountOfferSection";
+import { ozen_sushi_home } from "app/utils/routes";
 
 function OzenKoreaHome() {
+  const router = useRouter();
   const foodImagesInSec3 = [
     {
       src: food63,
@@ -55,8 +58,14 @@ function OzenKoreaHome() {
               <RedBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </RedBgBtn>
-              <BlackBgBtc className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
-                Go to Ozen Korea
+              <BlackBgBtc
+                className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]"
+                onClick={(event) => {
+                  event?.preventDefault();
+                  router.push(`${ozen_sushi_home}`);
+                }}
+              >
+                Go to Ozen Sushi
               </BlackBgBtc>
             </div>
           </div>
