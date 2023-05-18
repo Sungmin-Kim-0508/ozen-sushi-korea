@@ -49,7 +49,7 @@ function AboutUs() {
               </span>
             </span>
             <div className="border-2 border-EC6236 max-w-[4rem] my-5 md:mx-auto md:w-[7rem]" />
-            <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)]">
+            <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)] md:text-center">
               <div className="mb-5">
                 The unique taste comes from family recipes and from fresh,
                 simple and tasteful ingredients straight out of love. In every

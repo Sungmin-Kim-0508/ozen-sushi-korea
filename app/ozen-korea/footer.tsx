@@ -38,9 +38,9 @@ function Footer() {
               <div
                 className={`flex flex-col gap-y-2 ${infoTextSize} text-white`}
               >
-                <span>11am - 9pm</span>
-                <span>11am - 10pm</span>
-                <span>11am - 10pm</span>
+                <span>11:30am - 10:00pm</span>
+                <span>11:30am - 10:00pm</span>
+                <span>11:30am - 09:30pm</span>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ function Footer() {
             <div
               className={`w-2/3 ${infoTextSize} mb-5 md:text-white md:text-center`}
             >
-              607 Richmond St, London ON N6A 3G3
+              541 Oxford St W, London, ON N6H 4L1
             </div>
             <div className="md:hidden">
               <AiOutlineInstagram size="clamp(14px,1.14vw,20px)" />

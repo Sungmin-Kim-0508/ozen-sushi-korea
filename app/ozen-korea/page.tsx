@@ -10,6 +10,7 @@ import food65 from "public/images/ozen-korea/food65.png";
 import food66 from "public/images/ozen-korea/food66.png";
 import DiscountOfferSection from "app/components/DiscountOfferSection";
 import { ozen_sushi_home } from "app/utils/routes";
+import { OzenKoreaDivider } from "app/components/OzenKoreaDivider";
 
 function OzenKoreaHome() {
   const router = useRouter();
@@ -34,7 +35,7 @@ function OzenKoreaHome() {
   const SECTION_GAP_IN_MOBILE = "mb-[max(30px,8vw)]";
   return (
     <>
-      <section className="relative w-full min-h-full md:px-[max(20px,5.33vw)]">
+      <section className="relative w-full md:px-[max(20px,5.33vw)]">
         <div className="flex mb-16 md:block md:mt-[max(30px,8vw)] bg-191919 md:rounded-[max(20px,5.3vw)]">
           <div className="flex-1 flex flex-col justify-center px-[8.21vw] py-[10vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
             <span className="font-semibold text-white text-[1.28vw] md:hidden">
@@ -54,7 +55,7 @@ function OzenKoreaHome() {
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
             </div>
-            <div className="flex gap-x-7">
+            <div className="flex gap-x-7 md:gap-x-[10px]">
               <RedBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </RedBgBtn>
@@ -118,14 +119,14 @@ function OzenKoreaHome() {
       <DiscountOfferSection />
       <section className="relative py-24 bg-white">
         <div className="text-center mb-10">
-          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-191919">
+          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-191919 md:text-[max(20px,5.33vw)]">
             Check out{" "}
             <span className="monserratBold900 text-[clamp(35px,3vw,50px)] text-CF382D border-CF382D">
               Our Stories
             </span>
           </span>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center md:hidden">
           <div className="border-2 border-CF382D w-14 mb-10" />
         </div>
         <div className="flex gap-x-3 w-full md:grid grid-rows-2 grid-cols-2 md:gap-y-3">
@@ -152,7 +153,7 @@ const WhatWeServeMobile = () => (
           serve
         </span>
       </span>
-      <div className="border-2 border-CF382D max-w-[3.75rem] my-5 md:mx-auto md:w-[3.75rem]" />
+      <OzenKoreaDivider />
       <div className="mb-7 text-[clamp(14px,1.0vw,20px)] text-white leading-normal">
         Ozen Korea is a Korean restaurant located in the vibrant city of London,
         Ontario. With its unique fusion of traditional Korean cuisine and

@@ -7,6 +7,10 @@ import { ANIMATION_CONFIGUARTION } from "app/utils/constants";
 import salmonRiceBowl from "public/images/ozen-sushi/sushi_bowl.png";
 import image144 from "public/images/ozen-sushi/image_144.png";
 import image_7601 from "public/images/ozen-sushi/image_7601.png";
+import image_104 from "public/images/ozen-sushi/image_104.png";
+import image_105 from "public/images/ozen-sushi/image_105.png";
+import image_106 from "public/images/ozen-sushi/image_106.png";
+import image_107 from "public/images/ozen-sushi/image_107.png";
 import image_124 from "public/images/ozen-sushi/image_124.png";
 import image_136 from "public/images/ozen-sushi/image_136.png";
 import image_137 from "public/images/ozen-sushi/image_137.png";
@@ -19,20 +23,20 @@ function OzenSushiHome() {
   const router = useRouter();
   const foodImages = [
     {
-      src: image_136,
-      alt: "image_136",
+      src: image_104,
+      alt: "image_104",
     },
     {
-      src: image_137,
-      alt: "image_137",
+      src: image_105,
+      alt: "image_105",
     },
     {
-      src: image_138,
-      alt: "image_138",
+      src: image_106,
+      alt: "image_106",
     },
     {
-      src: image_139,
-      alt: "image_139",
+      src: image_107,
+      alt: "image_107",
     },
   ];
   return (

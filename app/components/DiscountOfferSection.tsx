@@ -2,13 +2,14 @@ import Image from "next/image";
 import image_7626 from "public/images/ozen-sushi/image_7626.png";
 import { BlueBgBtn, OrangeBgBtn, RedBgBtn } from "app/components/button";
 import { usePathname } from "next/navigation";
+import { OzenKoreaDivider } from "./OzenKoreaDivider";
 
 const DiscountOfferSection = () => {
   const pathname = usePathname();
 
   if (pathname?.includes("ozen-sushi")) {
     return (
-      <section className="relative w-full min-h-full md:static md:px-[max(21px,5.6vw)]">
+      <section className="relative w-full md:static md:px-[max(21px,5.6vw)]">
         <Image
           alt="image_7626"
           src={image_7626}
@@ -49,10 +50,10 @@ const DiscountOfferSection = () => {
           <span className="monserratBold900 text-[clamp(36px,3vw,100px)] text-white mb-2 md:text-white md:text-[max(20px,5.33vw)]">
             Get 10% Off!
           </span>
-          <span className="monserratBold900 text-[clamp(36px,3vw,100px)] text-white mb-5 md:text-CF382D md:text-[max(20px,5.33vw)]">
+          <span className="monserratBold900 text-[clamp(36px,3vw,100px)] text-white mb-5 md:text-CF382D md:text-[max(20px,5.33vw)] md:mb-2">
             Online Order!
           </span>
-          <div className="border-2 w-[3.75rem] border-white mb-5 md:border-CF382D" />
+          <OzenKoreaDivider />
           <div className="text-white text-[clamp(12px,1vw,20px)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-white md:text-[max(12px,3.2vw)] md:mb-[max(30px,8vw)]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             consectetur augue sit amet viverra varius. Suspendisse porttitor
