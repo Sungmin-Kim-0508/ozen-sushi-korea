@@ -10,7 +10,7 @@ const btnDefaultStyle =
 
 function page() {
   return (
-    <div className="grid grid-flow-col justify-center gap-x-20 px-[8rem] py-64 lg:gap-x-6 md:grid-flow-row md:justify-center md:py-16">
+    <div className="grid grid-flow-col justify-center gap-x-20 px-[8rem] py-64 lg:gap-x-6 md:grid-flow-row md:justify-center md:py-8">
       <div className="grid md:justify-center md:align-middle md:mx-auto">
         <OzenKoreaLogo className="w-[clamp(350px,26.85vw,376px)] md:w-[max(190px,50.66vw)] md:mx-auto" />
         <Link
