@@ -10,9 +10,9 @@ const btnDefaultStyle =
 
 function page() {
   return (
-    <div className="grid grid-flow-col justify-center gap-x-20 px-[8rem] py-64 lg:gap-x-6 md:grid-flow-row md:justify-center md:py-8">
+    <div className="grid grid-flow-col justify-center gap-x-20 px-[8rem] py-64 md:grid-flow-row md:justify-center md:py-8">
       <div className="grid md:justify-center md:align-middle md:mx-auto">
-        <OzenKoreaLogo className="w-[clamp(350px,26.85vw,376px)] md:w-[max(190px,50.66vw)] md:mx-auto" />
+        <OzenKoreaLogo className="w-full md:w-[max(183px,48.8vw)] md:mx-auto" />
         <Link
           href="/ozen-korea"
           className={`${btnDefaultStyle} text-white bg-22346b hover:bg-CF382D hover:duration-500`}
@@ -25,11 +25,11 @@ function page() {
         <Image
           src={ozen_sushi_logo}
           alt="ozen_sushi_logo"
-          className="md:mb-3"
+          className="w-full mb-3"
         />
         <Link
           href="/ozen-sushi"
-          className={`${btnDefaultStyle} text-EC6236 bg-white border-2 border-EC6236 relative top-7 hover:bg-EC6236 hover:duration-500 hover:text-white
+          className={`${btnDefaultStyle} text-EC6236 bg-white border-2 border-EC6236 hover:bg-EC6236 hover:duration-500 hover:text-white
           md:bg-EC6236 md:text-white md:border-0 md:hover:bg-white md:hover:border-EC6236 md:hover:border-2 md:hover:text-EC6236`}
         >
           Ozen Sushi
