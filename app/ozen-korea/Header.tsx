@@ -29,6 +29,10 @@ function OzenKoreaHeader() {
       label: "Menu",
       href: ozen_korea_home + menu,
     },
+    {
+      label: "Ozen Sushi",
+      href: ozen_sushi_home,
+    },
   ];
 
   const toggleNavbar = () => {
@@ -38,7 +42,7 @@ function OzenKoreaHeader() {
   if (isNavOpen) {
     return (
       <header
-        className={`fixed top-0 left-0 bg-white w-full h-screen z-30 animate-flip-down animate-duration-[800ms]`}
+        className={`fixed top-0 left-0 w-full h-screen z-30 animate-flip-down animate-duration-[800ms] bg-191919`}
       >
         <nav
           className="flex flex-col gap-y-[max(40px,10.66vw)] items-center
@@ -49,7 +53,7 @@ function OzenKoreaHeader() {
             <Link
               key={label}
               href={href}
-              className={`text-191919 hover:text-CF382D ${
+              className={`text-white hover:text-CF382D ${
                 pathname === href ? "text-CF382D" : ""
               } ${label === "Ozen Korea" ? "block" : ""}`}
               onClick={() => setIsNavOpen(false)}
@@ -93,7 +97,7 @@ function OzenKoreaHeader() {
               href={href}
               className={`text-white hover:text-CF382D ${
                 pathname === href ? "text-CF382D" : ""
-              } md:hidden`}
+              } ${label === "Ozen Sushi" ? "hidden" : ""} md:hidden`}
             >
               {label}
             </Link>
