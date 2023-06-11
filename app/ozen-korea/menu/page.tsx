@@ -32,7 +32,7 @@ function OzenKoreaMenu() {
     },
   ];
   return (
-    <main className="flex flex-col justify-center items-center gap-y-5">
+    <main className="flex flex-col justify-center items-center gap-y-5 mb-32">
       {images.map((img) => (
         <Image key={img.alt} src={img.src} alt={img.alt} width={791} />
       ))}
