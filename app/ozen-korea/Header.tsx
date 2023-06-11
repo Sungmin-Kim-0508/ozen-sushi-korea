@@ -29,10 +29,6 @@ function OzenKoreaHeader() {
       label: "Menu",
       href: ozen_korea_home + menu,
     },
-    {
-      label: "Ozen Sushi",
-      href: ozen_sushi_home,
-    },
   ];
 
   const toggleNavbar = () => {
@@ -90,7 +86,7 @@ function OzenKoreaHeader() {
         >
           <OzenKoreaLogoSmall className="w-[max(91px,24.26vw)]" />
         </Link>
-        <nav className="flex gap-[4.28vw] items-center text-[clamp(13px,1.14vw,25px)]">
+        <nav className="flex gap-[4.28vw] items-center text-[clamp(19px,1.14vw,25px)]">
           {menuItems.map(({ label, href }) => (
             <Link
               key={label}
