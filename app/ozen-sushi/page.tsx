@@ -49,7 +49,7 @@ function OzenSushiHome() {
       >
         <div className="flex mb-16 md:block">
           <div className="flex-1 flex flex-col justify-center px-[max(42px,8.21vw)] py-[14.62vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
-            <span className="font-semibold text-xl text-[clamp(11px,1.28vw,40px)] md:hidden">
+            <span className="font-normal text-xl text-[clamp(11px,1.28vw,40px)] md:hidden">
               Served everyday since 2008
             </span>
             <span className="font-montserrat text-191919 font-[900] text-[clamp(40px,4.42vw,77px)] leading-none md:text-[max(32px,9.6vw)]">
