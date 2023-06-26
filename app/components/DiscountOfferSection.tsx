@@ -40,20 +40,20 @@ const DiscountOfferSection = () => {
           className="absolute min-w-full h-full -z-10 md:hidden"
         />
         <div className="flex flex-col pl-[8.21vw] py-32 md:md:bg-F7F7F8 md:items-center md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:rounded-[max(20px,5.3vw)] md:text-center">
-          <span className="monserratBold900 text-[max(42px,3vw)] text-white mb-2 md:hidden md:text-191919 md:text-[max(20px,5.33vw)]">
+          <span className="font-montserrat text-[max(42px,3vw)] font-semibold text-white mb-2 md:hidden md:text-191919 md:text-[max(20px,5.33vw)]">
             {contents.ozen_sushi.HEAD1}
           </span>
-          <span className="monserratBold900 text-[max(42px,3vw)] text-white mb-2 md:text-191919 md:text-[max(20px,5.33vw)]">
+          <span className="font-montserrat text-[max(42px,3vw)] font-semibold text-white mb-2 md:text-191919 md:text-[max(20px,5.33vw)]">
             {isMobile
               ? contents.ozen_sushi_mobile.HEAD2
               : contents.ozen_sushi.HEAD2}
           </span>
           <div className="border-2 w-[3.75rem] border-white mb-5 md:hidden" />
-          <span className="monserratBold900 text-[max(24px,1.71vw)] text-EC6236 mb-5 md:text-EC6236 md:text-[max(12px,3.2vw)]">
+          <span className="font-montserrat text-[max(24px,1.71vw)] font-semibold text-EC6236 mb-5 md:text-EC6236 md:text-[max(12px,3.2vw)] md:mb-3">
             {contents.ozen_sushi.SUB_HEAD}
           </span>
-          <div className="hidden md:block border w-8 mb-5 border-EC6236" />
-          <div className="text-white text-[max(16px,1.14vw)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-191919 md:text-[max(12px,3.2vw)]">
+          <div className="hidden md:block border w-8 mb-3 border-EC6236" />
+          <div className="text-white font-light text-[max(16px,1.14vw)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-191919 md:text-[max(12px,3.2vw)] md:font-normal md:mb-7">
             {contents.ozen_sushi.BODY}
           </div>
           <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
@@ -71,16 +71,16 @@ const DiscountOfferSection = () => {
           className="absolute min-w-full h-full -z-10 bg-none md:hidden"
         />
         <div className="flex flex-col pl-[8.21vw] py-32 md:bg-191919 md:items-center md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:rounded-[max(20px,5.3vw)] md:text-center">
-          <span className="monserratBold900 text-[max(42px,3vw)] text-white mb-2 md:text-white md:text-[max(20px,5.33vw)]">
+          <span className="font-montserrat text-[max(42px,3vw)] text-white mb-2 md:text-white md:text-[max(20px,5.33vw)]">
             {contents.ozen_korea.HEAD1}
           </span>
-          <span className="monserratBold900 text-[max(42px,3vw)] text-white mb-2 md:text-white md:text-[max(20px,5.33vw)]">
+          <span className="font-montserrat text-[max(42px,3vw)] text-white mb-2 md:text-white md:text-[max(20px,5.33vw)]">
             {isMobile
               ? contents.ozen_korea_mobile.HEAD2
               : contents.ozen_korea.HEAD2}
           </span>
           <div className="border-2 w-[3.75rem] border-white mb-3 md:border-EC6236" />
-          <span className="monserratBold900 text-[max(24px,1.71vw)] text-CF382D mb-3 md:text-CF382D md:text-[max(20px,5.33vw)] md:mb-2">
+          <span className="font-montserrat text-[max(24px,1.71vw)] text-CF382D mb-3 md:text-CF382D md:text-[max(20px,5.33vw)] md:mb-2">
             {contents.ozen_korea.SUB_HEAD}
           </span>
           <div className="text-white text-[clamp(12px,1vw,20px)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-white md:text-[max(12px,3.2vw)] md:mb-[max(30px,8vw)]">

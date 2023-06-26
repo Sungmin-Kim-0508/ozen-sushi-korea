@@ -22,11 +22,7 @@ img {
   image-rendering: -webkit-optimize-contrast;
 }
 
-.monserratBold600 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.monserratBold900 {
+.font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
 

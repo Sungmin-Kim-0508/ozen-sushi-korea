@@ -44,13 +44,13 @@ function AboutUs() {
             className="w-[36.42vw] h-[47.21vw] md:hidden"
           />
           <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg md:text-center">
-            <span className="monserratBold900 text-191919 text-5xl mlg:text-4xl md:hidden">
+            <span className="font-montserrat text-191919 text-5xl mlg:text-4xl md:hidden">
               About{" "}
-              <span className="monserratBold900 text-CF382D text-5xl">Us</span>
+              <span className="font-montserrat text-CF382D text-5xl">Us</span>
             </span>
-            <span className="hidden md:block text-white monserratBold900 text-[max(20px,5.33vw)] text-center">
+            <span className="hidden md:block text-white font-montserrat text-[max(20px,5.33vw)] text-center">
               About{" "}
-              <span className="monserratBold900 text-CF382D text-[max(20px,5.33vw)]">
+              <span className="font-montserrat text-CF382D text-[max(20px,5.33vw)]">
                 Us
               </span>
             </span>

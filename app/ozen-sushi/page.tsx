@@ -20,6 +20,8 @@ import DiscountOfferSection from "app/components/DiscountOfferSection";
 import { ozen_korea_home } from "app/utils/routes";
 import { OzenSushiDivider } from "app/components/OzenSushiDivider";
 
+const textSize = `text-[clamp(14px,1.14vw,28px)]`;
+
 function OzenSushiHome() {
   const router = useRouter();
   const foodImages = [
@@ -50,26 +52,30 @@ function OzenSushiHome() {
             <span className="font-semibold text-xl text-[clamp(11px,1.28vw,40px)] md:hidden">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-191919 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none md:text-[max(32px,9.6vw)]">
+            <span className="font-montserrat text-191919 font-[900] text-[clamp(40px,4.42vw,77px)] leading-none md:text-[max(32px,9.6vw)]">
               Welcome to
             </span>
-            <span className="monserratBold900 text-EC6236 mb-5 font-extrabold text-[clamp(40px,4.42vw,77px)] leading-none md:text-[max(32px,9.6vw)]">
-              Ozen Sushi
+            <span className="font-montserrat text-EC6236 mb-5 font-[900] text-[clamp(40px,4.42vw,77px)] leading-none md:text-[max(32px,9.6vw)]">
+              Ozensushi
             </span>
             <span className="hidden robotoMedium mb-[max(6px,1.6vw)] md:block md:text-[max(14px,3.73vw)]">
               Served everyday since 2008
             </span>
-            <OzenSushiDivider />
-            <div className="mb-5 w-[35.71vw] text-[clamp(10px,1.15vw,20px)] md:w-full md:block md:px-[min(16px,5.86vw)] md:text-[clamp(10px,3.2vw,20px)]">
+            <div className="md:hidden">
+              <OzenSushiDivider />
+            </div>
+            <div
+              className={`mb-5 w-[35.71vw] ${textSize} font-light md:w-full md:block md:px-[min(16px,5.86vw)] md:text-[clamp(12px,3.2vw,16px)]`}
+            >
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
             </div>
-            <div className="flex gap-x-7 md:justify-center md:gap-x-[10px] md:w-[max(290px,77.33vw)] md:h-[min(10.66vw,40px)]">
-              <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-full md:h-full md:text-[clamp(10px,3.2vw,20px)]">
+            <div className="flex gap-x-7 md:justify-center md:gap-x-[10px] md:w-[max(290px,77.33vw)] md:h-[clamp(40px,10.66vw,58px)]">
+              <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] md:w-full md:h-full">
                 Learn More
               </OrangeBgBtn>
               <BlueBgBtn
-                className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-full md:h-full md:text-[clamp(10px,3.2vw,20px)]"
+                className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] md:w-full md:h-full"
                 onClick={(event) => {
                   event?.preventDefault();
                   router.push(`${ozen_korea_home}`);
@@ -119,9 +125,9 @@ function OzenSushiHome() {
         className={`relative py-24 md:pt-[max(30px,8vw)] md:pb-[max(7px,1.86vw)] ${ANIMATION_CONFIGUARTION}`}
       >
         <div className="text-center mb-5 md:mb-[max(20px,5.33vw)]">
-          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-191919 md:text-[max(20px,5.33vw)]">
+          <span className="font-montserrat text-[clamp(38px,3vw,50px)] font-semibold text-191919 md:text-[max(20px,5.33vw)]">
             Check out{" "}
-            <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-EC6236 md:text-[max(20px,5.33vw)]">
+            <span className="font-montserrat text-[clamp(38px,3vw,50px)] text-EC6236 md:text-[max(20px,5.33vw)]">
               Our Stories
             </span>
           </span>
@@ -146,16 +152,18 @@ function OzenSushiHome() {
 
 const WhatWeServeSection = () => (
   <>
-    <span className="monserratBold900 text-[3.5vw] md:text-white md:text-[max(20px,5.3vw)]">
+    <span className="font-montserrat text-[3.5vw] font-semibold mb-3 md:text-white md:text-[max(20px,5.3vw)]">
       What we{" "}
-      <span className="monserratBold900 text-EC6236 md:text-[max(20px,5.3vw)]">
+      <span className="font-montserrat text-EC6236 md:text-[max(20px,5.3vw)]">
         serve
       </span>
     </span>
     <div className="md:flex md:justify-center md:mt-5">
       <OzenSushiDivider />
     </div>
-    <div className="text-[clamp(14px,1.0vw,20px)] md:text-white md:text-[max(12px,3.2vw)]">
+    <div
+      className={`${textSize} font-light md:text-white md:text-[max(12px,3.2vw)]`}
+    >
       <div className="mb-5">
         The unique taste comes from family recipes and from fresh, simple and
         tasteful ingredients straight out of love. In every menu items from OZEN
@@ -167,7 +175,7 @@ const WhatWeServeSection = () => (
         list to the heart of London Ontario.
       </div>
     </div>
-    <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
+    <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)]">
       Learn More
     </OrangeBgBtn>
   </>

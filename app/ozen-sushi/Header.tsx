@@ -72,7 +72,7 @@ function OzenSushiHeader() {
     );
   } else {
     return (
-      <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[8.1vw] py-[1.78vw] bg-white border-b-2 border-FAFAFA animate-flip-up">
+      <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[8.1vw] py-[1.78vw] bg-white border-b-2 border-b-EDEDED animate-flip-up">
         <div className="md:flex items-center gap-x-[clamp(10px,2vw,15px)]">
           <button
             className="hidden md:block md:w-[clamp(11px,2.93vw,20px)] md:h-[clamp(13px,3.46vw,22px)]"
@@ -100,7 +100,7 @@ function OzenSushiHeader() {
                 {label}
               </Link>
             ))}
-            <OrangeBgBtn className="w-[clamp(150px,10.71vw,165px)] h-[clamp(44px,3.92vw,48px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
+            <OrangeBgBtn className="w-[clamp(140px,10.71vw,165px)] h-[clamp(40px,3.92vw,48px)] md:w-[clamp(100px,26.66vw,160px)] md:h-[clamp(30px,8vw,45px)] md:text-[clamp(10px,2.66vw,15px)]">
               Online Order
             </OrangeBgBtn>
           </nav>

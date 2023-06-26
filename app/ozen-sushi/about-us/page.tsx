@@ -40,19 +40,19 @@ function AboutUs() {
             className="w-[36.42vw] h-[47.21vw] md:hidden"
           />
           <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg">
-            <span className="monserratBold900 text-5xl mlg:text-4xl md:hidden">
-              About <span className="monserratBold900 text-EC6236">Us</span>
+            <span className="font-montserrat text-5xl font-semibold mlg:text-4xl md:hidden">
+              About <span className="font-montserrat text-EC6236">Us</span>
             </span>
-            <span className="hidden md:block monserratBold900 text-[max(20px,5.33vw)] text-center">
+            <span className="hidden md:block font-montserrat text-[max(20px,5.33vw)] font-semibold text-center">
               About{" "}
-              <span className="monserratBold900 text-EC6236 text-[max(20px,5.33vw)]">
+              <span className="font-montserrat text-EC6236 text-[max(20px,5.33vw)]">
                 Us
               </span>
             </span>
             <div className="mt-5 md:flex justify-center md:mt-3">
               <OzenSushiDivider />
             </div>
-            <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)] md:text-center">
+            <div className="text-[clamp(12px,1.14vw,22px)] font-light md:text-[max(12px,3.2vw)] md:text-center md:font-normal">
               <div className="mb-5">
                 The unique taste comes from family recipes and from fresh,
                 simple and tasteful ingredients straight out of love. In every

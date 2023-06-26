@@ -41,10 +41,10 @@ function OzenKoreaHome() {
             <span className="font-semibold text-white text-[1.28vw] md:hidden">
               Served everyday since 2008
             </span>
-            <span className="monserratBold900 text-white font-extrabold text-[4.42vw] leading-none md:text-[max(32px,9.6vw)]">
+            <span className="font-montserrat text-white font-extrabold text-[4.42vw] leading-none md:text-[max(32px,9.6vw)]">
               Welcome to
             </span>
-            <span className="monserratBold900 text-CF382D mb-5 font-extrabold text-[4.42vw] leading-none md:text-[max(32px,9.6vw)]">
+            <span className="font-montserrat text-CF382D mb-5 font-extrabold text-[4.42vw] leading-none md:text-[max(32px,9.6vw)]">
               Ozen Korea
             </span>
             <span className="hidden robotoMedium mb-[max(6px,1.6vw)] md:block md:text-[max(14px,3.73vw)] md:text-white">
@@ -95,9 +95,9 @@ function OzenKoreaHome() {
         />
         {/* Desktop */}
         <div className="flex flex-col justify-center ml-[6.42vw] w-[40vw] relative top-10 xl:top-20 mlg:top-24 mb-40 md:hidden">
-          <span className="monserratBold900 text-[3.5vw] xl:text-[3vw] text-191919">
+          <span className="font-montserrat text-[3.5vw] xl:text-[3vw] text-191919">
             What we{" "}
-            <span className="text-CF38border-CF382D monserratBold900 text-CF382D">
+            <span className="text-CF38border-CF382D font-montserrat text-CF382D">
               serve
             </span>
           </span>
@@ -119,9 +119,9 @@ function OzenKoreaHome() {
       <DiscountOfferSection />
       <section className="relative py-24 bg-white">
         <div className="text-center mb-10">
-          <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-191919 md:text-[max(20px,5.33vw)]">
+          <span className="font-montserrat text-[clamp(38px,3vw,50px)] text-191919 md:text-[max(20px,5.33vw)]">
             Check out{" "}
-            <span className="monserratBold900 text-[clamp(35px,3vw,50px)] text-CF382D border-CF382D">
+            <span className="font-montserrat text-[clamp(35px,3vw,50px)] text-CF382D border-CF382D">
               Our Stories
             </span>
           </span>
@@ -147,9 +147,9 @@ function OzenKoreaHome() {
 const WhatWeServeMobile = () => (
   <section className="hidden md:flex w-full px-[max(20px,5.33vw)]">
     <div className="py-[max(40px,10.66vw)] md:text-center md:bg-191919 md:rounded-[max(20px,5.3vw)] md:px-[max(22px,5.86vw)]">
-      <span className="monserratBold900 text-[max(20px,5.33vw)] text-white">
+      <span className="font-montserrat text-[max(20px,5.33vw)] text-white">
         What we{" "}
-        <span className="text-CF38border-CF382D monserratBold900 text-CF382D">
+        <span className="text-CF38border-CF382D font-montserrat text-CF382D">
           serve
         </span>
       </span>
