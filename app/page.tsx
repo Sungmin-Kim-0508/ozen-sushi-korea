@@ -12,7 +12,7 @@ function page() {
   return (
     <div className="grid grid-flow-col justify-center gap-x-20 px-[8rem] py-64 md:grid-flow-row md:justify-center md:py-8">
       <div className="grid md:justify-center md:align-middle md:mx-auto">
-        <OzenKoreaLogo className="relative right-6 w-[clamp(350px,26.85vw,376px)] md:w-[max(190px,50.66vw)] md:mx-auto" />
+        <OzenKoreaLogo className="relative right-6 w-[clamp(350px,26.85vw,376px)] mb-9 md:mb-5 md:w-[max(190px,50.66vw)] md:mx-auto" />
         <Link
           href="/ozen-korea"
           className={`${btnDefaultStyle} text-white bg-22346b hover:bg-CF382D hover:duration-500`}
@@ -25,7 +25,7 @@ function page() {
         <Image
           src={ozen_sushi_logo}
           alt="ozen_sushi_logo"
-          className="w-full mb-3"
+          className="w-full mb-4 md:mb-6"
         />
         <Link
           href="/ozen-sushi"

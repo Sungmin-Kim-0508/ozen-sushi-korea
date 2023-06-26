@@ -72,7 +72,7 @@ function OzenSushiHeader() {
     );
   } else {
     return (
-      <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[8.1vw] py-[1.78vw] bg-white animate-flip-up">
+      <header className="sticky top-0 z-20 flex justify-between items-center pl-[8.21vw] pr-[8.1vw] py-[1.78vw] bg-white border-b-2 border-FAFAFA animate-flip-up">
         <div className="md:flex items-center gap-x-[clamp(10px,2vw,15px)]">
           <button
             className="hidden md:block md:w-[clamp(11px,2.93vw,20px)] md:h-[clamp(13px,3.46vw,22px)]"

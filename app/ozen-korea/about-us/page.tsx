@@ -11,7 +11,7 @@ import DiscountOfferSection from "app/components/DiscountOfferSection";
 import { RedBgBtn } from "app/components/button";
 
 function AboutUs() {
-  const SECTION_GAP_IN_MOBILE = "mb-[max(30px,8vw)]";
+  const SECTION_GAP_IN_MOBILE = "md:mb-[max(30px,8vw)]";
 
   const foodImages = [
     {
@@ -45,9 +45,10 @@ function AboutUs() {
           />
           <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg md:text-center">
             <span className="monserratBold900 text-191919 text-5xl mlg:text-4xl md:hidden">
-              About Us
+              About{" "}
+              <span className="monserratBold900 text-CF382D text-5xl">Us</span>
             </span>
-            <span className="hidden md:block text-white  monserratBold900 text-[max(20px,5.33vw)] text-center">
+            <span className="hidden md:block text-white monserratBold900 text-[max(20px,5.33vw)] text-center">
               About{" "}
               <span className="monserratBold900 text-CF382D text-[max(20px,5.33vw)]">
                 Us
@@ -56,19 +57,23 @@ function AboutUs() {
             <div className="border-2 border-CF382D max-w-[4rem] my-5 md:mx-auto md:w-[7rem]" />
             <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)] md:text-white">
               <div className="mb-5">
-                The unique taste comes from family recipes and from fresh,
-                simple and tasteful ingredients straight out of love. In every
-                menu items from OZEN SUSHI there is a bit of Korean/Japanese
-                culture and flavor.
+                Ozen Korea is a Korean restaurant located in the vibrant city of
+                London, Ontario. With its unique fusion of traditional Korean
+                cuisine and contemporary style, Ozen Korea offers an exceptional
+                dining experience that combines bold flavors and impeccable
+                service.
               </div>
               <div className="mb-8">
-                Ozen Sushi bridges the traditional with the contemporary,
-                bringing live-fire cooking, housemade spicy mayo sauce, and a
-                robust fresh fish list to the heart of London Ontario.
+                Ozen Korea is located in the heart of the city, just a short
+                distance from both Oxford Street and Wonderland Road, two of the
+                most prominent landmarks in London, Ontario. Whether you’re
+                looking to explore the city’s cultural offerings or indulge in
+                some delicious Korean food, Ozen Korea is the perfect
+                destination.
               </div>
             </div>
             <div className="flex justify-center">
-              <RedBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
+              <RedBgBtn className="hidden w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:block md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </RedBgBtn>
             </div>

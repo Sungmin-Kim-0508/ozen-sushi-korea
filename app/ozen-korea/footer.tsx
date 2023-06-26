@@ -62,15 +62,17 @@ function Footer() {
             >
               541 Oxford St W, London, ON N6H 4L1
             </div>
-            <div className="md:hidden">
-              <AiOutlineInstagram size="clamp(14px,1.14vw,20px)" />
+            <div className="w-5 md:hidden">
+              <a href="https://www.instagram.com/ozenlondon/">
+                <AiOutlineInstagram size="clamp(14px,1.14vw,20px)" />
+              </a>
             </div>
           </div>
         </div>
       </section>
       <section className="flex justify-between px-[7.2rem] py-2 text-sm text-white bg-191919 mlg:px-[4.8rem] border-t border-595959 md:hidden">
         <div>Website proudly create by Jinu & Sungmin</div>
-        <div>&copy; {fullYear} Ozensushi. All rights reserved</div>
+        <div>&copy; {fullYear} Ozenkorea. All rights reserved</div>
       </section>
     </footer>
   );

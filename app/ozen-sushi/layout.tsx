@@ -7,7 +7,7 @@ function OzenSushiLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <OzenSushiHeader />
-      {children}
+      <div>{children}</div>
       <Footer />
     </>
   );

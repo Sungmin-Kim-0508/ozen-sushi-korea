@@ -61,8 +61,10 @@ function Footer() {
             >
               607 Richmond St, London ON N6A 3G3
             </div>
-            <div className="md:hidden">
-              <AiOutlineInstagram size="clamp(14px,1.14vw,20px)" />
+            <div className="w-5 md:hidden">
+              <a href="https://www.instagram.com/ozenlondon/">
+                <AiOutlineInstagram size="clamp(14px,1.14vw,20px)" />
+              </a>
             </div>
           </div>
         </div>

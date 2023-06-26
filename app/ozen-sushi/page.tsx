@@ -18,6 +18,7 @@ import image_138 from "public/images/ozen-sushi/image_138.png";
 import image_139 from "public/images/ozen-sushi/image_139.png";
 import DiscountOfferSection from "app/components/DiscountOfferSection";
 import { ozen_korea_home } from "app/utils/routes";
+import { OzenSushiDivider } from "app/components/OzenSushiDivider";
 
 function OzenSushiHome() {
   const router = useRouter();
@@ -58,17 +59,17 @@ function OzenSushiHome() {
             <span className="hidden robotoMedium mb-[max(6px,1.6vw)] md:block md:text-[max(14px,3.73vw)]">
               Served everyday since 2008
             </span>
-            <div className="border-2 border-EC6236 max-w-[3.75rem] mb-5 md:hidden" />
+            <OzenSushiDivider />
             <div className="mb-5 w-[35.71vw] text-[clamp(10px,1.15vw,20px)] md:w-full md:block md:px-[min(16px,5.86vw)] md:text-[clamp(10px,3.2vw,20px)]">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
             </div>
-            <div className="flex gap-x-7 md:justify-center md:gap-x-[10px]">
-              <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
+            <div className="flex gap-x-7 md:justify-center md:gap-x-[10px] md:w-[max(290px,77.33vw)] md:h-[min(10.66vw,40px)]">
+              <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-full md:h-full md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </OrangeBgBtn>
               <BlueBgBtn
-                className="w-[clamp(140px,14.28vw,240px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]"
+                className="w-[clamp(140px,14.28vw,240px)] h-[clamp(40px,3.92vw,55px)] md:w-full md:h-full md:text-[clamp(10px,3.2vw,20px)]"
                 onClick={(event) => {
                   event?.preventDefault();
                   router.push(`${ozen_korea_home}`);
@@ -91,7 +92,7 @@ function OzenSushiHome() {
             />
           </div>
         </div>
-        <div className="flex px-32 xl:px-24 md:contents md:px-0">
+        <div className="flex gap-x-[9vw] px-32 xl:px-24 md:contents md:px-0">
           <Image
             alt="image_7601"
             src={image_7601}
@@ -102,7 +103,7 @@ function OzenSushiHome() {
             src={image_124}
             className="hidden md:block w-full mb-[max(30px,8vw)]"
           />
-          <div className="flex flex-col justify-center ml-[6.42vw] w-[40vw] relative top-10 xl:top-20 mlg:top-24 mb-40 md:hidden">
+          <div className="flex flex-col justify-center md:hidden">
             <WhatWeServeSection />
           </div>
         </div>
@@ -117,7 +118,7 @@ function OzenSushiHome() {
       <section
         className={`relative py-24 md:pt-[max(30px,8vw)] md:pb-[max(7px,1.86vw)] ${ANIMATION_CONFIGUARTION}`}
       >
-        <div className="text-center mb-10 md:mb-[max(20px,5.33vw)]">
+        <div className="text-center mb-5 md:mb-[max(20px,5.33vw)]">
           <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-191919 md:text-[max(20px,5.33vw)]">
             Check out{" "}
             <span className="monserratBold900 text-[clamp(38px,3vw,50px)] text-EC6236 md:text-[max(20px,5.33vw)]">
@@ -125,8 +126,8 @@ function OzenSushiHome() {
             </span>
           </span>
         </div>
-        <div className="flex justify-center md:hidden">
-          <div className="border-2 border-EC6236 w-14 mb-10" />
+        <div className="flex justify-center mb-12 md:hidden">
+          <OzenSushiDivider />
         </div>
         <div className="flex gap-x-3 w-full md:grid grid-rows-2 grid-cols-2 md:gap-y-3">
           {foodImages.map((image) => (
@@ -151,7 +152,7 @@ const WhatWeServeSection = () => (
         serve
       </span>
     </span>
-    <div className="border-2 border-EC6236 max-w-[3.75rem] my-5 md:mx-auto" />
+    <OzenSushiDivider />
     <div className="text-[clamp(14px,1.0vw,20px)] md:text-white md:text-[max(12px,3.2vw)]">
       <div className="mb-5">
         The unique taste comes from family recipes and from fresh, simple and

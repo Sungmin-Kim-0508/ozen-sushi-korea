@@ -40,7 +40,7 @@ function AboutUs() {
           />
           <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg">
             <span className="monserratBold900 text-5xl mlg:text-4xl md:hidden">
-              About Us
+              About <span className="monserratBold900 text-EC6236">Us</span>
             </span>
             <span className="hidden md:block monserratBold900 text-[max(20px,5.33vw)] text-center">
               About{" "}
@@ -63,7 +63,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="flex justify-center">
-              <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
+              <OrangeBgBtn className="hidden w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:block md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </OrangeBgBtn>
             </div>
@@ -78,8 +78,7 @@ function AboutUs() {
         />
       </section>
       <DiscountOfferSection />
-      <div className="mt-8" />
-      <section className="md:hidden">
+      <section className="hidden">
         <div className="flex w-full">
           {foodImages.map((image) => (
             <Image
