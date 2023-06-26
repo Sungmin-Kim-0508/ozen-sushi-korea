@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { RedBgBtn } from "app/components/button";
+import { useMediaQuery } from "react-responsive";
+import { BlackBgBtc, RedBgBtn } from "app/components/button";
 import {
   aboutUs,
   ozen_korea_home,
@@ -14,6 +15,12 @@ import { RxCross2 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function OzenKoreaHeader() {
+  const onlineOrderBtnStyle =
+    "w-[clamp(140px,10.71vw,165px)] h-[clamp(40px,3.92vw,48px)] md:w-[clamp(100px,26.66vw,160px)] md:h-[clamp(30px,8vw,45px)] md:text-[clamp(10px,2.66vw,15px)]";
+
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
   const [isNavOpen, setIsNavOpen] = useState(false);
   const pathname = usePathname();
   const menuItems: MenuItem[] = [
@@ -102,13 +109,13 @@ function OzenKoreaHeader() {
               {label}
             </Link>
           ))}
-          <RedBgBtn
-            width="clamp(100px,14.28vw,170px)"
-            height="clamp(30px,3.92vw,50px)"
-            className="md:rounded-xl md:bg-191919 md:text-white md:border-white"
-          >
-            Online Order
-          </RedBgBtn>
+          {isMobile ? (
+            <BlackBgBtc className={onlineOrderBtnStyle}>
+              Online Order
+            </BlackBgBtc>
+          ) : (
+            <RedBgBtn className={onlineOrderBtnStyle}>Online Order</RedBgBtn>
+          )}
         </nav>
       </header>
     );
