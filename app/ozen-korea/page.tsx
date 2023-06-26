@@ -46,7 +46,7 @@ function OzenKoreaHome() {
               Welcome to
             </span>
             <span className="font-montserrat text-CF382D mb-5 font-extrabold text-[4.42vw] leading-none md:text-[max(32px,9.6vw)]">
-              Ozen Korea
+              OzenKorea
             </span>
             <span className="hidden robotoMedium mb-[max(6px,1.6vw)] md:block md:text-[max(14px,3.73vw)] md:text-white">
               Served everyday since 2008
