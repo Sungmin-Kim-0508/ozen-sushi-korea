@@ -40,7 +40,7 @@ function AboutUs() {
             className="w-[36.42vw] h-[47.21vw] md:hidden"
           />
           <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg">
-            <span className="font-montserrat text-5xl font-semibold mlg:text-4xl md:hidden">
+            <span className="font-montserrat text-5xl font-bold mlg:text-4xl md:hidden">
               About <span className="font-montserrat text-EC6236">Us</span>
             </span>
             <span className="hidden md:block font-montserrat text-[max(20px,5.33vw)] font-semibold text-center">

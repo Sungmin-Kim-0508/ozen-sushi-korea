@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="flex flex-col">
       <section
-        className="flex justify-between pl-[clamp(50px,6vw,90px)] text-white bg-191919
+        className="flex justify-between pl-[8.21vw] pr-[3vw] text-white bg-191919
                    md:flex-col md:items-center md:pl-0 md:pb-[max(41px,10.93vw)]"
       >
         <div className="pt-[clamp(40px,4.28vw,60px)] md:mb-[max(30px,8vw)]">

@@ -54,7 +54,7 @@ function OzenKoreaHome() {
             <div className="md:hidden">
               <OzenKoreaDivider />
             </div>
-            <div className="flex flex-col mb-5 w-[35.71vw] text-[clamp(16px,1.14vw,20px)] font-light text-white md:w-full md:block md:px-[min(16px,5.86vw)] md:text-[clamp(10px,3.2vw,20px)]">
+            <div className="flex flex-col mb-5 w-[35.71vw] text-[clamp(16px,1.14vw,20px)] font-light text-white font-light md:w-full md:block md:px-[min(16px,5.86vw)] md:text-[clamp(10px,3.2vw,20px)] md:font-normal">
               The unique taste comes from family recipes and from fresh simple
               and tasteful ingredients straight out of love.
             </div>
@@ -134,8 +134,8 @@ const WhatWeServeDesktop = () => (
           serve
         </span>
       </span>
-      <div className="border-2 border-CF382D max-w-[3.75rem] my-5" />
-      <div className="mb-7 text-[clamp(16px,1.0vw,20px)] text-191919 leading-normal">
+      <OzenKoreaDivider />
+      <div className="mb-7 text-[clamp(16px,1.0vw,20px)] text-191919 leading-normal font-light">
         Ozen Korea is a Korean restaurant located in the vibrant city of London,
         Ontario. With its unique fusion of traditional Korean cuisine and
         contemporary style, Ozen Korea offers an exceptional dining experience

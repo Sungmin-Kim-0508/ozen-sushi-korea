@@ -71,7 +71,7 @@ const DiscountOfferSection = () => {
           className="absolute min-w-full h-full -z-10 bg-none md:hidden"
         />
         <div className="flex flex-col pl-[8.21vw] py-32 md:bg-191919 md:items-center md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:rounded-[max(20px,5.3vw)] md:text-center">
-          <span className="font-montserrat text-[max(42px,3vw)] font-semibold text-white mb-2 md:text-white md:text-[max(20px,5.33vw)]">
+          <span className="font-montserrat text-[max(42px,3vw)] font-semibold text-white md:text-white md:text-[max(20px,5.33vw)]">
             {isMobile ? "" : contents.ozen_korea.HEAD1}
           </span>
           <span className="font-montserrat text-[max(42px,3vw)] font-semibold text-white mb-2 md:text-white md:text-[max(20px,5.33vw)]">

@@ -9,6 +9,7 @@ import img106 from "public/images/ozen-korea/img_106.png";
 import img107 from "public/images/ozen-korea/img_107.png";
 import DiscountOfferSection from "app/components/DiscountOfferSection";
 import { RedBgBtn } from "app/components/button";
+import { OzenKoreaDivider } from "app/components/OzenKoreaDivider";
 
 function AboutUs() {
   const SECTION_GAP_IN_MOBILE = "md:mb-[max(30px,8vw)]";
@@ -44,18 +45,20 @@ function AboutUs() {
             className="w-[36.42vw] h-[47.21vw] md:hidden"
           />
           <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg md:text-center">
-            <span className="font-montserrat text-191919 text-5xl mlg:text-4xl md:hidden">
+            <span className="font-montserrat text-191919 text-5xl font-bold mlg:text-4xl md:hidden">
               About{" "}
-              <span className="font-montserrat text-CF382D text-5xl">Us</span>
+              <span className="font-montserrat text-CF382D text-5xl">us</span>
             </span>
-            <span className="hidden md:block text-white font-montserrat text-[max(20px,5.33vw)] text-center">
+            <span className="hidden md:block text-white font-montserrat font-semibold text-[max(20px,5.33vw)] text-center">
               About{" "}
               <span className="font-montserrat text-CF382D text-[max(20px,5.33vw)]">
-                Us
+                us
               </span>
             </span>
-            <div className="border-2 border-CF382D max-w-[4rem] my-5 md:mx-auto md:w-[7rem]" />
-            <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)] md:text-white">
+            <div className="mt-5 md:flex justify-center mb:mt-3">
+              <OzenKoreaDivider />
+            </div>
+            <div className="text-[clamp(12px,1.14vw,22px)] font-light md:text-[max(12px,3.2vw)] md:text-white md:font-normal">
               <div className="mb-5">
                 Ozen Korea is a Korean restaurant located in the vibrant city of
                 London, Ontario. With its unique fusion of traditional Korean
@@ -86,7 +89,7 @@ function AboutUs() {
       <div className={`${SECTION_GAP_IN_MOBILE}`}>
         <DiscountOfferSection />
       </div>
-      <section className="hidden md:grid grid-rows-2 grid-cols-2 md:gap-3 mb-2">
+      <section className="hidden md:grid grid-rows-2 grid-cols-2 md:gap-2 mb-2">
         {foodImages.map((image) => (
           <Image
             key={image.alt}
