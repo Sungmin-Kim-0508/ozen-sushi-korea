@@ -65,11 +65,11 @@ function OzenSushiHome() {
               and tasteful ingredients straight out of love.
             </div>
             <div className="flex gap-x-7 md:justify-center md:gap-x-[10px] md:w-[max(290px,77.33vw)] md:h-[min(10.66vw,40px)]">
-              <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-full md:h-full md:text-[clamp(10px,3.2vw,20px)]">
+              <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-full md:h-full md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </OrangeBgBtn>
               <BlueBgBtn
-                className="w-[clamp(140px,14.28vw,240px)] h-[clamp(40px,3.92vw,55px)] md:w-full md:h-full md:text-[clamp(10px,3.2vw,20px)]"
+                className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-full md:h-full md:text-[clamp(10px,3.2vw,20px)]"
                 onClick={(event) => {
                   event?.preventDefault();
                   router.push(`${ozen_korea_home}`);
@@ -152,7 +152,9 @@ const WhatWeServeSection = () => (
         serve
       </span>
     </span>
-    <OzenSushiDivider />
+    <div className="md:flex md:justify-center md:mt-5">
+      <OzenSushiDivider />
+    </div>
     <div className="text-[clamp(14px,1.0vw,20px)] md:text-white md:text-[max(12px,3.2vw)]">
       <div className="mb-5">
         The unique taste comes from family recipes and from fresh, simple and
@@ -165,7 +167,7 @@ const WhatWeServeSection = () => (
         list to the heart of London Ontario.
       </div>
     </div>
-    <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
+    <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
       Learn More
     </OrangeBgBtn>
   </>

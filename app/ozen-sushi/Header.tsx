@@ -100,11 +100,7 @@ function OzenSushiHeader() {
                 {label}
               </Link>
             ))}
-            <OrangeBgBtn
-              width="clamp(100px,14.28vw,170px)"
-              height="clamp(30px,3.92vw,50px)"
-              className="md:rounded-xl"
-            >
+            <OrangeBgBtn className="w-[clamp(150px,10.71vw,165px)] h-[clamp(44px,3.92vw,48px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
               Online Order
             </OrangeBgBtn>
           </nav>

@@ -56,7 +56,7 @@ const DiscountOfferSection = () => {
           <div className="text-white text-[max(16px,1.14vw)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-191919 md:text-[max(12px,3.2vw)]">
             {contents.ozen_sushi.BODY}
           </div>
-          <OrangeBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
+          <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
             Online Order
           </OrangeBgBtn>
         </div>
@@ -79,8 +79,8 @@ const DiscountOfferSection = () => {
               ? contents.ozen_korea_mobile.HEAD2
               : contents.ozen_korea.HEAD2}
           </span>
-          <div className="border-2 w-[3.75rem] border-white mb-5 md:border-EC6236" />
-          <span className="monserratBold900 text-[max(24px,1.71vw)] text-CF382D mb-5 md:text-CF382D md:text-[max(20px,5.33vw)] md:mb-2">
+          <div className="border-2 w-[3.75rem] border-white mb-3 md:border-EC6236" />
+          <span className="monserratBold900 text-[max(24px,1.71vw)] text-CF382D mb-3 md:text-CF382D md:text-[max(20px,5.33vw)] md:mb-2">
             {contents.ozen_korea.SUB_HEAD}
           </span>
           <div className="text-white text-[clamp(12px,1vw,20px)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-white md:text-[max(12px,3.2vw)] md:mb-[max(30px,8vw)]">

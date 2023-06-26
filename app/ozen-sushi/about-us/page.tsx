@@ -9,6 +9,7 @@ import image_138 from "public/images/ozen-sushi/image_138.png";
 import image_139 from "public/images/ozen-sushi/image_139.png";
 import DiscountOfferSection from "app/components/DiscountOfferSection";
 import { OrangeBgBtn } from "app/components/button";
+import { OzenSushiDivider } from "app/components/OzenSushiDivider";
 
 function AboutUs() {
   const foodImages = [
@@ -48,7 +49,9 @@ function AboutUs() {
                 Us
               </span>
             </span>
-            <div className="border-2 border-EC6236 max-w-[4rem] my-5 md:mx-auto md:w-[7rem]" />
+            <div className="mt-5 md:flex justify-center md:mt-3">
+              <OzenSushiDivider />
+            </div>
             <div className="text-[clamp(12px,1.14vw,22px)] md:text-[max(12px,3.2vw)] md:text-center">
               <div className="mb-5">
                 The unique taste comes from family recipes and from fresh,
@@ -77,7 +80,9 @@ function AboutUs() {
           className="px-[max(20px,5.33vw)] min-w-full"
         />
       </section>
-      <DiscountOfferSection />
+      <div className="md:mb-8">
+        <DiscountOfferSection />
+      </div>
       <section className="hidden">
         <div className="flex w-full">
           {foodImages.map((image) => (
