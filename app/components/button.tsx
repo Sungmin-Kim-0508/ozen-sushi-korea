@@ -21,7 +21,7 @@ export const OrangeBgBtn: React.FC<BtnProps> = ({
   onClick,
 }) => {
   const c = twMerge(
-    `text-center bg-gradient-to-r from-EC6236 to-F49172 border border-EC6236 text-white ${borderRounded} ${buttonFontSize} hover:text-EC6236 md:rounded-[14px] hover:from-white hover:to-white duration-1000`,
+    `text-center bg-gradient-to-r from-EC6236 to-F49172 text-white ${borderRounded} ${buttonFontSize} hover:text-EC6236 md:rounded-[14px] hover:from-white hover:to-white duration-1000`,
     className
   );
   return (

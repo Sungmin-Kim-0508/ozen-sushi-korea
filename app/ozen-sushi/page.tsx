@@ -98,7 +98,7 @@ function OzenSushiHome() {
             />
           </div>
         </div>
-        <div className="flex gap-x-[9vw] px-32 xl:px-24 md:contents md:px-0">
+        <div className="flex gap-x-[13vw] px-32 xl:px-24 md:contents md:px-0">
           <Image
             alt="image_7601"
             src={image_7601}
