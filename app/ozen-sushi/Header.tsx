@@ -88,7 +88,7 @@ function OzenSushiHeader() {
           </Link>
         </div>
         <div>
-          <nav className="flex gap-16 items-center relative text-[clamp(19px,1.14vw,25px)] lg:gap-5">
+          <nav className="flex gap-12 items-center relative text-[clamp(16px,1.14vw,18px)]">
             {menuItems.map(({ label, href }) => (
               <Link
                 key={label}

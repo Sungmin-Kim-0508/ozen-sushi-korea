@@ -97,7 +97,7 @@ function OzenKoreaHeader() {
         >
           <OzenKoreaLogoSmall className="w-[max(91px,24.26vw)]" />
         </Link>
-        <nav className="flex gap-[4.28vw] items-center text-[clamp(19px,1.14vw,25px)]">
+        <nav className="flex gap-[4.28vw] items-center text-[clamp(16px,1.14vw,18px)]">
           {menuItems.map(({ label, href }) => (
             <Link
               key={label}
