@@ -32,7 +32,7 @@ function AboutUs() {
   ];
   return (
     <>
-      <section className="flex md:block md:px-[max(20px,5.33vw)]">
+      <section className="flex bg-FAFAFA md:block md:px-[max(20px,5.33vw)]">
         <div className="flex justify-center px-[8.21vw] py-[8.57vw] gap-x-[6.42vw] md:px-0">
           <Image
             alt="image_7606"

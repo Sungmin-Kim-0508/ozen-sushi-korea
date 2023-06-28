@@ -42,7 +42,7 @@ function pages() {
     },
   ];
   return (
-    <main className="flex flex-col justify-center items-center gap-y-5 mb-32">
+    <main className="flex flex-col justify-center items-center gap-y-5 pb-32 h-full bg-FAFAFA">
       {images.map((img) => (
         <Image key={img.alt} src={img.src} alt={img.alt} />
       ))}

@@ -45,7 +45,7 @@ function OzenSushiHome() {
   return (
     <>
       <section
-        className={`relative w-full min-h-full md:px-[max(20px,5.33vw)] ${ANIMATION_CONFIGUARTION}`}
+        className={`relative w-full min-h-full bg-FAFAFA md:px-[max(20px,5.33vw)] ${ANIMATION_CONFIGUARTION}`}
       >
         <div className="flex md:block">
           <div className="flex-1 flex flex-col justify-center px-[max(42px,8.21vw)] py-[14.62vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
@@ -122,7 +122,7 @@ function OzenSushiHome() {
       </section>
       <DiscountOfferSection />
       <section
-        className={`relative py-24 md:pt-[max(30px,8vw)] md:pb-[max(7px,1.86vw)] ${ANIMATION_CONFIGUARTION}`}
+        className={`relative py-24 bg-FAFAFA md:pt-[max(30px,8vw)] md:pb-[max(7px,1.86vw)] ${ANIMATION_CONFIGUARTION}`}
       >
         <div className="text-center mb-5 md:mb-[max(20px,5.33vw)]">
           <span className="font-montserrat text-[clamp(38px,3vw,50px)] font-semibold text-191919 md:text-[max(20px,5.33vw)]">
