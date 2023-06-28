@@ -47,7 +47,7 @@ function OzenSushiHome() {
       <section
         className={`relative w-full min-h-full md:px-[max(20px,5.33vw)] ${ANIMATION_CONFIGUARTION}`}
       >
-        <div className="flex mb-16 md:block">
+        <div className="flex md:block">
           <div className="flex-1 flex flex-col justify-center px-[max(42px,8.21vw)] py-[14.62vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
             <span className="font-normal text-xl text-[clamp(11px,1.28vw,40px)] md:hidden">
               Served everyday since 2008
@@ -98,11 +98,11 @@ function OzenSushiHome() {
             />
           </div>
         </div>
-        <div className="flex gap-x-[13vw] px-32 xl:px-24 md:contents md:px-0">
+        <div className="flex gap-x-[13vw] px-[12rem] pb-[6.75rem] md:contents md:px-0">
           <Image
             alt="image_7601"
             src={image_7601}
-            className="z-10 w-[clamp(280px,36.43vw,1000px)] relative top-8 md:hidden"
+            className="z-10 w-[27.42vw] h-[35.78vw] relative top-8 md:hidden"
           />
           <Image
             alt="image_124"

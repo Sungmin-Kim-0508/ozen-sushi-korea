@@ -21,7 +21,7 @@ export const OrangeBgBtn: React.FC<BtnProps> = ({
   onClick,
 }) => {
   const c = twMerge(
-    `text-center bg-gradient-to-r from-EC6236 to-F49172 text-white ${borderRounded} ${buttonFontSize} hover:text-EC6236 md:rounded-[14px] hover:from-white hover:to-white duration-1000`,
+    `text-center bg-gradient-to-r from-EC6236 to-F49172 text-white ${borderRounded} ${buttonFontSize} hover:text-EC6236 md:rounded-[14px] hover:from-white hover:to-white hover:border hover:border-EC6236 duration-1000`,
     className
   );
   return (
@@ -67,7 +67,7 @@ export const RedBgBtn: React.FC<BtnProps> = ({
   onClick,
 }) => {
   const c = twMerge(
-    `text-center ${borderRounded} bg-CF382D border border-CF382D ${buttonFontSize} text-white hover:duration-500 hover:bg-191919 hover:border-CF382D hover:text-CF382D`,
+    `text-center ${borderRounded} bg-CF382D border border-CF382D ${buttonFontSize} text-white hover:duration-500 hover:bg-white hover:border-CF382D hover:text-CF382D`,
     className
   );
   return (
