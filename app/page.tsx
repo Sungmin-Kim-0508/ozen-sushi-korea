@@ -25,7 +25,7 @@ function page() {
         <Image
           src={ozen_sushi_logo}
           alt="ozen_sushi_logo"
-          className="w-full mb-4 md:mb-6"
+          className="w-[17.5rem] mb-9 md:mb-5 md:w-[max(190px,50.66vw)] md:mx-auto"
         />
         <Link
           href="/ozen-sushi"

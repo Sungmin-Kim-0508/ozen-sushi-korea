@@ -3,7 +3,12 @@ import { useMediaQuery } from "react-responsive";
 import { usePathname } from "next/navigation";
 import image_7666 from "public/images/ozen-sushi/image_7666.png";
 import image_7682 from "public/images/ozen-korea/img_7682.png";
-import { OrangeBgBtn, RedBgBtn } from "app/components/button";
+import {
+  OrangeBgAndHoverTransparentBtn,
+  OrangeBgBtn,
+  RedBgAndHoverTransparentBtn,
+  RedBgBtn,
+} from "app/components/button";
 
 const contents = {
   ozen_sushi: {
@@ -56,9 +61,9 @@ const DiscountOfferSection = () => {
           <div className="text-white font-light text-[max(16px,1.14vw)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-191919 md:text-[max(12px,3.2vw)] md:font-normal md:mb-7">
             {contents.ozen_sushi.BODY}
           </div>
-          <OrangeBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
+          <OrangeBgAndHoverTransparentBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
             Online Order
-          </OrangeBgBtn>
+          </OrangeBgAndHoverTransparentBtn>
         </div>
       </section>
     );
@@ -87,9 +92,9 @@ const DiscountOfferSection = () => {
           <div className="text-white font-light text-[max(16px,1.14vw)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-[max(12px,3.2vw)] md:font-normal md:mb-7">
             {contents.ozen_korea.BODY}
           </div>
-          <RedBgBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
+          <RedBgAndHoverTransparentBtn className="w-[min(200px,14.28vw)] h-[clamp(40px,3.92vw,55px)] text-[min(16px,1.14vw)] md:w-[max(140px,37.33vw)] md:h-[max(10.66vw,40px)] md:text-[clamp(10px,3.2vw,20px)]">
             Online Order
-          </RedBgBtn>
+          </RedBgAndHoverTransparentBtn>
         </div>
       </section>
     );

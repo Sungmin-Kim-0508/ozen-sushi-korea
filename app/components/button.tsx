@@ -36,6 +36,29 @@ export const OrangeBgBtn: React.FC<BtnProps> = ({
   );
 };
 
+export const OrangeBgAndHoverTransparentBtn: React.FC<BtnProps> = ({
+  children,
+  width,
+  height,
+  className,
+  onClick,
+}) => {
+  const c = twMerge(
+    `text-center bg-gradient-to-r from-EC6236 to-F49172 text-white ${borderRounded} ${buttonFontSize} hover:text-EC6236 md:rounded-[14px] hover:from-transparent hover:to-transparent hover:border hover:border-EC6236 duration-1000`,
+    className
+  );
+  return (
+    <button
+      type="button"
+      style={{ width, height }}
+      className={c}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+};
+
 export const OrangeBorderBtn: React.FC<BtnProps> = ({
   children,
   width,
@@ -82,6 +105,29 @@ export const RedBgBtn: React.FC<BtnProps> = ({
   );
 };
 
+export const RedBgAndHoverTransparentBtn: React.FC<BtnProps> = ({
+  children,
+  width,
+  height,
+  className,
+  onClick,
+}) => {
+  const c = twMerge(
+    `text-center ${borderRounded} bg-CF382D border border-CF382D ${buttonFontSize} text-white hover:duration-500 hover:bg-transparent hover:border-CF382D hover:text-CF382D`,
+    className
+  );
+  return (
+    <button
+      type="button"
+      style={{ width, height }}
+      className={c}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+};
+
 export const BlackBgBtc: React.FC<BtnProps> = ({
   children,
   width,
@@ -113,7 +159,7 @@ export const BlueBgBtn: React.FC<BtnProps> = ({
   onClick,
 }) => {
   const c = twMerge(
-    `text-center ${borderRounded} bg-gradient-to-r from-103DC6 to-395AC1 border border-4358DC text-white ${buttonFontSize} md:rounded-[14px] hover:bg-white hover:border-4358DC hover:text-4358DC hover:from-white hover:to-white duration-1000`,
+    `text-center ${borderRounded} bg-gradient-to-r from-103DC6 to-395AC1 border border-4358DC text-white ${buttonFontSize} md:rounded-[14px] hover:bg-white hover:border-173591 hover:text-173591 hover:from-white hover:to-white duration-1000`,
     className
   );
   return (
