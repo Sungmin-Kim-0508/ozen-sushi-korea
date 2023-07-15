@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { BlackBgBtc, RedBgBtn } from "app/components/button";
+import { BlackBgBtn, RedBgBtn } from "app/components/button";
 import image9928Large from "public/images/ozen-korea/img_9928.png";
 import image_9930 from "public/images/ozen-korea/img_9930.png";
 import food63 from "public/images/ozen-korea/food63.png";
@@ -62,7 +62,7 @@ function OzenKoreaHome() {
               <RedBgBtn className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]">
                 Learn More
               </RedBgBtn>
-              <BlackBgBtc
+              <BlackBgBtn
                 className="w-[clamp(140px,14.28vw,200px)] h-[clamp(40px,3.92vw,55px)] md:w-[max(140px,37.55vw)] md:h-[max(40px,7vw)] md:text-[clamp(10px,3.2vw,20px)]"
                 onClick={(event) => {
                   event?.preventDefault();
@@ -70,7 +70,7 @@ function OzenKoreaHome() {
                 }}
               >
                 Go to Ozen Sushi
-              </BlackBgBtc>
+              </BlackBgBtn>
             </div>
           </div>
           <div className="flex-1">

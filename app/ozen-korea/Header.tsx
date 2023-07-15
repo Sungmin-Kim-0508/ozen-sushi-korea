@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
-import { BlackBgBtc, RedBgBtn } from "app/components/button";
+import {
+  BlackBgAnchor,
+  BlackBgBtn,
+  RedBgAnchor,
+  RedBgBtn,
+} from "app/components/button";
 import {
   aboutUs,
   ozen_korea_home,
@@ -21,7 +26,6 @@ function OzenKoreaHeader() {
   const isMobile = useMediaQuery({
     query: "(max-width: 768px)",
   });
-  const [isNavOpen, setIsNavOpen] = useState(false);
   const pathname = usePathname();
   const menuItems: MenuItem[] = [
     {
@@ -41,7 +45,10 @@ function OzenKoreaHeader() {
       href: ozen_sushi_home,
     },
   ];
+  const ozen_korea_doordash_link =
+    "https://order.online/store/ozen-korea-london-24657549/?hideModal=true&pickup=true";
 
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const toggleNavbar = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -110,11 +117,19 @@ function OzenKoreaHeader() {
             </Link>
           ))}
           {isMobile ? (
-            <BlackBgBtc className={onlineOrderBtnStyle}>
+            <BlackBgAnchor
+              href={ozen_korea_doordash_link}
+              className={onlineOrderBtnStyle}
+            >
               Online Order
-            </BlackBgBtc>
+            </BlackBgAnchor>
           ) : (
-            <RedBgBtn className={onlineOrderBtnStyle}>Online Order</RedBgBtn>
+            <RedBgAnchor
+              href={ozen_korea_doordash_link}
+              className={onlineOrderBtnStyle}
+            >
+              Online Order
+            </RedBgAnchor>
           )}
         </nav>
       </header>
