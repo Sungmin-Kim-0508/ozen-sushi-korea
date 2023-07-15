@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import { OrangeBgBtn } from "../components/button";
+import { OrangeBgAnchor } from "../components/button";
 import {
   aboutUs,
   menu,
@@ -100,9 +100,12 @@ function OzenSushiHeader() {
                 {label}
               </Link>
             ))}
-            <OrangeBgBtn className="w-[clamp(140px,10.71vw,165px)] h-[clamp(40px,3.92vw,48px)] md:w-[clamp(100px,26.66vw,160px)] md:h-[clamp(30px,8vw,45px)] md:text-[clamp(10px,2.66vw,15px)]">
+            <OrangeBgAnchor
+              href="https://order.online/business/~154476/"
+              className="w-[clamp(140px,10.71vw,165px)] h-[clamp(40px,3.92vw,48px)] md:w-[clamp(100px,26.66vw,160px)] md:h-[clamp(30px,8vw,45px)] md:text-[clamp(10px,2.66vw,15px)]"
+            >
               Online Order
-            </OrangeBgBtn>
+            </OrangeBgAnchor>
           </nav>
         </div>
       </header>

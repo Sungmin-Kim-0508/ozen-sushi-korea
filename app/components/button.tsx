@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -6,6 +7,13 @@ type BtnProps = {
   width?: string;
   height?: string;
   className?: string;
+  onClick?: (event?: React.MouseEvent<HTMLElement>) => void;
+};
+
+type AnchorProps = {
+  children: React.ReactNode;
+  className?: string;
+  href: string;
   onClick?: (event?: React.MouseEvent<HTMLElement>) => void;
 };
 
@@ -33,6 +41,23 @@ export const OrangeBgBtn: React.FC<BtnProps> = ({
     >
       {children}
     </button>
+  );
+};
+
+export const OrangeBgAnchor: React.FC<AnchorProps> = ({
+  children,
+  className,
+  href,
+  onClick,
+}) => {
+  const c = twMerge(
+    `flex justify-center items-center bg-gradient-to-r from-EC6236 to-F49172 text-white ${borderRounded} ${buttonFontSize} hover:text-EC6236 md:rounded-[14px] hover:from-white hover:to-white hover:border hover:border-EC6236 duration-1000`,
+    className
+  );
+  return (
+    <Link className={c} href={href} onClick={onClick}>
+      {children}
+    </Link>
   );
 };
 
