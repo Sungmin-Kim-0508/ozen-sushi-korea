@@ -12,10 +12,7 @@ import image_105 from "public/images/ozen-sushi/image_105.png";
 import image_106 from "public/images/ozen-sushi/image_106.png";
 import image_107 from "public/images/ozen-sushi/image_107.png";
 import image_124 from "public/images/ozen-sushi/image_124.png";
-import image_136 from "public/images/ozen-sushi/image_136.png";
 import image_137 from "public/images/ozen-sushi/image_137.png";
-import image_138 from "public/images/ozen-sushi/image_138.png";
-import image_139 from "public/images/ozen-sushi/image_139.png";
 import DiscountOfferSection from "app/components/DiscountOfferSection";
 import { ozen_korea_home } from "app/utils/routes";
 import { OzenSushiDivider } from "app/components/OzenSushiDivider";
@@ -47,7 +44,7 @@ function OzenSushiHome() {
       <section
         className={`relative w-full min-h-full bg-FAFAFA md:px-[max(20px,5.33vw)] ${ANIMATION_CONFIGUARTION}`}
       >
-        <div className="flex md:block">
+        <div className="flex md:block md:py-8">
           <div className="flex-1 flex flex-col justify-center px-[max(42px,8.21vw)] py-[14.62vw] md:px-[max(22px,5.86vw)] md:py-[max(43px,11.46vw)] md:shadow-2xl md:text-center md:opacity-100 md:rounded-[20px]">
             <span className="font-normal text-xl text-[clamp(11px,1.28vw,40px)] md:hidden">
               Served everyday since 2008

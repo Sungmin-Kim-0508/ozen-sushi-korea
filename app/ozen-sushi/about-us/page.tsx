@@ -39,7 +39,7 @@ function AboutUs() {
             src={image_7606}
             className="w-[27.42vw] h-[35.78vw] md:hidden"
           />
-          <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:shadow-lg">
+          <div className="flex flex-col justify-center w-full md:px-[max(21px,5.6vw)] md:py-[max(40px,10.66vw)] md:rounded-[20px] md:shadow-lg">
             <span className="font-montserrat text-5xl font-bold mlg:text-4xl md:hidden">
               About <span className="font-montserrat text-EC6236">Us</span>
             </span>
