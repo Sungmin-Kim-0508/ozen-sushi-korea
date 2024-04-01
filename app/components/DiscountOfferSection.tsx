@@ -5,29 +5,27 @@ import image_7666 from "public/images/ozen-sushi/image_7666.png";
 import image_7682 from "public/images/ozen-korea/img_7682.png";
 import {
   OrangeBgAndHoverTransparentBtn,
-  OrangeBgBtn,
   RedBgAndHoverTransparentBtn,
-  RedBgBtn,
 } from "app/components/button";
 
 const contents = {
   ozen_sushi: {
     HEAD1: "Celebrate Flavorful Delights!",
-    HEAD2: "Get 15% Off Your Online Order Today!",
+    HEAD2: "Your Online Order Today!",
     SUB_HEAD: "CODE: OZENLONDON",
-    BODY: "Indulge in the authentic flavors of OzenSushi’s Japanese cuisine! Order online to enjoy a generous 15% discount on your entire purchase. From beautifully crafted sushi rolls to delightful sashimi and crispy tempura, experience the essence of Japan from the comfort of your home.",
+    BODY: "Indulge in the authentic flavors of OzenSushi’s Japanese cuisine! From beautifully crafted sushi rolls to delightful sashimi and crispy tempura, experience the essence of Japan from the comfort of your home.",
   },
   ozen_sushi_mobile: {
-    HEAD2: "Get 15% Off! Online Order!",
+    HEAD2: "Online Order!",
   },
   ozen_korea: {
     HEAD1: "Celebrate Flavorful Delights!",
-    HEAD2: "Get 15% Off Your Online Order Today!",
+    HEAD2: "Your Online Order Today!",
     SUB_HEAD: "CODE: OZENLONDON",
-    BODY: "Delight in the flavors of OzenKorea’s Korean cuisine! Order online and get 15% off your entire purchase. Explore a wide range of authentic dishes, from savory bulgogi to flavorful bibimbap, and experience the true taste of Korea from the convenience of your home.",
+    BODY: "Delight in the flavors of OzenKorea’s Korean cuisine! Explore a wide range of authentic dishes, from savory bulgogi to flavorful bibimbap, and experience the true taste of Korea from the convenience of your home.",
   },
   ozen_korea_mobile: {
-    HEAD2: "Get 15% Off! Online Order!",
+    HEAD2: "Online Order!",
   },
 };
 
@@ -54,9 +52,9 @@ const DiscountOfferSection = () => {
               : contents.ozen_sushi.HEAD2}
           </span>
           <div className="border-2 w-[3.75rem] border-white mb-5 md:hidden" />
-          <span className="font-montserrat text-[max(24px,1.71vw)] font-semibold text-EC6236 mb-5 md:text-EC6236 md:text-[max(12px,3.2vw)] md:mb-3">
+          {/* <span className="font-montserrat text-[max(24px,1.71vw)] font-semibold text-EC6236 mb-5 md:text-EC6236 md:text-[max(12px,3.2vw)] md:mb-3">
             {contents.ozen_sushi.SUB_HEAD}
-          </span>
+          </span> */}
           <div className="hidden md:block border w-8 mb-3 border-EC6236" />
           <div className="text-white font-light text-[max(16px,1.14vw)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-191919 md:text-[max(12px,3.2vw)] md:font-normal md:mb-7">
             {contents.ozen_sushi.BODY}
@@ -85,9 +83,9 @@ const DiscountOfferSection = () => {
               : contents.ozen_korea.HEAD2}
           </span>
           <div className="border-2 w-[3.75rem] border-white mb-3 md:border-CF382D md:hidden" />
-          <span className="font-montserrat text-[max(24px,1.71vw)] font-semibold text-CF382D mb-5 md:text-[max(12px,3.2vw)] md:mb-3">
+          {/* <span className="font-montserrat text-[max(24px,1.71vw)] font-semibold text-CF382D mb-5 md:text-[max(12px,3.2vw)] md:mb-3">
             {contents.ozen_korea.SUB_HEAD}
-          </span>
+          </span> */}
           <div className="hidden md:block border w-8 mb-3 border-CF382D" />
           <div className="text-white font-light text-[max(16px,1.14vw)] w-[40.17vw] mb-[2.14vw] md:w-full md:text-[max(12px,3.2vw)] md:font-normal md:mb-7">
             {contents.ozen_korea.BODY}
