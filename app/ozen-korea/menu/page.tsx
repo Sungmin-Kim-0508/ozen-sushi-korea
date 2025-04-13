@@ -9,6 +9,7 @@ import page4 from "public/images/ozen-korea/ozen_korea_menu/page4.jpg";
 import page5 from "public/images/ozen-korea/ozen_korea_menu/page5.jpg";
 import page6 from "public/images/ozen-korea/ozen_korea_menu/page6.jpg";
 import page7 from "public/images/ozen-korea/ozen_korea_menu/page7.jpg";
+import page8 from "public/images/ozen-korea/ozen_korea_menu/page8.jpg";
 
 function OzenKoreaMenu() {
   const images = [
@@ -39,6 +40,10 @@ function OzenKoreaMenu() {
     {
       src: page7,
       alt: "page7",
+    },
+    {
+      src: page8,
+      alt: "page8",
     },
   ];
   return (
