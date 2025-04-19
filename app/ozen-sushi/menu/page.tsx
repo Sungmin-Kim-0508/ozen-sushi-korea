@@ -44,7 +44,13 @@ function pages() {
   return (
     <main className="flex flex-col justify-center items-center gap-y-5 pb-32 h-full bg-FAFAFA">
       {images.map((img) => (
-        <Image key={img.alt} src={img.src} alt={img.alt} />
+        <Image
+          key={img.alt}
+          src={img.src}
+          alt={img.alt}
+          width={800}
+          style={{ objectFit: "cover" }}
+        />
       ))}
     </main>
   );
